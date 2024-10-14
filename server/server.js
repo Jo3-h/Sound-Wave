@@ -1,24 +1,63 @@
 const express = require("express");
-const spotify_api = require("spotify-web-api-node");
+const cors = require("cors");
+const bodyParser = require("body-parser");
+const SpotifyWebApi = require("spotify-web-api-node");
+
 const app = express();
+app.use(cors());
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: true }));
+
+app.post("/refresh", (req, res) => {
+  const refreshToken = req.body.refreshToken;
+  const spotifyApi = new SpotifyWebApi({
+    redirectUri: "http://localhost:3000",
+    clientId: "af336f24a30e439b88ed899c0813426a",
+    clientSecret: "dfc4388665b943c2ab7b0f27d2454d5f",
+    refreshToken,
+  });
+
+  spotifyApi
+    .refreshAccessToken()
+    .then((data) => {
+      console.log("Access Token has been refreshed");
+      res.json({
+        accessToken: data.body.access_token,
+        expiresIn: data.body.expires_in,
+      });
+    })
+    .catch((err) => {
+      res.sendStatus(400).json({ error: err });
+    });
+});
 
 app.post("/login", (req, res) => {
   const code = req.body.code;
-  const spotifyApi = new SpotifyWebpi({
+  console.log("Received code:", code);
+  const spotifyApi = new SpotifyWebApi({
     redirectUri: "http://localhost:3000",
-    clientId: "",
-    clientSecret: "",
+    clientId: "af336f24a30e439b88ed899c0813426a",
+    clientSecret: "dfc4388665b943c2ab7b0f27d2454d5f",
   });
 
-  spotifyApi.authorizationCodeGrant(code).then((data) => {
-    res
-      .json({
-        accessToken: data.body.accessToken,
-        refreshToken: data.body.refreshToken,
+  spotifyApi
+    .authorizationCodeGrant(code)
+    .then((data) => {
+      console.log("Spotify API connection success: ", data.body);
+      res.json({
+        accessToken: data.body.access_token,
+        refreshToken: data.body.refresh_token,
         expiresIn: data.body.expires_in,
-      })
-      .catch(() => {
-        res.sendStatus(400);
       });
-  });
+      res.status(200);
+      console.log("Access Token: ", data.body.access_token);
+      console.log("Refresh Token: ", data.body.refresh_token);
+      console.log("Expries In: ", data.body.expires_in);
+    })
+    .catch((err) => {
+      console.log("Error connecting to Spotify API: ", err);
+      res.status(400).json({ error: "authorization failed", details: err });
+    });
 });
+
+app.listen(3001);
