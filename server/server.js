@@ -1,9 +1,34 @@
+/*
+SoundWave Web Application - Backend Server
+-------------------------------------------
+This server handles the backend logic for the SoundWave application including, 
+user authentication through spotify APIs, playlist management, manipulation of
+playback state, streaming spotify content, and more.
+
+Modules used:
+- Dotenv: For management of environment variables
+- Express: Framework for setting up web server
+- Cors: Handle cross-origin requests
+- Body-parser: Parse incoming data requests
+- Spotify-web-api-node: For interaction with external spotify API
+
+Endpoints:
+- POST /login         - to login to the application with spotify credentials
+- POST /refresh       - to refresh the users accessToken upon timeout
+
+Author: Joe Hosking
+Date: 15-10-2024
+
+Usage:
+- Development: npm run devStart (custom script to run with nodemon)
+- Production: npm start
+
+*/
 require("dotenv").config();
 const express = require("express");
 const cors = require("cors");
 const bodyParser = require("body-parser");
 const SpotifyWebApi = require("spotify-web-api-node");
-
 const app = express();
 app.use(cors());
 app.use(bodyParser.json());
@@ -45,15 +70,13 @@ app.post("/login", (req, res) => {
     .authorizationCodeGrant(code)
     .then((data) => {
       console.log("Spotify API connection success: ", data.body);
-      res.json({
-        accessToken: data.body.access_token,
-        refreshToken: data.body.refresh_token,
-        expiresIn: data.body.expires_in,
-      });
-      res.status(200);
-      console.log("Access Token: ", data.body.access_token);
-      console.log("Refresh Token: ", data.body.refresh_token);
-      console.log("Expries In: ", data.body.expires_in);
+      res
+        .json({
+          accessToken: data.body.access_token,
+          refreshToken: data.body.refresh_token,
+          expiresIn: data.body.expires_in,
+        })
+        .status(200);
     })
     .catch((err) => {
       console.log("Error connecting to Spotify API: ", err);
