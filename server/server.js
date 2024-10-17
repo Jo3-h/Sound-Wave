@@ -34,6 +34,27 @@ app.use(cors());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
+/*
+POST /refresh 
+-------------
+This endpoint is responsible for refreshing the users accessToken either once it has
+expired or the refresh interval in the frontend has timed out
+
+Request Body:
+{
+  "refreshToken" : <string>     // the refreshToken provided by Spotify API upon initial login
+}
+
+Response Body:
+on success -> {
+  "accessToken" : <string>      // new accessToken
+  "expiresIn" : <int>           // time until new token expires
+}.status(200)
+
+on failure -> {
+  "error" : <string>            // details of the error returned from Spotify API
+}.status(400)
+*/
 app.post("/refresh", (req, res) => {
   const refreshToken = req.body.refreshToken;
   const spotifyApi = new SpotifyWebApi({
@@ -57,6 +78,29 @@ app.post("/refresh", (req, res) => {
     });
 });
 
+/*
+POST /login 
+-------------
+This endpoint is responsible for taking a user login code obtained in the application frontend
+and connecting to the external Spotify API to request an accessToken for API access.
+
+Request Body:
+{
+  "code" : <string>             // code generated from user login through spotify portal
+}
+
+Response Body:
+on success -> {
+  "accessToken" : <string>      // accessToken used for accessing external Spotify API
+  "refreshToken" : <string>     // refreshToken for obtaining new token once access token expires
+  "expiresIn" : <int>           // time in seconds before accessToken expires
+}.status(200)
+
+on failure -> {
+  "error" : <string>            // message confirming authorization failed
+  "details" : <string>          // details of error returned from API call
+}.status(400)
+*/
 app.post("/login", (req, res) => {
   const code = req.body.code;
   console.log("Received code:", code);
@@ -84,4 +128,5 @@ app.post("/login", (req, res) => {
     });
 });
 
+// starting the application listening on port 3001
 app.listen(3001);
