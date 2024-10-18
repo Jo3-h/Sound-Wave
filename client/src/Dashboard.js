@@ -1,16 +1,24 @@
 import { useState, useEffect } from "react";
-import useAuth from "./useAuth";
 import { Container, Form } from "react-bootstrap";
 import SpotifyWebApi from "spotify-web-api-node";
+
+// Import custom functional components
+import TrackSearchResult from "./TrackSearchResult";
+import useAuth from "./useAuth";
+import Player from "./Player";
 
 const spotifyApi = new SpotifyWebApi({
   clientId: "af336f24a30e439b88ed899c0813426a",
 });
 
-export default function Dashboard({ code }) {
-  const accessToken = useAuth(code);
+export default function Dashboard({ code, accessToken, setPlayingTrack }) {
   const [search, setSearch] = useState("");
   const [searchResults, setSearchResults] = useState([]);
+
+  function chooseTrack(track) {
+    setPlayingTrack(track);
+    setSearch("");
+  }
 
   useEffect(() => {
     if (!accessToken) {
@@ -28,9 +36,26 @@ export default function Dashboard({ code }) {
     }
 
     // search spotify based on search value
+    let cancel = false;
     spotifyApi.searchTracks(search).then((res) => {
+      if (cancel) return;
+      setSearchResults(
+        res.body.tracks.items.map((track) => {
+          const smallestImage = track.album.images.reduce((smallest, image) => {
+            if (image.height < smallest.height) return image;
+            return smallest;
+          });
+          return {
+            artist: track.artists[0].name,
+            title: track.name,
+            uri: track.uri,
+            albumUrl: smallestImage.url,
+          };
+        })
+      );
       console.log(res);
     });
+    return () => (cancel = true);
   }, [search, accessToken]);
 
   return (
@@ -46,20 +71,16 @@ export default function Dashboard({ code }) {
           onChange={(e) => setSearch(e.target.value)}
         />
         <div className="flex-grow-1 my-2" style={{ overflowY: "auto" }}>
-          Songs
+          {searchResults.map((track) => (
+            <TrackSearchResult
+              track={track}
+              key={track.uri}
+              chooseTrack={chooseTrack}
+            />
+          ))}
         </div>
+        <div></div>
       </Container>
-      <div>
-        Dashboard
-        <p>
-          - code - <br />
-          {code}
-        </p>
-        <p>
-          - Access Token - <br />
-          {accessToken}
-        </p>
-      </div>
     </div>
   );
 }

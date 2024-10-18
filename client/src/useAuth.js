@@ -16,6 +16,7 @@ export default function useAuth(code) {
   const [refreshToken, setRefreshToken] = useState();
   const [expiresIn, setExpiresIn] = useState();
   const hasFetched = useRef(false);
+  console.log("useAuth() -> ", code);
 
   /**
    * useEffect function 1
