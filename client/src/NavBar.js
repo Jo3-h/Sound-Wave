@@ -1,5 +1,5 @@
 import React from "react";
-import { Navbar, Nav, Container, NavDropdown } from "react-bootstrap";
+import { Navbar, Nav, Container } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import logo from "./assets/logo.png";
 
@@ -31,7 +31,7 @@ export default function NavBar() {
             <Nav.Link as={Link} to="/">
               Playlist Maker
             </Nav.Link>
-            <Nav.Link as={Link} to="/">
+            <Nav.Link as={Link} to="/song-countdown">
               Song Countdown
             </Nav.Link>
           </Nav>

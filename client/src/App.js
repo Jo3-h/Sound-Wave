@@ -1,5 +1,5 @@
 import "bootstrap/dist/css/bootstrap.min.css";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import {
   BrowserRouter as Router,
   Route,
@@ -13,6 +13,7 @@ import Dashboard from "./Dashboard";
 import Layout from "./Layout";
 import Player from "./Player";
 import useAuth from "./useAuth";
+import SongCountdown from "./SongCountdown";
 
 const code = new URLSearchParams(window.location.search).get("code");
 
@@ -20,8 +21,6 @@ function App() {
   // get state from dashboard components
   const [playingTrack, setPlayingTrack] = useState("");
   const accessToken = useAuth(code);
-  console.log("accessToken -> ", accessToken);
-  console.log("code -> ", code);
 
   // if the code is not set then render login page
   if (!code) {
@@ -38,7 +37,15 @@ function App() {
             path="/dashboard"
             element={
               <Dashboard
-                code={code}
+                accessToken={accessToken}
+                setPlayingTrack={setPlayingTrack}
+              />
+            }
+          />
+          <Route
+            path="/song-countdown"
+            element={
+              <SongCountdown
                 accessToken={accessToken}
                 setPlayingTrack={setPlayingTrack}
               />

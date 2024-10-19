@@ -16,7 +16,6 @@ export default function useAuth(code) {
   const [refreshToken, setRefreshToken] = useState();
   const [expiresIn, setExpiresIn] = useState();
   const hasFetched = useRef(false);
-  console.log("useAuth() -> ", code);
 
   /**
    * useEffect function 1
@@ -78,7 +77,6 @@ export default function useAuth(code) {
           if (res.data.accessToken && res.data.expiresIn) {
             setAccessToken(res.data.accessToken);
             setExpiresIn(res.data.expiresIn);
-            setExpiresIn(61);
             console.log("Successfully refreshed token information");
           } else {
             console.error("Missing token information from response");
@@ -89,7 +87,7 @@ export default function useAuth(code) {
           console.log("Error with axios request to server sides");
           window.location = "/";
         });
-    }, (expiresIn - 60) * 1000);
+    }, (expiresIn - 240) * 1000);
 
     return () => clearInterval(interval);
   }, [refreshToken, expiresIn]);

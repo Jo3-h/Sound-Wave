@@ -4,14 +4,12 @@ import SpotifyWebApi from "spotify-web-api-node";
 
 // Import custom functional components
 import TrackSearchResult from "./TrackSearchResult";
-import useAuth from "./useAuth";
-import Player from "./Player";
 
 const spotifyApi = new SpotifyWebApi({
   clientId: "af336f24a30e439b88ed899c0813426a",
 });
 
-export default function Dashboard({ code, accessToken, setPlayingTrack }) {
+export default function Dashboard({ accessToken, setPlayingTrack }) {
   const [search, setSearch] = useState("");
   const [searchResults, setSearchResults] = useState([]);
 
@@ -79,7 +77,6 @@ export default function Dashboard({ code, accessToken, setPlayingTrack }) {
             />
           ))}
         </div>
-        <div></div>
       </Container>
     </div>
   );
