@@ -1,5 +1,5 @@
 import React from "react";
-import { Button, Container } from "react-bootstrap";
+import { Button } from "react-bootstrap";
 import "./css/PlayerCard.css";
 
 export default function PlayerCard({
@@ -9,7 +9,7 @@ export default function PlayerCard({
   removePlayer,
 }) {
   return (
-    <div className="player-card" style={{ width: "30%" }}>
+    <div className="player-card" style={{ width: "100%" }}>
       <img
         src={player.profileImage}
         alt={`${player.name}'s profile`}
@@ -37,7 +37,7 @@ export default function PlayerCard({
           </div>
         ))}
       </div>
-      <div className="player-card-buttons">
+      <div className="mt-auto d-flex justify-content-between">
         <Button variant="outline-secondary" onClick={() => editPlayer(player)}>
           Edit
         </Button>

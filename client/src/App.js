@@ -1,5 +1,5 @@
 import "bootstrap/dist/css/bootstrap.min.css";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import {
   BrowserRouter as Router,
   Route,
@@ -21,6 +21,10 @@ function App() {
   // get state from dashboard components
   const [playingTrack, setPlayingTrack] = useState("");
   const accessToken = useAuth(code);
+
+  useEffect(() => {
+    console.log("playingTrack set -> ", playingTrack);
+  }, [playingTrack]);
 
   // if the code is not set then render login page
   if (!code) {

@@ -15,7 +15,13 @@ export default function PlayerForm({
   accessToken,
   addPlayer,
   editPlayerDetails,
+  handleModalClose,
 }) {
+  console.log(
+    editPlayerDetails
+      ? `Editing player: ${editPlayerDetails.id} ${editPlayerDetails.name}`
+      : "New Player"
+  );
   const PlayerDetails = {
     id: editPlayerDetails ? editPlayerDetails.id : Date.now(),
     name: editPlayerDetails ? editPlayerDetails.name : "",
@@ -24,7 +30,7 @@ export default function PlayerForm({
   };
 
   // set variables present in the form
-  const playerId = PlayerDetails.id;
+  const id = PlayerDetails.id;
   const [name, setName] = useState(PlayerDetails.name);
   const [profileImage, setProfileImage] = useState(PlayerDetails.profileImage);
   const [selectedSongs, setSelectedSongs] = useState(
@@ -41,11 +47,12 @@ export default function PlayerForm({
     }
     e.preventDefault();
     const newPlayer = {
-      playerId,
+      id,
       name,
       profileImage,
       selectedSongs,
     };
+    console.log("PLAYER ADDING -> ", newPlayer);
     addPlayer(newPlayer);
     setName("");
     setProfileImage(null);
@@ -81,18 +88,16 @@ export default function PlayerForm({
 
   useEffect(() => {
     if (!search) {
-      console.log("Not searching, no search defined");
       return setSearchResults([]);
     } // if there isn't a value for search then set results to empty array
     if (!accessToken) {
-      console.log("Not searching, no accessToken");
       return;
     }
 
     // search spotify based on search value
-    console.log("searching spotify");
     let cancel = false;
     spotifyApi.searchTracks(search).then((res) => {
+      console.log(res);
       if (cancel) return;
       setSearchResults(
         res.body.tracks.items.map((track) => {
@@ -105,10 +110,13 @@ export default function PlayerForm({
             title: track.name,
             uri: track.uri,
             albumUrl: smallestImage.url,
+            albumUrlLarge: track.album.images[1].url
+              ? track.album.images[1].url
+              : null,
+            played: false,
           };
         })
       );
-      console.log(res);
     });
     return () => (cancel = true);
   }, [search, accessToken]);
