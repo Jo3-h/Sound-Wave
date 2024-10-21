@@ -1,0 +1,23 @@
+/* PlayerForm.css */
+
+.player-form-container {
+  width: 100%; /* Make the container full width */
+  max-width: 840px; /* Maximum width for the form */
+  padding: 20px; /* Add padding for aesthetics */
+}
+
+.add-player-form {
+  width: 50%; /* Make the form full width */
+  /* You can also use max-width if you want to limit it */
+}
+
+.add-player-form .form-group {
+  margin-bottom: 20px; /* Space between form fields */
+  width: 100%; /* Set form group width to 100% to take full width of the form */
+}
+
+.selected-songs {
+  flex: 1; /* Selected songs take less space */
+  max-width: 300px; /* Optional: Limit width */
+  overflow-y: auto; /* Scroll if list is too long */
+}

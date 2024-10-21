@@ -1,0 +1,56 @@
+/* Ensure the modal can resize and content scrolls if necessary */
+.modal-content {
+  width: 900px; /* Set the desired width of the modal */
+  max-height: 90vh; /* Optional: Limit the maximum height */
+  overflow-y: auto; /* Enable vertical scrolling if content is too large */
+  margin: 30px auto; /* Center the modal horizontally and add top margin */
+  position: relative; /* Ensure proper positioning */
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px; /* Adjust spacing between cards */
+  margin-top: 16px;
+}
+
+.modal-dialog {
+  width: 860px;
+  max-width: 100%;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.modal {
+  z-index: 1050; /* Ensure the modal is on top of other content */
+}
+
+/* Optional: Customize the background of the modal */
+.modal-body {
+  padding: 20px; /* Add padding for better spacing */
+}
+
+/* Flex container for the form and selected songs */
+.player-form-container {
+  display: flex;
+  flex-grow: 1; /* Ensure the content inside the modal stretches */
+  gap: 20px; /* Space between form and selected songs */
+  overflow: hidden;
+}
+
+/* Make the form and results area scrollable */
+.player-form {
+  flex: 2;
+  overflow-y: auto; /* Scroll if form content is too large */
+  padding: 10px;
+}
+
+/* Styling for selected songs container */
+.selected-songs {
+  flex: 1;
+  max-width: 300px;
+  overflow-y: auto; /* Allow scrolling within selected songs */
+  padding: 10px;
+  background-color: #f8f9fa; /* Optional: Light background to differentiate */
+  border-radius: 8px;
+}

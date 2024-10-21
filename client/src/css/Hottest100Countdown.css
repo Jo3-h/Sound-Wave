@@ -1,0 +1,28 @@
+.countdownStatusSection {
+  height: 100%;
+  width: 60%;
+  padding: 10px;
+  background-color: "grey";
+}
+
+.playerStatusSection {
+  height: 100%;
+  width: 40%;
+  padding: 10px;
+  background-color: "blue";
+}
+
+.track-information-section {
+  height: 100%;
+  width: 100%;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+}
+
+.parent {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end; /* Pushes h4 to the bottom */
+  height: 100%; /* Make parent take full height if needed */
+}

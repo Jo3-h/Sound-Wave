@@ -1,0 +1,10 @@
+.track-list div img {
+  margin-right: 10px; /* Space between the image and text */
+}
+
+.player-card-buttons {
+  display: flex;
+  justify-content: space-between; /* Align buttons horizontally */
+  margin-top: auto; /* Push the buttons to the bottom */
+  gap: 8px;
+}
