@@ -28,6 +28,7 @@ export default function SongCountdown({ accessToken, setPlayingTrack }) {
         );
       } else {
         console.log("Adding new player");
+        console.log("players -> ", players);
         return [...prevPlayers, newPlayer];
       }
     });
@@ -76,7 +77,15 @@ export default function SongCountdown({ accessToken, setPlayingTrack }) {
       </ModalBody>
     </Modal>
   ) : (
-    <div style={{ width: "100%" }}>
+    <div
+      className="wrapper"
+      style={{
+        width: "100%",
+        height: "auto",
+        padding: "20px",
+        marginBottom: "110px",
+      }}
+    >
       {!isGameStarted ? (
         <Container
           className="justify-content-center align-items-top py-50"

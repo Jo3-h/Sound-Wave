@@ -1,0 +1,3 @@
+.track-information-section {
+  padding: clamp(20px, 1vw + 20px, 50px);
+}

@@ -22,10 +22,6 @@ function App() {
   const [playingTrack, setPlayingTrack] = useState("");
   const accessToken = useAuth(code);
 
-  useEffect(() => {
-    console.log("playingTrack set -> ", playingTrack);
-  }, [playingTrack]);
-
   // if the code is not set then render login page
   if (!code) {
     return <Login />;

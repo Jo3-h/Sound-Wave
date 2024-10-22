@@ -1,15 +1,41 @@
-.countdownStatusSection {
-  height: 100%;
-  width: 60%;
-  padding: 10px;
-  background-color: "grey";
+.hottest-100-container {
+  width: 100%;
+  height: auto;
+  min-height: 100%;
+  background-color: red;
+  display: flex;
 }
 
-.playerStatusSection {
+.countdownStatusSection {
   height: 100%;
-  width: 40%;
+  flex: 1;
   padding: 10px;
-  background-color: "blue";
+  padding-right: 5px;
+  background-color: green;
+}
+
+@media (min-width: 700px) {
+  .playerStatusSection {
+    height: auto;
+    flex: 0 1 35%;
+    max-width: 1500px;
+    padding: 10px;
+    padding-left: 5px;
+    background-color: blue;
+  }
+}
+
+@media (min-width: 1390px) {
+  .playerStatusSection {
+    flex: 0 1 50%;
+    display: flex;
+    flex-wrap: wrap; /* Allow cards to wrap to the next line */
+    align-items: flex-start; /* Prevent cards from stretching vertically */
+    padding: 10px; /* Padding around the section */
+    box-sizing: border-box; /* Include padding in height calculations */
+    overflow-y: auto; /* Enable vertical scrolling if needed */
+    max-height: 80vh; /* Optional: set a max height */
+  }
 }
 
 .track-information-section {
