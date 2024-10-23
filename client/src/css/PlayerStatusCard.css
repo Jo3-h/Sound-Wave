@@ -8,7 +8,7 @@ body {
   background-color: white;
   border-radius: 10px;
   margin-bottom: 20px;
-  border: 2px solid black;
+  border: 1px solid black;
 }
 
 @media (min-width: 1390px) {
@@ -18,7 +18,7 @@ body {
     background-color: white;
     border-radius: 10px;
     margin: 5px; /* Margin between cards */
-    border: 2px solid black;
+    border: 1px solid black;
     box-sizing: border-box; /* Include padding and border in width/height calculations */
     height: auto; /* Height should be determined by aspect ratio and width */
   }
@@ -33,13 +33,17 @@ body {
 }
 
 .player-status-content .text-container {
-  display: flex; /* Enable flexbox */
-  align-items: center; /* Center vertically */
-  height: 100%; /* Ensure it takes full height of the parent */
+  width: 100%;
+  height: 30%;
+  padding: 10px 15px 0 5px;
+  display: flex;
 }
 
 .player-status-content .images-array {
   align-content: center;
+  padding: 0 5px 0 5px;
+  height: 70%;
+  width: 100%;
 }
 
 .player-status-content .album-image {
@@ -50,13 +54,31 @@ body {
 }
 
 .player-name-label {
-  font-family: monospace;
-  font-weight: bold;
-  font-size: 1vw;
+  height: 100%;
+  width: 40%;
+  display: flex; /* Use flexbox for alignment */
+  align-items: center; /* Align content vertically */
+  justify-content: center; /* Align content horizontally */
+  font-size: 1.3vw;
+  white-space: nowrap; /* Prevent text from wrapping */
+  overflow: hidden; /* Hide overflowing text */
+  text-overflow: ellipsis; /* Add '...' if text overflows */
 }
 
 .songs-remaining-label {
-  font-family: monospace;
+  height: 100%;
+  width: 60%;
+  align-content: center;
   text-align: right;
-  font-size: 0.7vw;
+  font-size: 0.8vw;
+}
+
+@media (min-width: 1390px) {
+  .player-name-label {
+    font-size: 1vw;
+  }
+
+  .songs-remaining-label {
+    font-size: 0.8vw;
+  }
 }

@@ -9,30 +9,43 @@ export default function PlayerCard({
   removePlayer,
 }) {
   return (
-    <div className="player-card" style={{ width: "100%" }}>
-      <img
-        src={player.profileImage}
-        alt={`${player.name}'s profile`}
-        style={{
-          width: "100px",
-          height: "100px",
-          objectFit: "cover",
-          borderRadius: "50%",
-        }}
-      />
-      <h5>{player.name}</h5>
+    <div className="player-card">
+      <div className="player-card-player" style={{ display: "flex" }}>
+        <img
+          className="profile-image"
+          src={player.profileImage}
+          alt={`${player.name}'s profile`}
+        />
+        <div
+          style={{
+            height: "100px",
+            width: "130px",
+            padding: "20px",
+            alignContent: "center",
+          }}
+        >
+          <h5 style={{ fontWeight: "bold", fontSize: "larger" }}>
+            {player.name}
+          </h5>
+        </div>
+      </div>
+
       <div className="track-list">
         {player.selectedSongs.map((track) => (
-          <div key={track.uri} className="d-flex m-2 align-items-center">
+          <div key={track.uri} className="song-card">
             <img
+              className="album-image"
               src={track.albumUrl}
               alt={track.title}
               width={50}
               height={50}
             />
-            <div>
-              <strong className="track-title">{track.title}</strong> <br />
-              <span className="artist-title">{track.artist}</span>
+            <div className="text-content">
+              <div className="flex">
+                <div className="track-title">{track.title}</div>
+              </div>
+
+              <div className="artist-title">{track.artist}</div>
             </div>
           </div>
         ))}

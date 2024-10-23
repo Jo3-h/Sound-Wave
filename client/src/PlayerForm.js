@@ -171,7 +171,7 @@ export default function PlayerForm({
         </Form.Group>
       </Form>
       <div className="selectedSongs" style={{ width: "200px" }}>
-        <h4>Selected Tracks</h4>
+        <h4 className="selected-tracks">Selected Tracks</h4>
         {selectedSongs.map((track) => (
           <TrackSearchResult track={track} key={track.uri} chooseTrack={noop} />
         ))}

@@ -72,30 +72,13 @@ export default function PlayerStatusCard({ key, player, iconCard }) {
           }}
         />
         <div className="player-status-content">
-          <div style={{ height: "30%", width: "100%", display: "flex" }}>
-            <div
-              className="text-container"
-              style={{
-                width: "35%",
-                height: "100%",
-                display: "flex", // Enable flexbox
-                alignItems: "center", // Center vertically
-              }}
-            >
-              <h4 className="player-name-label">{player.name}</h4>
-            </div>
-            <div
-              style={{ width: "65%", height: "100%", justifyContent: "right" }}
-            >
-              <h3 className="songs-remaining-label">
-                Songs Remaining: {songsRemaining}
-              </h3>
+          <div className="text-container">
+            <div className="player-name-label">{player.name}</div>
+            <div className="songs-remaining-label">
+              Songs Remaining: {songsRemaining}
             </div>
           </div>
-          <div
-            className="images-array"
-            style={{ height: "70%", width: "100%" }}
-          >
+          <div className="images-array">
             {player.selectedSongs.map(
               (track) =>
                 track.played === false && (

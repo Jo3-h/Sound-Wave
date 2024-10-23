@@ -1,0 +1,16 @@
+.track-result {
+  font-size: large;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100%;
+}
+
+.artist-result {
+  font-size: medium;
+  white-space: nowrap;
+  overflow: hidden;
+  color: grey;
+  text-overflow: ellipsis;
+  width: 100%;
+}

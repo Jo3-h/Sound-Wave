@@ -1,3 +1,34 @@
 .track-information-section {
-  padding: clamp(20px, 1vw + 20px, 50px);
+  padding: 20px;
+  overflow: hidden; /* Ensures content doesn't overflow the section */
+}
+
+.track-information-section .song-number {
+  font-size: 2vw;
+}
+
+.track-information-section .song-title {
+  font-size: 3vw;
+  font-weight: bold;
+  white-space: nowrap; /* Prevents text from breaking into multiple lines */
+  overflow: hidden; /* Hides any overflow */
+  text-overflow: ellipsis; /* Adds '...' when the text overflows */
+}
+
+.track-information-section .song-artist {
+  font-size: 1.5vw;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.track-information-section .song-player-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.track-information-section .song-player {
+  color: red;
+  font-weight: bold;
 }

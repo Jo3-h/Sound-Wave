@@ -21,3 +21,7 @@
   max-width: 300px; /* Optional: Limit width */
   overflow-y: auto; /* Scroll if list is too long */
 }
+
+.selected-tracks {
+  font-size: large;
+}
