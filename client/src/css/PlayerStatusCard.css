@@ -9,23 +9,11 @@ body {
   border-radius: 10px;
   margin-bottom: 20px;
   border: 1px solid black;
-}
-
-@media (min-width: 1390px) {
-  .player-status-container {
-    width: calc(50% - 10px); /* Two cards per row with margins */
-    aspect-ratio: 3.5 / 1; /* Maintain aspect ratio */
-    background-color: white;
-    border-radius: 10px;
-    margin: 5px; /* Margin between cards */
-    border: 1px solid black;
-    box-sizing: border-box; /* Include padding and border in width/height calculations */
-    height: auto; /* Height should be determined by aspect ratio and width */
-  }
+  display: flex;
 }
 
 .player-status-content {
-  width: 100%;
+  width: 72%;
   height: 100%;
   background-color: white;
   border-radius: 0 10px 10px 0;
@@ -53,6 +41,15 @@ body {
   margin-right: 5px;
 }
 
+.player-status-content .album-image-played {
+  width: calc(20% - 15px);
+  margin: 5px;
+  height: auto;
+  border-radius: 5px;
+  filter: grayscale(100%) brightness(0.4);
+  opacity: 0.6;
+}
+
 .player-name-label {
   height: 100%;
   width: 40%;
@@ -73,6 +70,17 @@ body {
   font-size: 0.8vw;
 }
 
+.profile-image-container {
+  height: 100%;
+  aspect-ratio: 1/1;
+}
+
+.profile-image-container .profile-image {
+  height: 100%;
+  width: 100%;
+  border-radius: 10px 0 0 10px;
+}
+
 @media (min-width: 1390px) {
   .player-name-label {
     font-size: 1vw;
@@ -80,5 +88,20 @@ body {
 
   .songs-remaining-label {
     font-size: 0.8vw;
+  }
+
+  .player-status-container {
+    width: calc(50% - 10px); /* Two cards per row with margins */
+    aspect-ratio: 3.5/1;
+    background-color: white;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    border: 1px solid black;
+    display: flex; /* Include padding and border in width/height calculations */
+  }
+
+  .profile-image-container .profile-image {
+    width: 100px;
+    aspect-ratio: 1/1;
   }
 }

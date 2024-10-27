@@ -60,49 +60,43 @@ export default function PlayerStatusCard({ key, player, iconCard }) {
 
   return (
     <div className="player-status-container">
-      <div style={{ display: "flex", width: "100%", height: "100%" }}>
+      <div className="profile-image-container">
         <img
+          className="profile-image"
           src={player.profileImage}
           alt="Profile Pic"
-          style={{
-            height: "100%",
-            width: "auto",
-            maxWidth: "100%",
-            borderRadius: "10px 0 0 10px",
-          }}
         />
-        <div className="player-status-content">
-          <div className="text-container">
-            <div className="player-name-label">{player.name}</div>
-            <div className="songs-remaining-label">
-              Songs Remaining: {songsRemaining}
-            </div>
+      </div>
+      <div className="player-status-content">
+        <div className="text-container">
+          <div className="player-name-label">{player.name}</div>
+          <div className="songs-remaining-label">
+            Songs Remaining: {songsRemaining}
           </div>
-          <div className="images-array">
-            {player.selectedSongs.map(
-              (track) =>
-                track.played === false && (
-                  <img
-                    key={track.id}
-                    className="album-image"
-                    src={track.albumUrl}
-                    alt="album img"
-                  />
-                )
-            )}
-            {player.selectedSongs.map(
-              (track) =>
-                track.played === true && (
-                  <img
-                    key={track.id}
-                    style={{ filter: "grayscale(100%) brightness(0.4)" }}
-                    className="album-image"
-                    src={track.albumUrl}
-                    alt="album img"
-                  />
-                )
-            )}
-          </div>
+        </div>
+        <div className="images-array">
+          {player.selectedSongs.map(
+            (track) =>
+              track.played === false && (
+                <img
+                  key={track.id}
+                  className="album-image"
+                  src={track.albumUrl}
+                  alt="album img"
+                />
+              )
+          )}
+          {player.selectedSongs.map(
+            (track) =>
+              track.played === true && (
+                <img
+                  key={track.id}
+                  className="album-image-played"
+                  src={track.albumUrl}
+                  alt="album img"
+                />
+              )
+          )}
         </div>
       </div>
     </div>

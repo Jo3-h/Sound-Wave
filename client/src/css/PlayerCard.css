@@ -36,16 +36,16 @@
 }
 
 .text-content .track-title {
-  width: 80%;
-  font-size: large;
+  width: 70%;
+  font-size: medium;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
 
 .text-content .artist-title {
-  width: 80%;
-  font-size: medium;
+  width: 75%;
+  font-size: small;
   color: grey;
   white-space: nowrap;
   overflow: hidden;

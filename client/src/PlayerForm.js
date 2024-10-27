@@ -148,7 +148,11 @@ export default function PlayerForm({
             <img
               src={profileImage}
               alt="Profile"
-              style={{ width: "100px", marginTop: "10px" }}
+              style={{
+                width: "100px",
+                marginTop: "10px",
+                borderRadius: "10px",
+              }}
             />
           )}
         </Form.Group>

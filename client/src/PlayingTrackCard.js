@@ -1,14 +1,9 @@
 import React from "react";
 import { Container } from "react-bootstrap";
-import { useEffect } from "react";
 
 import "./css/PlayingTrackCard.css";
 
 export default function PlayingTrackCard({ number, track, player }) {
-  useEffect(() => {
-    console.log("Value of Track within PlayingTrackCard -> ", track);
-  }, [track]);
-
   return track ? (
     <div>
       <Container
