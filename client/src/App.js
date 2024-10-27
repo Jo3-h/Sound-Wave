@@ -1,5 +1,5 @@
 import "bootstrap/dist/css/bootstrap.min.css";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import {
   BrowserRouter as Router,
   Route,
@@ -20,12 +20,12 @@ const code = new URLSearchParams(window.location.search).get("code");
 function App() {
   // get state from dashboard components
   const [playingTrack, setPlayingTrack] = useState("");
+  const [playerRef, setPlayerRef] = useState(null);
   const accessToken = useAuth(code);
 
-  useEffect(() => {
-    console.log("playingTrack set -> ", playingTrack);
-  }, [playingTrack]);
-
+  const updatePlayerRef = (ref) => {
+    setPlayerRef(ref);
+  };
   // if the code is not set then render login page
   if (!code) {
     return <Login />;
@@ -52,12 +52,17 @@ function App() {
               <SongCountdown
                 accessToken={accessToken}
                 setPlayingTrack={setPlayingTrack}
+                playerRef={playerRef}
               />
             }
           />
         </Routes>
         {accessToken && (
-          <Player accessToken={accessToken} trackUri={playingTrack?.uri} />
+          <Player
+            accessToken={accessToken}
+            trackUri={playingTrack?.uri}
+            getPlayerRef={updatePlayerRef}
+          />
         )}
       </Layout>
     </Router>

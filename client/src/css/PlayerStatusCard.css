@@ -1,0 +1,107 @@
+body {
+  font-family: monospace;
+}
+
+.player-status-container {
+  width: 100%;
+  aspect-ratio: 3.5/1;
+  background-color: white;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  border: 1px solid black;
+  display: flex;
+}
+
+.player-status-content {
+  width: 72%;
+  height: 100%;
+  background-color: white;
+  border-radius: 0 10px 10px 0;
+  align-items: center;
+}
+
+.player-status-content .text-container {
+  width: 100%;
+  height: 30%;
+  padding: 10px 15px 0 5px;
+  display: flex;
+}
+
+.player-status-content .images-array {
+  align-content: center;
+  padding: 0 5px 0 5px;
+  height: 70%;
+  width: 100%;
+}
+
+.player-status-content .album-image {
+  width: calc(20% - 5px);
+  height: auto;
+  border-radius: 5px;
+  margin-right: 5px;
+}
+
+.player-status-content .album-image-played {
+  width: calc(20% - 15px);
+  margin: 5px;
+  height: auto;
+  border-radius: 5px;
+  filter: grayscale(100%) brightness(0.4);
+  opacity: 0.6;
+}
+
+.player-name-label {
+  height: 100%;
+  width: 40%;
+  display: flex; /* Use flexbox for alignment */
+  align-items: center; /* Align content vertically */
+  justify-content: center; /* Align content horizontally */
+  font-size: 1.3vw;
+  white-space: nowrap; /* Prevent text from wrapping */
+  overflow: hidden; /* Hide overflowing text */
+  text-overflow: ellipsis; /* Add '...' if text overflows */
+}
+
+.songs-remaining-label {
+  height: 100%;
+  width: 60%;
+  align-content: center;
+  text-align: right;
+  font-size: 0.8vw;
+}
+
+.profile-image-container {
+  height: 100%;
+  aspect-ratio: 1/1;
+}
+
+.profile-image-container .profile-image {
+  height: 100%;
+  width: 100%;
+  border-radius: 10px 0 0 10px;
+}
+
+@media (min-width: 1390px) {
+  .player-name-label {
+    font-size: 1vw;
+  }
+
+  .songs-remaining-label {
+    font-size: 0.8vw;
+  }
+
+  .player-status-container {
+    width: calc(50% - 10px); /* Two cards per row with margins */
+    aspect-ratio: 3.5/1;
+    background-color: white;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    border: 1px solid black;
+    display: flex; /* Include padding and border in width/height calculations */
+  }
+
+  .profile-image-container .profile-image {
+    width: 100px;
+    aspect-ratio: 1/1;
+  }
+}

@@ -148,7 +148,11 @@ export default function PlayerForm({
             <img
               src={profileImage}
               alt="Profile"
-              style={{ width: "100px", marginTop: "10px" }}
+              style={{
+                width: "100px",
+                marginTop: "10px",
+                borderRadius: "10px",
+              }}
             />
           )}
         </Form.Group>
@@ -171,7 +175,7 @@ export default function PlayerForm({
         </Form.Group>
       </Form>
       <div className="selectedSongs" style={{ width: "200px" }}>
-        <h4>Selected Tracks</h4>
+        <h4 className="selected-tracks">Selected Tracks</h4>
         {selectedSongs.map((track) => (
           <TrackSearchResult track={track} key={track.uri} chooseTrack={noop} />
         ))}

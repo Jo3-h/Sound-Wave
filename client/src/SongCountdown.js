@@ -8,16 +8,17 @@ import PlayerForm from "./PlayerForm";
 import Hottest100Countdown from "./Hottest100Countdown";
 import "./css/SongCountdown.css";
 
-export default function SongCountdown({ accessToken, setPlayingTrack }) {
+export default function SongCountdown({
+  accessToken,
+  setPlayingTrack,
+  playerRef,
+}) {
   const [players, setPlayers] = useState([]);
   const [isGameStarted, setIsGameStarted] = useState(false);
   const [showModal, setShowModal] = useState(false);
   const [editPlayerDetails, setEditPlayerDetails] = useState(null);
 
   const addPlayer = (newPlayer) => {
-    console.log("Current Players -> ", players);
-    console.log("Player to add -> ", newPlayer);
-
     setPlayers((prevPlayers) => {
       const isUpdate = prevPlayers.some((player) => player.id === newPlayer.id);
 
@@ -28,6 +29,7 @@ export default function SongCountdown({ accessToken, setPlayingTrack }) {
         );
       } else {
         console.log("Adding new player");
+        console.log("players -> ", players);
         return [...prevPlayers, newPlayer];
       }
     });
@@ -76,7 +78,15 @@ export default function SongCountdown({ accessToken, setPlayingTrack }) {
       </ModalBody>
     </Modal>
   ) : (
-    <div style={{ width: "100%" }}>
+    <div
+      className="wrapper"
+      style={{
+        width: "100%",
+        height: "auto",
+        padding: "10px",
+        marginBottom: "110px",
+      }}
+    >
       {!isGameStarted ? (
         <Container
           className="justify-content-center align-items-top py-50"
@@ -85,9 +95,9 @@ export default function SongCountdown({ accessToken, setPlayingTrack }) {
             minHeight: "100vh",
             backgroundColor: "#f8f9fa",
             marginBottom: "130px",
-            marginTop: "10px",
             paddingTop: "10px",
             paddingBottom: "10px",
+            borderRadius: "10px",
           }}
         >
           <div className="position-relative top-20 start-20 mt-20">
@@ -119,6 +129,7 @@ export default function SongCountdown({ accessToken, setPlayingTrack }) {
           accessToken={accessToken}
           players={players}
           setPlayingTrack={setPlayingTrack}
+          playerRef={playerRef}
         />
       )}
     </div>

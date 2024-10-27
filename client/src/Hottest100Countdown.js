@@ -1,21 +1,68 @@
 import React from "react";
-import { Container, Button } from "react-bootstrap";
-import { useState, useEffect } from "react";
+import { Button } from "react-bootstrap";
+import { useState, useEffect, useRef } from "react";
 
 // import custom elements and styling sheets
 import PlayingTrackCard from "./PlayingTrackCard";
+import PlayerStatusCard from "./PlayerStatusCard";
+import PlayedTrackCard from "./PlayedTrackCard";
 import "./css/Hottest100Countdown.css";
 
 export default function Hottest100Countdown({
   accessToken,
   players,
   setPlayingTrack,
+  playerRef,
 }) {
   const [songQueue, setSongQueue] = useState([]);
   const [currentlyPlaying, setCurrentlyPlaying] = useState(null);
   const [currentPosition, setCurrentPosition] = useState(-1);
   const [gamePlayers, setGamePlayers] = useState(players);
   const [currentSongNumber, setCurrentSongNumber] = useState(-1);
+  const [isWideScreen, setIsWideScreen] = useState(true);
+  const timer = useRef(null);
+  const isPlayingRef = useRef(false);
+  const [isIntervalActive, setIsIntervalActive] = useState(true);
+
+  useEffect(() => {
+    if (!playerRef || !playerRef.current || !playerRef.current.state) return;
+
+    // Function to check the player's state and handle volume change
+    const checkPlayerState = () => {
+      const time_remaining =
+        playerRef.current.state.track.durationMs -
+        playerRef.current.state.progressMs;
+      console.log("time_remaining -> ", time_remaining);
+
+      if (time_remaining < 5000 && currentPosition > -1) {
+        clearTimeout(timer.current);
+        console.log("changing volume");
+        changeVolume(100, 20, 20, 100);
+
+        // Stop the interval
+        setIsIntervalActive(false);
+
+        timer.current = setTimeout(() => {
+          console.log("playing next track");
+          playNextSong();
+          setIsIntervalActive(true);
+        }, time_remaining);
+      }
+    };
+
+    // Set up an interval to check every second if it's active
+    let intervalId;
+    if (isIntervalActive) {
+      intervalId = setInterval(checkPlayerState, 1000);
+      return () => clearInterval(intervalId);
+    }
+
+    // Cleanup function to clear the interval and timeout
+    return () => {
+      clearInterval(intervalId);
+      clearTimeout(timer.current);
+    };
+  }, [playerRef, currentPosition, isIntervalActive]);
 
   useEffect(() => {
     /**
@@ -67,7 +114,7 @@ export default function Hottest100Countdown({
         "can't play next song, current position not valid or queue length <= 0"
       );
     }
-  }, [songQueue, currentPosition]);
+  }, [currentPosition]);
 
   useEffect(() => {
     /**
@@ -82,13 +129,43 @@ export default function Hottest100Countdown({
      */
 
     if (currentSongNumber > 0) {
-      console.log("attempting to play audio file ", currentSongNumber);
       const audio = new Audio(`/audio_files/${currentSongNumber}.mp3`);
-      audio
-        .play()
-        .catch((error) => console.error("Error playing audio:", error));
+
+      const playAudio = async () => {
+        try {
+          await audio.play();
+          console.log(`Audio ${currentSongNumber}.mp3 playing`);
+          changeVolume(20, 100, 20, 100);
+        } catch (error) {
+          console.log("Error playing Audio: ", error);
+        }
+      };
+
+      playAudio();
     }
   }, [currentSongNumber]);
+
+  useEffect(() => {
+    /**
+     * useEffect Hook 4 - Check width for playerCard render
+     *
+     * This useEffect hook listens for window size changes to decide whether playerStatusCards
+     * should render fully or render icon version. This will be stored as a boolean value which is
+     * passed to the playerStatusCard as a prop to decide which is rendered
+     *
+     * NOTE: Icon version playerStatusCard will not be impletented yet, simply don't render cards if
+     * wideWindow state is false
+     */
+
+    const handleResize = () => {
+      setIsWideScreen(window.innerWidth > 700); // Update based on width
+    };
+
+    window.addEventListener("resize", handleResize);
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
 
   /**
    * Auxiliary Function 1 - Refactor players array for songQueue convenience
@@ -101,6 +178,7 @@ export default function Hottest100Countdown({
       player.selectedSongs.map((song) => ({
         ...song,
         player: player.name, // Track who owns the song
+        playerId: player.id,
       }))
     );
   };
@@ -124,11 +202,19 @@ export default function Hottest100Countdown({
    * Auxiliary Function 3 - Iterate currentPosition to trigger playing next song in queue
    */
   const playNextSong = () => {
+    if (isPlayingRef.current) return;
+    isPlayingRef.current = true;
+
     if (currentPosition < songQueue.length - 1) {
-      setCurrentPosition(currentPosition + 1);
+      setCurrentPosition((prev) => prev + 1);
     } else {
       console.log("All Songs have played");
     }
+
+    // create a timeout to release the mutex lock for next exection (guards against double calls)
+    setTimeout(() => {
+      isPlayingRef.current = false;
+    }, 1000);
   };
 
   /**
@@ -139,7 +225,7 @@ export default function Hottest100Countdown({
   const markSongPlayed = (nextSong) => {
     setGamePlayers((prevGamePlayers) =>
       prevGamePlayers.map((player) =>
-        player.name === nextSong.player
+        player.name === nextSong.player && player.id === nextSong.playerId
           ? {
               ...player,
               selectedSongs: player.selectedSongs.map((song) =>
@@ -153,21 +239,29 @@ export default function Hottest100Countdown({
     );
   };
 
+  const changeVolume = (startVolume, endVolume, steps, interval) => {
+    let current_step = 0;
+    const volume_change = (startVolume - endVolume) / steps;
+
+    //define interval
+    const intervalId = setInterval(() => {
+      if (current_step < steps) {
+        const new_volume = Math.max(
+          0,
+          Math.min(100, startVolume - volume_change * current_step)
+        );
+        if (playerRef.current) {
+          playerRef.current.setVolume(new_volume / 100);
+        }
+        current_step++;
+      } else {
+        clearInterval(intervalId);
+      }
+    }, interval);
+  };
+
   return (
-    <Container
-      className="d-flex flex-row vh-100 w-100 justify-content-center align-items-center"
-      style={{
-        maxWidth: "1400px",
-        margin: "0 auto",
-        marginTop: "20px",
-        marginBottom: "130px",
-        backgroundColor: "#f7f7f7",
-        marginRight: "20px",
-        marginLeft: "20px",
-        padding: "0",
-        borderRadius: "10px",
-      }}
-    >
+    <div className="hottest-100-container">
       <div className="countdownStatusSection">
         <PlayingTrackCard
           number={songQueue ? songQueue.length - currentPosition : -1}
@@ -178,20 +272,42 @@ export default function Hottest100Countdown({
           }
           player={currentlyPlaying ? currentlyPlaying.player : "unknown"}
         />
-        <Container
-          className="h-100 w-100 py-3"
-          style={{
-            height: "100%",
-            backgroundColor: "white",
-            overflow: "hidden",
-            borderRadius: "10px",
-            marginTop: "15px",
-          }}
-        >
-          <Button variant="secondary" onClick={playNextSong}></Button>
-        </Container>
+        <div className="played-tracks-container">
+          {currentPosition === -1 && (
+            <Button
+              variant="secondary"
+              onClick={playNextSong}
+              style={{ height: "40px", width: "180px", marginBottom: "20px" }}
+            >
+              Start Countdown
+            </Button>
+          )}
+          {currentPosition !== -1 &&
+            songQueue.map((track, index) => {
+              const reverseIndex = songQueue.length - 1 - index; // Calculate the reverse index
+              return (
+                reverseIndex < songQueue.length - currentSongNumber && (
+                  <PlayedTrackCard
+                    key={reverseIndex}
+                    track={songQueue[reverseIndex]}
+                    position={index + 1}
+                  />
+                )
+              );
+            })}
+        </div>
       </div>
-      <div className="playerStatusSection"></div>
-    </Container>
+      {isWideScreen && (
+        <div className="playerStatusSection">
+          {gamePlayers.map((player) => (
+            <PlayerStatusCard
+              key={player.id}
+              player={player}
+              iconCard={isWideScreen}
+            />
+          ))}
+        </div>
+      )}
+    </div>
   );
 }

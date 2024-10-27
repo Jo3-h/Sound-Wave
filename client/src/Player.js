@@ -1,19 +1,29 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import SpotifyPlayer from "react-spotify-web-playback";
 
-export default function Player({ accessToken, trackUri }) {
+export default function Player({ accessToken, trackUri, getPlayerRef }) {
   const [play, setPlay] = useState(false);
+  const playerRef = useRef(null);
 
   useEffect(() => {
-    console.log("Updated trackUri");
-    console.log("TrackUri -> ", trackUri);
-    console.log("AccessToken -> ", accessToken);
-
     // Play the track if trackUri is valid
     if (trackUri) {
       setPlay(true);
     }
   }, [trackUri, accessToken]);
+
+  useEffect(() => {
+    const attemptToPassRef = () => {
+      if (playerRef.current) {
+        getPlayerRef(playerRef);
+      } else {
+        setTimeout(attemptToPassRef, 1000);
+      }
+    };
+
+    attemptToPassRef();
+    return () => clearTimeout(attemptToPassRef);
+  }, []);
 
   // Early return if no access token
   if (!accessToken) return null;
@@ -27,18 +37,18 @@ export default function Player({ accessToken, trackUri }) {
         width: "100%",
       }}
     >
+      <style>{`
+        ._ControlsButtonsRSWP > div:nth-child(2),
+        ._ControlsButtonsRSWP > div:nth-child(4) {
+          display: none !important;
+        }
+      `}</style>
       <SpotifyPlayer
         token={accessToken}
         showSaveIcon
-        callback={(state) => {
-          if (state.isPlaying) {
-            console.log("Currently playing:", state.track);
-          } else {
-            setPlay(false);
-          }
-        }}
         play={play}
         uris={trackUri ? [trackUri] : []}
+        ref={playerRef}
       />
     </div>
   );

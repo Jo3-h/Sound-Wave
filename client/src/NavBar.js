@@ -28,11 +28,9 @@ export default function NavBar() {
             <Nav.Link as={Link} to="/">
               Login
             </Nav.Link>
-            <Nav.Link as={Link} to="/">
-              Playlist Maker
-            </Nav.Link>
+            <Nav.Link as={Link} to="/"></Nav.Link>
             <Nav.Link as={Link} to="/song-countdown">
-              Song Countdown
+              Countdown
             </Nav.Link>
           </Nav>
         </Navbar.Collapse>
