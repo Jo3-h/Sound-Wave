@@ -3,7 +3,7 @@ import { Container, Form } from "react-bootstrap";
 import SpotifyWebApi from "spotify-web-api-node";
 
 // Import custom functional components
-import TrackSearchResult from "./TrackSearchResult";
+import TrackSearchResult from "../common/TrackSearchResult";
 
 const spotifyApi = new SpotifyWebApi({
   clientId: "af336f24a30e439b88ed899c0813426a",

@@ -39,7 +39,7 @@ import "./css/PlayerStatusCard.css";
 }
  * }
  */
-export default function PlayerStatusCard({ key, player, iconCard }) {
+export default function PlayerStatusCard({ player, iconCard }) {
   const [songsRemaining, setSongsRemaining] = useState(-1);
 
   /**

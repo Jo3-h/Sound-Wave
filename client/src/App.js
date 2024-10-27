@@ -8,12 +8,12 @@ import {
 } from "react-router-dom";
 
 // import custom functional components
-import Login from "./login";
-import Dashboard from "./Dashboard";
-import Layout from "./Layout";
-import Player from "./Player";
-import useAuth from "./useAuth";
-import SongCountdown from "./SongCountdown";
+import Login from "./components/common/login";
+import Dashboard from "./components/dashboard/Dashboard";
+import Layout from "./components/common/Layout";
+import Player from "./components/common/Player";
+import useAuth from "./components/common/useAuth";
+import SongCountdown from "./components/countdown/SongCountdown";
 
 const code = new URLSearchParams(window.location.search).get("code");
 
