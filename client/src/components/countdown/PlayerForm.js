@@ -4,7 +4,7 @@ import { Form, Button } from "react-bootstrap";
 import SpotifyWebApi from "spotify-web-api-node";
 
 // import custom components
-import TrackSearchResult from "./TrackSearchResult";
+import TrackSearchResult from "../common/TrackSearchResult";
 import "./css/PlayerForm.css";
 
 const spotifyApi = new SpotifyWebApi({
