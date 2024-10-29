@@ -1,0 +1,54 @@
+.top-track-card-container {
+  height: 70px;
+  width: 100%;
+  display: flex;
+  background-color: white;
+  margin-bottom: 5px;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+.top-track-card-container .top-track-index {
+  height: 100%;
+  aspect-ratio: 1/1.5;
+  align-content: center;
+  display: grid;
+  justify-content: center;
+  background-color: white;
+  border-radius: 10px 0 0 10px;
+}
+
+.top-track-card-container .album-image {
+  height: 100%;
+  border-radius: 10px;
+}
+
+.top-track-card-container .information-container {
+  height: 100%;
+  width: calc(100% - 160px);
+  padding: 0 0 0 10px;
+  align-content: center;
+}
+
+.play-button {
+  height: 100%;
+  aspect-ratio: 1/1;
+  align-content: center;
+  justify-self: center;
+  padding: 12px;
+}
+
+.track-label {
+  font-size: large;
+  font-weight: bold;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.artist-label {
+  font-size: small;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

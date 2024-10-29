@@ -14,6 +14,7 @@ import Layout from "./components/common/Layout";
 import Player from "./components/common/Player";
 import useAuth from "./components/common/useAuth";
 import SongCountdown from "./components/countdown/SongCountdown";
+import StatisticsDashboard from "./components/statistics/statisticsDashboard";
 
 const code = new URLSearchParams(window.location.search).get("code");
 
@@ -43,6 +44,16 @@ function App() {
               <Dashboard
                 accessToken={accessToken}
                 setPlayingTrack={setPlayingTrack}
+              />
+            }
+          />
+          <Route
+            path="/statistics"
+            element={
+              <StatisticsDashboard
+                accessToken={accessToken}
+                setPlayingTrack={setPlayingTrack}
+                playerRef={playerRef}
               />
             }
           />
