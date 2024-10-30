@@ -19,7 +19,9 @@ export default function TopArtistCard({
           atl="artist image"
         />
       </div>
-      <div className="title-container"></div>
+
+      <div className="index-label">{index}</div>
+      <div className="artist-label">{artist.name}</div>
     </div>
   );
 }

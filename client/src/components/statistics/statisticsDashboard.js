@@ -1,6 +1,7 @@
 import React from "react";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 import { Button } from "react-bootstrap";
+import SpotifyWebApi from "spotify-web-api-node";
 import axios from "axios";
 
 // import custom components
@@ -10,6 +11,10 @@ import TopArtistCard from "./TopArtistCard";
 // import custom css styling sheets
 import "./css/statisticsDashboard.css";
 
+const spotifyApi = new SpotifyWebApi({
+  clientId: "af336f24a30e439b88ed899c0813426a",
+});
+
 export default function StatisticsDashboard({
   accessToken,
   setPlayingTrack,
@@ -17,10 +22,13 @@ export default function StatisticsDashboard({
 }) {
   const [topTracks, setTopTracks] = useState([]);
   const [topArtists, setTopArtists] = useState([]);
-  const [selectStat, setSelectStat] = useState("");
-  const [selectTime, setSelectTime] = useState("");
+  const [selectStat, setSelectStat] = useState("tracks");
+  const [selectTime, setSelectTime] = useState("short_term");
   const [topTrackCardSelected, setTopTrackCardSelected] = useState("");
   const [topArtistCardSelected, setTopArtistCardSelected] = useState("");
+  const [displayMessage, setTitleMessage] = useState("");
+  const username = useRef("");
+  const userProfileImage = useRef("");
 
   /**
    * useEffect Hook 1 - request user stats from backend
@@ -42,7 +50,33 @@ export default function StatisticsDashboard({
         setTopTracks(res.data.tracks);
         setTopArtists(res.data.artists);
       });
+
+    if (!accessToken) {
+      return;
+    }
+    spotifyApi.setAccessToken(accessToken);
+    spotifyApi.getMe().then((res) => {
+      username.current = res.body.display_name;
+      userProfileImage.current = res.body.images[0].url;
+    });
   }, []);
+
+  useEffect(() => {
+    if (!accessToken) {
+      return;
+    }
+    spotifyApi.setAccessToken(accessToken);
+  }, [accessToken]);
+
+  useEffect(() => {
+    let message = `${username.current}'s Top `;
+    if (selectStat === "tracks") {
+      message = message + "Tracks";
+    } else {
+      message = message + "Artists";
+    }
+    setTitleMessage(message);
+  }, [selectStat, selectTime]);
 
   const handleSelectStat = (stat) => {
     if (selectStat === stat) {
@@ -245,6 +279,20 @@ export default function StatisticsDashboard({
               >
                 Last 12 Months
               </Button>
+            </div>
+            <div
+              style={{
+                height: "calc(100% - 80px)",
+                weight: "100%",
+                fontSize: "26px",
+                fontWeight: "bolder",
+                margin: "10px",
+                display: "flex",
+                alignContent: "center",
+                justifyContent: "center",
+              }}
+            >
+              {displayMessage}
             </div>
           </div>
           <div>
