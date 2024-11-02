@@ -6,6 +6,8 @@ import { Container, Button, Modal, ModalBody } from "react-bootstrap";
 import PlayerCard from "./PlayerCard";
 import PlayerForm from "./PlayerForm";
 import Hottest100Countdown from "./Hottest100Countdown";
+import ImportPlaylistModal from "./ImportPlaylistModal";
+import AddPlayerModal from "./AddPlayerModal";
 import "./css/SongCountdown.css";
 
 export default function SongCountdown({
@@ -15,7 +17,7 @@ export default function SongCountdown({
 }) {
   const [players, setPlayers] = useState([]);
   const [isGameStarted, setIsGameStarted] = useState(false);
-  const [showModal, setShowModal] = useState(false);
+  const [showModal, setShowModal] = useState("");
   const [editPlayerDetails, setEditPlayerDetails] = useState(null);
 
   const addPlayer = (newPlayer) => {
@@ -35,11 +37,11 @@ export default function SongCountdown({
     });
 
     setEditPlayerDetails(null);
-    handleModalClose();
+    setShowModal("");
   };
   const editPlayer = (updatedPlayer) => {
     setEditPlayerDetails(updatedPlayer);
-    setShowModal(true);
+    setShowModal("AddPlayerModal");
   };
   const removePlayer = (PlayerId) => {
     setPlayers(players.filter((player) => player.id !== PlayerId));
@@ -48,35 +50,36 @@ export default function SongCountdown({
     setIsGameStarted(true);
   };
   const handleModalOpen = () => {
-    setShowModal(true);
+    setShowModal("AddPlayerModal");
   };
   const handleModalClose = () => {
-    setShowModal(false);
+    setEditPlayerDetails(null);
+    setShowModal("");
   };
-  const handleImportPlaylist = () => {};
+  const handleImportPlaylist = () => {
+    setShowModal("ImportPlaylistModal");
+  };
 
   useEffect(() => {
     console.log("Update in Players Array -> ", players);
   }, [players]);
 
-  return showModal ? (
-    <Modal
-      className="modal-content"
-      show={showModal}
-      onHide={handleModalClose}
-      centered
-    >
-      <Modal.Header closeButton>
-        <Modal.Title>Add Player</Modal.Title>
-      </Modal.Header>
-      <ModalBody>
-        <PlayerForm
-          addPlayer={addPlayer}
-          accessToken={accessToken}
-          editPlayerDetails={editPlayerDetails}
-        />
-      </ModalBody>
-    </Modal>
+  return showModal !== "" ? (
+    showModal === "AddPlayerModal" ? (
+      <AddPlayerModal
+        showModal={showModal}
+        handleModalClose={handleModalClose}
+        addPlayer={addPlayer}
+        accessToken={accessToken}
+        editPlayerDetails={editPlayerDetails}
+      />
+    ) : (
+      <ImportPlaylistModal
+        showModal={showModal}
+        handleModalClose={handleModalClose}
+        accessToken={accessToken}
+      />
+    )
   ) : (
     <div
       className="wrapper"

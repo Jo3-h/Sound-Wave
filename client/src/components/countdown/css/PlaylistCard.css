@@ -1,0 +1,41 @@
+.playlist-card-container {
+  height: 120px;
+  width: 100%;
+  border-radius: 10px;
+  background-color: #e3e3e3;
+  border-radius: 10px;
+  display: flex;
+}
+
+.playlist-image {
+  height: 100%;
+  aspect-ratio: 1/1;
+  border-radius: 10px 0 0 10px;
+}
+
+.information-container {
+  height: 100%;
+  flex: 1 0;
+  padding: 10px;
+}
+
+.playlist-name-label {
+  font-weight: bold;
+  font-size: large;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.playlist-owner-label {
+  font-size: medium;
+  color: grey;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.playlist-tracks-label {
+  font-size: small;
+  color: red;
+}
