@@ -1,0 +1,103 @@
+.navbar-wrapper {
+  height: 60px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  z-index: 1;
+  background-color: black;
+  display: flex;
+}
+
+.navbar-wrapper .content-left {
+  height: 100%;
+  flex: 1;
+}
+
+.navbar-wrapper .content-center {
+  height: 100%;
+  width: 20%;
+  max-width: 200px;
+  display: flex;
+  justify-content: center;
+}
+
+.navbar-wrapper .content-right {
+  height: 100%;
+  flex: 1;
+  display: flex;
+  justify-content: right;
+  padding: 0 50px 0 0;
+}
+
+.content-right .buttons-array {
+  justify-content: space-between;
+  display: flex;
+  align-content: center;
+}
+
+.brand-label {
+  height: 100%;
+  width: auto;
+  align-items: center;
+  display: flex;
+  color: #c91104;
+  text-decoration: none;
+  letter-spacing: 4px;
+  font-size: 26px;
+  font-weight: bolder;
+}
+
+.buttons-array > div {
+  height: 100%;
+  padding: 0 15px 0 15px;
+  color: white;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.signup-button {
+  background-color: beige;
+  height: 60%;
+  width: 70px;
+  border-radius: 5px;
+  color: black;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+}
+
+.dropdown-menu {
+  display: none;
+  top: 50px;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  min-width: 150px;
+  z-index: 1000;
+}
+
+/* Dropdown links styling */
+.dropdown-menu a,
+.dropdown-menu Link {
+  display: block;
+  padding: 8px 16px;
+  color: #333;
+  text-decoration: none;
+}
+
+/* Hover effects */
+.dropdown-menu a:hover,
+.dropdown-menu Link:hover {
+  background-color: #f0f0f0;
+}
+
+/* Show dropdown on hover */
+.spotify-dropdown-button-container:hover .dropdown-menu {
+  display: block;
+}

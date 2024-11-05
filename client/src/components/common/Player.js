@@ -1,9 +1,12 @@
 import React, { useState, useEffect, useRef } from "react";
+import { useLocation } from "react-router-dom";
 import SpotifyPlayer from "react-spotify-web-playback";
 
 export default function Player({ accessToken, trackUri, getPlayerRef }) {
   const [play, setPlay] = useState(false);
   const playerRef = useRef(null);
+  const location = useLocation();
+  const isCountdownPath = location.pathname === "/song-countdown";
 
   useEffect(() => {
     // Play the track if trackUri is valid
@@ -37,12 +40,14 @@ export default function Player({ accessToken, trackUri, getPlayerRef }) {
         width: "100%",
       }}
     >
-      <style>{`
+      {isCountdownPath && (
+        <style>{`
         ._ControlsButtonsRSWP > div:nth-child(2),
         ._ControlsButtonsRSWP > div:nth-child(4) {
           display: none !important;
         }
       `}</style>
+      )}
       <SpotifyPlayer
         token={accessToken}
         showSaveIcon

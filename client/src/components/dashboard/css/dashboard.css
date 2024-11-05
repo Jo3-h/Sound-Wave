@@ -1,0 +1,32 @@
+.collage-background {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 4px;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  padding: 5px;
+}
+
+.collage-background img {
+  border-radius: 20px;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  opacity: 0.3;
+  aspect-ratio: 1;
+}
+
+.page-title {
+  font-size: 9vw;
+  width: 100%;
+  color: black;
+  font-weight: bolder;
+  text-align: center;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  letter-spacing: 100px;
+  position: absolute;
+  top: 50%;
+  z-index: 1;
+}

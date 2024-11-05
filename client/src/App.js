@@ -9,11 +9,16 @@ import {
 
 // import custom functional components
 import Login from "./components/common/login";
+import MusicPlayer from "./components/musicplayer/MusicPlayer";
 import Dashboard from "./components/dashboard/Dashboard";
 import Layout from "./components/common/Layout";
 import Player from "./components/common/Player";
 import useAuth from "./components/common/useAuth";
 import SongCountdown from "./components/countdown/SongCountdown";
+import StatisticsDashboard from "./components/statistics/statisticsDashboard";
+
+// import global styles
+import "./global.css";
 
 const code = new URLSearchParams(window.location.search).get("code");
 
@@ -37,12 +42,23 @@ function App() {
       <Layout>
         <Routes>
           <Route path="/" element={<Navigate to="/dashboard" replace />} />
+          <Route path="/dashboard" element={<Dashboard />} />
           <Route
-            path="/dashboard"
+            path="/music-player"
             element={
-              <Dashboard
+              <MusicPlayer
                 accessToken={accessToken}
                 setPlayingTrack={setPlayingTrack}
+              />
+            }
+          />
+          <Route
+            path="/statistics"
+            element={
+              <StatisticsDashboard
+                accessToken={accessToken}
+                setPlayingTrack={setPlayingTrack}
+                playerRef={playerRef}
               />
             }
           />

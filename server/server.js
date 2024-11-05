@@ -128,5 +128,78 @@ app.post("/login", (req, res) => {
     });
 });
 
+/**
+ * GET /import-countdown-playlist
+ *
+ */
+app.get("/import-countdown-playlist", (req, res) => {});
+
+/**
+ * GET /user-stats
+ *
+ * Request Body:
+ * {
+ *  "accessToken": <string>
+ * }
+ */
+app.get("/user-stats", (req, res) => {
+  const accessToken = req.query.accessToken;
+  const spotifyApi = new SpotifyWebApi({
+    redirectUri: process.env.REDIRECT_URI,
+    clientId: process.env.CLIENT_ID,
+    clientSecret: process.env.CLIENT_SECRET,
+  });
+
+  spotifyApi.setAccessToken(accessToken);
+
+  const tracks_result = [];
+  const artists_result = [];
+  let term_length = ["short_term", "medium_term", "long_term"];
+
+  // Create an array of promises for top tracks and artists
+  const trackPromises = term_length.map((term) => {
+    return spotifyApi
+      .getMyTopTracks({ time_range: term, limit: 50 })
+      .then((data) => {
+        let topTracks = data.body.items;
+        tracks_result.push({ term, topTracks });
+      })
+      .catch((error) => {
+        console.log("Error obtaining user top tracks: ", error);
+        return { term, error: "Error obtaining users top songs." };
+      });
+  });
+
+  const artistPromises = term_length.map((term) => {
+    return spotifyApi
+      .getMyTopArtists({ time_range: term, limit: 50 })
+      .then((data) => {
+        let topArtists = data.body.items;
+        artists_result.push({ term, topArtists });
+      })
+      .catch((error) => {
+        console.log("Error obtaining top artists: ", error);
+        return { term, error: "Error obtaining users top artists." };
+      });
+  });
+
+  // Use Promise.all to wait for all the promises to resolve
+  Promise.all([...trackPromises, ...artistPromises])
+    .then(() => {
+      // All promises resolved, send the results back to the client
+      res.json({
+        tracks: tracks_result,
+        artists: artists_result,
+      });
+    })
+    .catch((error) => {
+      // Handle any errors that may have occurred
+      res.status(500).json({
+        message: "An error occurred while fetching user stats.",
+        error,
+      });
+    });
+});
+
 // starting the application listening on port 3001
 app.listen(3001);
