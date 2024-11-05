@@ -27,7 +27,7 @@ export default function StatisticsDashboard({
   const [topTrackCardSelected, setTopTrackCardSelected] = useState("");
   const [topArtistCardSelected, setTopArtistCardSelected] = useState("");
   const [displayMessage, setTitleMessage] = useState("");
-  const username = useRef("");
+  const [username, setUsername] = useState("");
   const userProfileImage = useRef("");
 
   /**
@@ -56,8 +56,10 @@ export default function StatisticsDashboard({
     }
     spotifyApi.setAccessToken(accessToken);
     spotifyApi.getMe().then((res) => {
-      username.current = res.body.display_name;
+      setUsername(res.body.display_name);
       userProfileImage.current = res.body.images[0].url;
+      setSelectStat("tracks");
+      setSelectTime("short_term");
     });
   }, []);
 
@@ -69,14 +71,14 @@ export default function StatisticsDashboard({
   }, [accessToken]);
 
   useEffect(() => {
-    let message = `${username.current}'s Top `;
+    let message = `${username}'s Top `;
     if (selectStat === "tracks") {
       message = message + "Tracks";
     } else {
       message = message + "Artists";
     }
     setTitleMessage(message);
-  }, [selectStat, selectTime]);
+  }, [selectStat, selectTime, username]);
 
   const handleSelectStat = (stat) => {
     if (selectStat === stat) {
@@ -95,14 +97,7 @@ export default function StatisticsDashboard({
   };
 
   return (
-    <div
-      style={{
-        display: "flex",
-        width: "80%",
-        margin: "10px auto",
-      }}
-    >
-      <div className="insights-wrapper"></div>
+    <div className="content-container">
       <div className="stats-wrapper">
         <div className="stats-content">
           <div className="options-container">
@@ -332,7 +327,6 @@ export default function StatisticsDashboard({
           </div>
         </div>
       </div>
-      <div className="insights-wrapper"></div>
     </div>
   );
 }

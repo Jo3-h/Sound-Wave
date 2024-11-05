@@ -1,7 +1,6 @@
 import React from "react";
 import { Navbar, Nav, Container, Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import logo from "./assets/logo.png";
 
 import "./css/Navbar.css";
 
@@ -11,15 +10,24 @@ export default function NavBar() {
       <div className="navbar-wrapper">
         <div className="content-left"></div>
         <div className="content-center">
-          <Link to="/statistics" className="brand-label">
+          <Link to="/dashboard" className="brand-label">
             Soundwave.FM
           </Link>
         </div>
         <div className="content-right">
           <div className="buttons-array">
-            <div className="spotify-dropdown-button-container">Spotify</div>
+            <div className="spotify-dropdown-button-container">
+              Spotify
+              <div className="dropdown-menu">
+                <Link to="/music-player">Player</Link>
+                <Link to="/song-countdown">Countdown</Link>
+                <Link to="/statistics">Stats</Link>
+              </div>
+            </div>
             <div className="login-button-container">login</div>
-            <div className="signup-button-container">signup</div>
+            <div className="signup-button-container">
+              <div className="signup-button">SIGN UP</div>
+            </div>
           </div>
         </div>
       </div>

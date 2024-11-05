@@ -13,7 +13,7 @@ export default function AddPlayerModal({
 }) {
   return (
     <Modal
-      className="modal-content"
+      className="custom-modal"
       show={showModal}
       onHide={handleModalClose}
       centered

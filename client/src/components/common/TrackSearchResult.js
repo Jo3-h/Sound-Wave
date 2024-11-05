@@ -14,6 +14,7 @@ export default function TrackSearchResult({ track, chooseTrack }) {
         height: "60px",
         marginBottom: "10px",
         borderRadius: "10px",
+        backgroundColor: "white",
       }}
       onClick={handlePlay}
     >
