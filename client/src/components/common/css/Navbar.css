@@ -95,9 +95,11 @@
 .dropdown-menu a:hover,
 .dropdown-menu Link:hover {
   background-color: #f0f0f0;
+  cursor: pointer;
 }
 
 /* Show dropdown on hover */
 .spotify-dropdown-button-container:hover .dropdown-menu {
   display: block;
+  cursor: pointer;
 }

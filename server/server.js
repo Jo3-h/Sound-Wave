@@ -34,6 +34,37 @@ app.use(cors());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
+// Initialize Spotify API with client credentials
+const spotifyApi = new SpotifyWebApi({
+  redirectUri: process.env.REDIRECT_URI,
+  clientId: process.env.CLIENT_ID,
+  clientSecret: process.env.CLIENT_SECRET,
+});
+
+/*
+Logging function to display to server terminal for debugging purposes
+*/
+const logRequest = (req, level = "INFO", message = "") => {
+  const logMessage = `[${new Date().toISOString()}] [${level}] [${
+    req.method
+  }] [${req.originalUrl}] 
+    [RequestID: ${req.id || "N/A"}]
+    - Client IP: ${req.ip}
+    - User Agent: ${req.headers["user-agent"]}
+    - Request Params: ${JSON.stringify(req.query, null, 2)}
+    - Request Body: ${JSON.stringify(req.body, null, 2)}
+    Message: ${message || "Request processed successfully"}
+  `;
+
+  if (level === "ERROR") {
+    console.error(logMessage);
+  } else if (level === "WARN") {
+    console.warn(logMessage);
+  } else {
+    console.info(logMessage);
+  }
+};
+
 /*
 POST /refresh 
 -------------
@@ -57,12 +88,6 @@ on failure -> {
 */
 app.post("/refresh", (req, res) => {
   const refreshToken = req.body.refreshToken;
-  const spotifyApi = new SpotifyWebApi({
-    redirectUri: process.env.REDIRECT_URI,
-    clientId: process.env.CLIENT_ID,
-    clientSecret: process.env.CLIENT_SECRET,
-    refreshToken,
-  });
 
   spotifyApi
     .refreshAccessToken()
@@ -132,7 +157,68 @@ app.post("/login", (req, res) => {
  * GET /import-countdown-playlist
  *
  */
-app.get("/import-countdown-playlist", (req, res) => {});
+app.get("/import-countdown-playlist", async (req, res) => {
+  // Add `async` here
+  logRequest(req, "INFO", "Importing Playlist to Countdown");
+  const playlistId = req.query.playlistId;
+  const accessToken = req.query.accessToken;
+  spotifyApi.setAccessToken(accessToken);
+
+  const playlist_tracks = [];
+
+  // get playlist details
+  try {
+    const playlistRes = await spotifyApi.getPlaylistTracks(playlistId);
+    playlist_tracks.push(...playlistRes.body.items);
+  } catch (error) {
+    console.log("Error fetching playlist tracks -> ", error);
+    res.status(500).json({ error: "Failed to fetch playlist tracks" });
+    return;
+  }
+
+  async function getUserProfileImage(user_id) {
+    try {
+      const userRes = await spotifyApi.getUser(user_id);
+      return userRes.body.images[0]?.url || "";
+    } catch (error) {
+      console.log("Error fetching user profile image -> ", error);
+      return "";
+    }
+  }
+
+  async function buildPlayersList(tracks) {
+    const playersList = {};
+
+    for (const item of tracks) {
+      const userId = item.added_by.id;
+      if (!playersList[userId]) {
+        const profileImage = await getUserProfileImage(userId);
+        playersList[userId] = {
+          id: userId,
+          name: item.added_by.display_name || userId,
+          profileImage,
+          selectedSongs: [],
+        };
+      }
+
+      const track = item.track;
+      playersList[userId].selectedSongs.push({
+        artist: track.artists.map((artist) => artist.name).join(", "),
+        title: track.name,
+        uri: track.uri,
+        albumUrl: track.album.images[0]?.url || "",
+        albumUrlLarge: track.album.images[1]?.url || "",
+        played: false,
+      });
+    }
+
+    return Object.values(playersList);
+  }
+
+  const playersList = await buildPlayersList(playlist_tracks);
+
+  res.status(200).json({ players: playersList });
+});
 
 /**
  * GET /user-stats
@@ -144,29 +230,21 @@ app.get("/import-countdown-playlist", (req, res) => {});
  */
 app.get("/user-stats", (req, res) => {
   const accessToken = req.query.accessToken;
-  const spotifyApi = new SpotifyWebApi({
-    redirectUri: process.env.REDIRECT_URI,
-    clientId: process.env.CLIENT_ID,
-    clientSecret: process.env.CLIENT_SECRET,
-  });
-
   spotifyApi.setAccessToken(accessToken);
 
   const tracks_result = [];
   const artists_result = [];
-  let term_length = ["short_term", "medium_term", "long_term"];
+  const term_length = ["short_term", "medium_term", "long_term"];
 
-  // Create an array of promises for top tracks and artists
   const trackPromises = term_length.map((term) => {
     return spotifyApi
       .getMyTopTracks({ time_range: term, limit: 50 })
       .then((data) => {
-        let topTracks = data.body.items;
-        tracks_result.push({ term, topTracks });
+        tracks_result.push({ term, topTracks: data.body.items });
       })
       .catch((error) => {
-        console.log("Error obtaining user top tracks: ", error);
-        return { term, error: "Error obtaining users top songs." };
+        console.error("Error obtaining user top tracks:", error);
+        return { term, error: "Error obtaining user's top songs." };
       });
   });
 
@@ -174,26 +252,19 @@ app.get("/user-stats", (req, res) => {
     return spotifyApi
       .getMyTopArtists({ time_range: term, limit: 50 })
       .then((data) => {
-        let topArtists = data.body.items;
-        artists_result.push({ term, topArtists });
+        artists_result.push({ term, topArtists: data.body.items });
       })
       .catch((error) => {
-        console.log("Error obtaining top artists: ", error);
-        return { term, error: "Error obtaining users top artists." };
+        console.error("Error obtaining top artists:", error);
+        return { term, error: "Error obtaining user's top artists." };
       });
   });
 
-  // Use Promise.all to wait for all the promises to resolve
   Promise.all([...trackPromises, ...artistPromises])
     .then(() => {
-      // All promises resolved, send the results back to the client
-      res.json({
-        tracks: tracks_result,
-        artists: artists_result,
-      });
+      res.json({ tracks: tracks_result, artists: artists_result });
     })
     .catch((error) => {
-      // Handle any errors that may have occurred
       res.status(500).json({
         message: "An error occurred while fetching user stats.",
         error,
