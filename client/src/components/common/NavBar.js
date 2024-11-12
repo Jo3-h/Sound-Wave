@@ -22,6 +22,7 @@ export default function NavBar() {
                 <Link to="/music-player">Player</Link>
                 <Link to="/song-countdown">Countdown</Link>
                 <Link to="/statistics">Stats</Link>
+                <Link to="/song-guesser">Song Guesser</Link>
               </div>
             </div>
             <div className="login-button-container">login</div>

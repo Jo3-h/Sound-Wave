@@ -1,14 +1,19 @@
 import React from "react";
 import { useState, useEffect } from "react";
 import { Container, Button, Modal, ModalBody } from "react-bootstrap";
+import SpotifyWebApi from "spotify-web-api-node";
+import axios from "axios";
 
 // import custom compenents
 import PlayerCard from "./PlayerCard";
-import PlayerForm from "./PlayerForm";
 import Hottest100Countdown from "./Hottest100Countdown";
 import ImportPlaylistModal from "./ImportPlaylistModal";
 import AddPlayerModal from "./AddPlayerModal";
 import "./css/SongCountdown.css";
+
+const spotifyApi = new SpotifyWebApi({
+  clientId: "af336f24a30e439b88ed899c0813426a",
+});
 
 export default function SongCountdown({
   accessToken,
@@ -19,6 +24,10 @@ export default function SongCountdown({
   const [isGameStarted, setIsGameStarted] = useState(false);
   const [showModal, setShowModal] = useState("");
   const [editPlayerDetails, setEditPlayerDetails] = useState(null);
+
+  useEffect(() => {
+    spotifyApi.setAccessToken(accessToken);
+  }, [accessToken]);
 
   const addPlayer = (newPlayer) => {
     setPlayers((prevPlayers) => {
@@ -56,8 +65,25 @@ export default function SongCountdown({
     setEditPlayerDetails(null);
     setShowModal("");
   };
-  const handleImportPlaylist = () => {
+  const handleImportPlaylistModalOpen = () => {
     setShowModal("ImportPlaylistModal");
+  };
+  const handleImportPlaylist = (playlist) => {
+    console.log("importing playlist -> ", playlist);
+    axios
+      .get("http://localhost:3001/import-countdown-playlist", {
+        params: {
+          accessToken: accessToken,
+          playlistId: playlist.id,
+        },
+      })
+      .then((res) => {
+        setPlayers(res.data.players);
+        setShowModal("");
+      })
+      .catch((error) => {
+        console.error("Failed to import playlist -> ", error);
+      });
   };
 
   useEffect(() => {
@@ -78,6 +104,7 @@ export default function SongCountdown({
         ) : (
           <ImportPlaylistModal
             showModal={showModal}
+            handleImportPlaylist={handleImportPlaylist}
             handleModalClose={handleModalClose}
             accessToken={accessToken}
           />
@@ -102,7 +129,10 @@ export default function SongCountdown({
                   <Button variant="primary" onClick={handleModalOpen}>
                     Add Player
                   </Button>
-                  <Button variant="secondary" onClick={handleImportPlaylist}>
+                  <Button
+                    variant="secondary"
+                    onClick={handleImportPlaylistModalOpen}
+                  >
                     Import Playlist
                   </Button>
                   <Button variant="danger" onClick={startCountdown}>

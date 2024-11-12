@@ -2,10 +2,13 @@ import React from "react";
 
 import "./css/PlaylistCard.css";
 
-export default function PlaylistCard({ playlist }) {
+export default function PlaylistCard({ playlist, handleImportPlaylist }) {
   return (
     <>
-      <div className="playlist-card-container">
+      <div
+        className="playlist-card-container"
+        onClick={() => handleImportPlaylist(playlist)}
+      >
         <img
           className="playlist-image"
           src={playlist.images[1]?.url || playlist.images[0]?.url || null}

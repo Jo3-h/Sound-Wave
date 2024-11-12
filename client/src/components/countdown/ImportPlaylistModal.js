@@ -10,6 +10,7 @@ const spotifyApi = new SpotifyWebApi({
 
 export default function ImportPlaylistModal({
   showModal,
+  handleImportPlaylist,
   handleModalClose,
   accessToken,
 }) {
@@ -29,7 +30,6 @@ export default function ImportPlaylistModal({
     const fetchAllPlaylists = async (offset = 0, accumulatedPlaylists = []) => {
       try {
         const res = await spotifyApi.getUserPlaylists({ limit: 50, offset });
-        console.log("res -> ", res);
         const fetchedPlaylists = accumulatedPlaylists.concat(res.body.items);
 
         if (res.body.items.length === 50) {
@@ -47,10 +47,6 @@ export default function ImportPlaylistModal({
     fetchAllPlaylists();
   }, [accessToken]);
 
-  useEffect(() => {
-    console.log("user playlists -> ", userPlaylists);
-  }, [userPlaylists]);
-
   return (
     <Modal
       className="custom-modal"
@@ -62,7 +58,10 @@ export default function ImportPlaylistModal({
         <Modal.Title>Import Playlist</Modal.Title>
       </Modal.Header>
       <ModalBody>
-        <PlaylistForm userPlaylists={userPlaylists} />
+        <PlaylistForm
+          userPlaylists={userPlaylists}
+          handleImportPlaylist={handleImportPlaylist}
+        />
       </ModalBody>
     </Modal>
   );

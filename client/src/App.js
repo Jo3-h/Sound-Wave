@@ -16,6 +16,7 @@ import Player from "./components/common/Player";
 import useAuth from "./components/common/useAuth";
 import SongCountdown from "./components/countdown/SongCountdown";
 import StatisticsDashboard from "./components/statistics/statisticsDashboard";
+import SongGuesser from "./components/songGuesser/SongGuesser";
 
 // import global styles
 import "./global.css";
@@ -72,6 +73,7 @@ function App() {
               />
             }
           />
+          <Route path="song-guesser" element={<SongGuesser />} />
         </Routes>
         {accessToken && (
           <Player
