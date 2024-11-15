@@ -179,10 +179,11 @@ app.get("/import-countdown-playlist", async (req, res) => {
   async function getUserProfileImage(user_id) {
     try {
       const userRes = await spotifyApi.getUser(user_id);
-      return userRes.body.images[0]?.url || "";
+      const displayName = userRes.body.display_name;
+      return [userRes.body.images[0]?.url || "", displayName];
     } catch (error) {
       console.log("Error fetching user profile image -> ", error);
-      return "";
+      return ["", ""];
     }
   }
 
@@ -192,10 +193,12 @@ app.get("/import-countdown-playlist", async (req, res) => {
     for (const item of tracks) {
       const userId = item.added_by.id;
       if (!playersList[userId]) {
-        const profileImage = await getUserProfileImage(userId);
+        const profile_details = await getUserProfileImage(userId);
+        const profileImage = profile_details[0];
+        const displayName = profile_details[1];
         playersList[userId] = {
           id: userId,
-          name: item.added_by.display_name || userId,
+          name: displayName,
           profileImage,
           selectedSongs: [],
         };

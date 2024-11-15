@@ -69,10 +69,10 @@ export default function Hottest100Countdown({
      * useEffect Hook 1 - Initialising songQueue
      *
      * This hook checks for valid gamePlayers (initialisd from players prop) and initialises the random
-     * song queue upon rendering of the page. no dependancies, will only run on intial render to maintain
+     * song queue upon rendering of the page. no dependencies, will only run on intial render to maintain
      * a single constant songQueue once it is set the first time.
      *
-     * Dependancies:
+     * Dependencies:
      * - null
      */
     if (gamePlayers && gamePlayers.length > 0) {
@@ -95,7 +95,7 @@ export default function Hottest100Countdown({
      *
      * Conditional will return early if countdown has not started yet
      *
-     * Dependancies:
+     * Dependencies:
      * - currentPosition        // used to trigger playing next track
      */
     if (currentPosition === -1) {
@@ -124,7 +124,7 @@ export default function Hottest100Countdown({
      * The currentSongNumber state is only iterated in Hook 2, so this hook will only run
      * as an effect of that hook playing
      *
-     * Dependancies:
+     * Dependencies:
      * - currentSongNumber      // used to store the countdown number to announce
      */
 
@@ -153,7 +153,7 @@ export default function Hottest100Countdown({
      * should render fully or render icon version. This will be stored as a boolean value which is
      * passed to the playerStatusCard as a prop to decide which is rendered
      *
-     * NOTE: Icon version playerStatusCard will not be impletented yet, simply don't render cards if
+     * NOTE: Icon version playerStatusCard will not be implemented yet, simply don't render cards if
      * wideWindow state is false
      */
 
@@ -211,7 +211,7 @@ export default function Hottest100Countdown({
       console.log("All Songs have played");
     }
 
-    // create a timeout to release the mutex lock for next exection (guards against double calls)
+    // create a timeout to release the mutex lock for next execution (guards against double calls)
     setTimeout(() => {
       isPlayingRef.current = false;
     }, 1000);
@@ -263,7 +263,7 @@ export default function Hottest100Countdown({
   return (
     <div className="hottest-100-container">
       <div className="countdownStatusSection">
-        <PlayingTrackCard
+        {/* <PlayingTrackCard
           number={songQueue ? songQueue.length - currentPosition : -1}
           track={
             currentlyPlaying
@@ -296,18 +296,19 @@ export default function Hottest100Countdown({
               );
             })}
         </div>
-      </div>
-      {isWideScreen && (
-        <div className="playerStatusSection">
-          {gamePlayers.map((player) => (
+      </div> */}
+        {isWideScreen && (
+          <div className="playerStatusSection">
+            {/* {gamePlayers.map((player) => (
             <PlayerStatusCard
               key={player.id}
               player={player}
               iconCard={isWideScreen}
             />
-          ))}
-        </div>
-      )}
+          ))} */}
+          </div>
+        )}
+      </div>
     </div>
   );
 }

@@ -3,6 +3,8 @@
   height: auto;
   min-height: 100%;
   display: flex;
+  background-color: red;
+  border-radius: 10px;
   padding: 0 0 10px 0;
 }
 

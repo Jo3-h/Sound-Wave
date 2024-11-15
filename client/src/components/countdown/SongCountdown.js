@@ -4,7 +4,7 @@ import { Container, Button, Modal, ModalBody } from "react-bootstrap";
 import SpotifyWebApi from "spotify-web-api-node";
 import axios from "axios";
 
-// import custom compenents
+// import custom components
 import PlayerCard from "./PlayerCard";
 import Hottest100Countdown from "./Hottest100Countdown";
 import ImportPlaylistModal from "./ImportPlaylistModal";
