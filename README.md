@@ -1,34 +1,81 @@
-# SoundWave - a Spotify toolkit
+# SOUNDWAVE Player Clone  
 
-## Abstract
+Welcome to the **SOUNDWAVE Player Clone** project! This application is a Spotify-inspired music player that integrates Spotify Web API analytics with interactive features, offering a unique blend of music streaming and data insights.  
 
-Soudwave is a lightweight application that connects to a users Spotify account
-to offer them additional features including custom cruration of playlists based
-on song characteristics, summary of user listening stats, as well as playing
-song based games. This project demonstraits how to build a React frontend that
-interacts with a Node.js backend to handle Spotify's OAuth flow.
+---
 
-Features
+## Table of Contents  
 
-- User Authentication
-- Token Refres
-  ....
+1. [Project Overview](#project-overview)  
+2. [Features](#features)  
+3. [Tech Stack](#tech-stack)  
+4. [Installation and Setup](#installation-and-setup)  
+5. [Project Structure](#project-structure)  
+6. [Usage](#usage)  
+7. [Development Workflow](#development-workflow)  
+8. [Future Enhancements](#future-enhancements)  
 
-## Tech-Stack
+---
 
-Front-End
+## Project Overview  
 
-- React: for building the user interface
-- Bootstrap: for styling purposes
-- Axios: for making http requests to backend server
+The **SOUNDWAVE Player Clone** is a React-based web application designed to showcase technical expertise in frontend development, API integration, and data analytics. It provides users with:  
 
-Back-End
+- A music player integrated with Spotify.  
+- A countdown game for a fun, interactive experience.  
+- Detailed Spotify stats and insights.  
 
-- Node.js and Express: for handling API requests
-- Spotify Web API Node: Wrapper for Spotify API requests
-- dotenv: for managing environment variables
+---
 
-## Prerequisites
+## Features  
 
-Before running this application on a local machine, ensure that Node.js is installed
-and the user has a valid Spotify account.
+### **Music Player with Spotify Integration**  
+- Plays tracks using Spotify Web API Node.  
+- Dynamically displays playlists and songs.  
+
+### **Countdown Game**  
+- Timer feature for music listening sessions.  
+- Inline styles applied specifically to the countdown section.  
+
+### **Spotify Stats**  
+- Analyze and display user data, such as:  
+  - Most-played tracks.  
+  - Favorite genres.  
+  - Listening history.  
+
+### **User Profile Customization**  
+- Update profile pictures and display names.  
+
+### **Navigation and Layout**  
+- Responsive UI featuring a navbar and footer inspired by last.fm.  
+
+### **Authentication and Data Storage**  
+- Login and signup functionality.  
+- User sessions and credentials stored in a MySQL database with hashed passwords.  
+
+---
+
+## Tech Stack  
+
+### **Frontend**  
+- **React.js**: For building a responsive and dynamic UI.  
+- **JavaScript**: Core language for interactivity.  
+- **CSS**: For styling components.  
+
+### **Backend**  
+- **Node.js**: Server-side logic.  
+- **Spotify Web API Node**: Integration with Spotify's API.  
+- **MySQL**: Database for user information and session persistence.  
+
+### **Tools and Libraries**  
+- **bcrypt**: For hashing user passwords.  
+- **Docker CLI**: Optional for environment management.  
+
+---
+
+## Installation and Setup  
+
+1. Clone this repository:  
+   ```bash
+   git clone https://github.com/your-username/soundwave.git  
+   cd soundwave  
