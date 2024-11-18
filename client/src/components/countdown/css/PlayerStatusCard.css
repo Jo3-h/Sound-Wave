@@ -7,13 +7,20 @@ body {
   aspect-ratio: 3.5/1;
   background-color: white;
   border-radius: 10px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
+  max-height: 100px;
   border: 1px solid black;
   display: flex;
 }
 
+@media (max-height: 100px) {
+  .player-status-container {
+    aspect-ratio: auto;
+  }
+}
+
 .player-status-content {
-  width: 72%;
+  flex: 1 0;
   height: 100%;
   background-color: white;
   border-radius: 0 10px 10px 0;
@@ -37,6 +44,8 @@ body {
 .player-status-content .album-image {
   width: calc(20% - 5px);
   height: auto;
+  max-height: 40px;
+  max-width: 40px;
   border-radius: 5px;
   margin-right: 5px;
 }
@@ -52,11 +61,12 @@ body {
 
 .player-name-label {
   height: 100%;
-  width: 40%;
+  flex: 1 0;
   display: flex; /* Use flexbox for alignment */
   align-items: center; /* Align content vertically */
-  justify-content: center; /* Align content horizontally */
-  font-size: 1.3vw;
+  justify-content: left; /* Align content horizontally */
+  font-size: clamp(10px, 1.3vw, 16px);
+  padding: 0 0 0 10px;
   white-space: nowrap; /* Prevent text from wrapping */
   overflow: hidden; /* Hide overflowing text */
   text-overflow: ellipsis; /* Add '...' if text overflows */
@@ -64,7 +74,7 @@ body {
 
 .songs-remaining-label {
   height: 100%;
-  width: 60%;
+  width: auto;
   align-content: center;
   text-align: right;
   font-size: 0.8vw;
@@ -79,29 +89,4 @@ body {
   height: 100%;
   width: 100%;
   border-radius: 10px 0 0 10px;
-}
-
-@media (min-width: 1390px) {
-  .player-name-label {
-    font-size: 1vw;
-  }
-
-  .songs-remaining-label {
-    font-size: 0.8vw;
-  }
-
-  .player-status-container {
-    width: calc(50% - 10px); /* Two cards per row with margins */
-    aspect-ratio: 3.5/1;
-    background-color: white;
-    border-radius: 10px;
-    margin-bottom: 20px;
-    border: 1px solid black;
-    display: flex; /* Include padding and border in width/height calculations */
-  }
-
-  .profile-image-container .profile-image {
-    width: 100px;
-    aspect-ratio: 1/1;
-  }
 }

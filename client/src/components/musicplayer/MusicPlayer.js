@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Container, Form } from "react-bootstrap";
+import { Form } from "react-bootstrap";
 import SpotifyWebApi from "spotify-web-api-node";
 
 // Import custom functional components

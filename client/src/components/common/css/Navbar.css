@@ -69,6 +69,7 @@
   justify-content: center;
   align-items: center;
   font-weight: bold;
+  text-decoration: none;
 }
 
 .dropdown-menu {
@@ -80,6 +81,7 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   min-width: 150px;
   z-index: 1000;
+  cursor: pointer;
 }
 
 /* Dropdown links styling */
@@ -89,6 +91,7 @@
   padding: 8px 16px;
   color: #333;
   text-decoration: none;
+  cursor: pointer;
 }
 
 /* Hover effects */

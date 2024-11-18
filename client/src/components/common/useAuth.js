@@ -4,14 +4,14 @@ import axios from "axios";
 /*
 useAuth - custom hook to manage Spotify API authentication
 ----------
-This hook comunicates with the backend server to send a request for a spotify accessToken,
-it utilises two useEffect functions to run based on dependancies code, refreshToken, and expiresIn
+This hook communicates with the backend server to send a request for a spotify accessToken,
+it utilises two useEffect functions to run based on dependencies code, refreshToken, and expiresIn
 
 @param {string} code            // authorization code granted to uses through the spotify login screen
 @returns { string | undefined } // current accessToken or undefined if none is available
 */
 
-export default function useAuth(code) {
+export default function useAuth(code, redirectUri) {
   const [accessToken, setAccessToken] = useState();
   const [refreshToken, setRefreshToken] = useState();
   const [expiresIn, setExpiresIn] = useState();
@@ -33,6 +33,7 @@ export default function useAuth(code) {
     axios
       .post("http://localhost:3001/login", {
         code,
+        redirectUri,
       })
       .then((res) => {
         if (
@@ -46,12 +47,12 @@ export default function useAuth(code) {
           console.log("Successfully set token information");
         } else {
           console.error("Missing token information from response");
-          window.location = "/";
+          //window.location = "/";
         }
       })
       .catch(() => {
         console.log("Error with axios request to server sides");
-        window.location = "/";
+        //window.location = "/";
       });
   }, [code]);
 

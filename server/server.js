@@ -28,11 +28,22 @@ require("dotenv").config();
 const express = require("express");
 const cors = require("cors");
 const bodyParser = require("body-parser");
+const { sequelize, User } = require("./db");
 const SpotifyWebApi = require("spotify-web-api-node");
 const app = express();
 app.use(cors());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
+
+// Initialise Sequelize ORM
+sequelize
+  .sync()
+  .then(() => {
+    console.log("Database & tables created!");
+  })
+  .catch((error) => {
+    console.error("Error syncing database:", error);
+  });
 
 // Initialize Spotify API with client credentials
 const spotifyApi = new SpotifyWebApi({
@@ -45,7 +56,7 @@ const spotifyApi = new SpotifyWebApi({
 Logging function to display to server terminal for debugging purposes
 */
 const logRequest = (req, level = "INFO", message = "") => {
-  const logMessage = `[${new Date().toISOString()}] [${level}] [${
+  const logMessage = `\n[${new Date().toISOString()}] [${level}] [${
     req.method
   }] [${req.originalUrl}] 
     [RequestID: ${req.id || "N/A"}]
@@ -127,10 +138,11 @@ on failure -> {
 }.status(400)
 */
 app.post("/login", (req, res) => {
+  logRequest(req, "INFO", "Requesting Access Token");
   const code = req.body.code;
-  console.log("Received code:", code);
+  const redirectUri = req.body.redirectUri;
   const spotifyApi = new SpotifyWebApi({
-    redirectUri: process.env.REDIRECT_URI,
+    redirectUri: redirectUri,
     clientId: process.env.CLIENT_ID,
     clientSecret: process.env.CLIENT_SECRET,
   });
@@ -179,10 +191,11 @@ app.get("/import-countdown-playlist", async (req, res) => {
   async function getUserProfileImage(user_id) {
     try {
       const userRes = await spotifyApi.getUser(user_id);
-      return userRes.body.images[0]?.url || "";
+      const displayName = userRes.body.display_name;
+      return [userRes.body.images[0]?.url || "", displayName];
     } catch (error) {
       console.log("Error fetching user profile image -> ", error);
-      return "";
+      return ["", ""];
     }
   }
 
@@ -192,10 +205,12 @@ app.get("/import-countdown-playlist", async (req, res) => {
     for (const item of tracks) {
       const userId = item.added_by.id;
       if (!playersList[userId]) {
-        const profileImage = await getUserProfileImage(userId);
+        const profile_details = await getUserProfileImage(userId);
+        const profileImage = profile_details[0];
+        const displayName = profile_details[1];
         playersList[userId] = {
           id: userId,
-          name: item.added_by.display_name || userId,
+          name: displayName,
           profileImage,
           selectedSongs: [],
         };
@@ -270,6 +285,44 @@ app.get("/user-stats", (req, res) => {
         error,
       });
     });
+});
+/**
+ * POST /check-username
+ *
+ * Request Body:
+ * {
+ * "username": <string>
+ * }
+ */
+app.post("/api/check-username", async (req, res) => {
+  logRequest(req, "INFO", "Checking username availability");
+  const username = req.body.username;
+
+  try {
+    const user = await User.findOne({ where: { username: username } });
+    console.log("User found: ", user);
+    if (user) {
+      res.json({ available: false });
+    } else {
+      res.json({ available: true });
+    }
+  } catch (error) {
+    res.status(500).json({ error: "Error checking username availability" });
+    console.error("Error checking username availability:", error);
+  }
+});
+
+app.post("/api/signup", async (req, res) => {
+  logRequest(req, "INFO", "Creating new user");
+  const { username, email, password } = req.body;
+
+  try {
+    const user = await User.create({ username, email, password });
+    res.json(user);
+  } catch (error) {
+    res.status(500).json({ error: "Error creating user" });
+    console.error("Error creating user:", error);
+  }
 });
 
 // starting the application listening on port 3001
