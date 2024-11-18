@@ -1,14 +1,18 @@
 import React from "react";
-import { Navbar, Nav, Container, Button } from "react-bootstrap";
+import { useUser } from "../../context/UserContext";
 import { Link } from "react-router-dom";
 
 import "./css/Navbar.css";
 
 export default function NavBar() {
+  const { user } = useUser();
+
   return (
     <>
       <div className="navbar-wrapper">
-        <div className="content-left"></div>
+        <div className="content-left">
+          {user ? <div></div> : <React.Fragment />}
+        </div>
         <div className="content-center">
           <Link to="/dashboard" className="brand-label">
             Soundwave.FM
@@ -25,10 +29,14 @@ export default function NavBar() {
                 <Link to="/song-guesser">Song Guesser</Link>
               </div>
             </div>
-            <div className="login-button-container">login</div>
-            <div className="signup-button-container">
-              <div className="signup-button">SIGN UP</div>
-            </div>
+            {!user && <div className="login-button-container">login</div>}
+            {!user && (
+              <div className="signup-button-container">
+                <Link to="/signup" className="signup-button">
+                  SIGN UP
+                </Link>
+              </div>
+            )}
           </div>
         </div>
       </div>

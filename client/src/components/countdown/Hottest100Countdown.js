@@ -160,7 +160,7 @@ export default function Hottest100Countdown({
     const handleResize = () => {
       setIsWideScreen(window.innerWidth > 700); // Update based on width
     };
-
+    console.log("isWideScreen -> ", isWideScreen);
     window.addEventListener("resize", handleResize);
     return () => {
       window.removeEventListener("resize", handleResize);
@@ -260,10 +260,18 @@ export default function Hottest100Countdown({
     }, interval);
   };
 
-  return (
+  return currentPosition == -1 ? (
+    <Button
+      variant="secondary"
+      onClick={playNextSong}
+      style={{ height: "40px", width: "180px", marginBottom: "20px" }}
+    >
+      Start Countdown
+    </Button>
+  ) : (
     <div className="hottest-100-container">
       <div className="countdownStatusSection">
-        {/* <PlayingTrackCard
+        <PlayingTrackCard
           number={songQueue ? songQueue.length - currentPosition : -1}
           track={
             currentlyPlaying
@@ -273,15 +281,6 @@ export default function Hottest100Countdown({
           player={currentlyPlaying ? currentlyPlaying.player : "unknown"}
         />
         <div className="played-tracks-container">
-          {currentPosition === -1 && (
-            <Button
-              variant="secondary"
-              onClick={playNextSong}
-              style={{ height: "40px", width: "180px", marginBottom: "20px" }}
-            >
-              Start Countdown
-            </Button>
-          )}
           {currentPosition !== -1 &&
             songQueue.map((track, index) => {
               const reverseIndex = songQueue.length - 1 - index; // Calculate the reverse index
@@ -296,19 +295,18 @@ export default function Hottest100Countdown({
               );
             })}
         </div>
-      </div> */}
-        {isWideScreen && (
-          <div className="playerStatusSection">
-            {/* {gamePlayers.map((player) => (
+      </div>
+      {isWideScreen && (
+        <div className="playerStatusSection">
+          {gamePlayers.map((player) => (
             <PlayerStatusCard
               key={player.id}
               player={player}
               iconCard={isWideScreen}
             />
-          ))} */}
-          </div>
-        )}
-      </div>
+          ))}
+        </div>
+      )}
     </div>
   );
 }

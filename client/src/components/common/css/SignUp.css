@@ -1,0 +1,55 @@
+.signup-container {
+  width: 400px;
+  height: 500px;
+  background-color: #ededed;
+  border-radius: 10px;
+  padding: 20px;
+  justify-items: center;
+}
+
+.signup-label {
+  font-weight: bolder;
+  letter-spacing: 5px;
+}
+
+.form-container {
+  background-color: white;
+  width: 100%;
+  height: auto;
+  display: grid;
+  row-gap: 10px;
+  align-content: center;
+}
+
+form label {
+  grid-column: 1/2;
+  height: 30px;
+  align-self: center;
+  font-size: medium;
+  padding: 5px 0 0 0;
+}
+
+form input {
+  grid-column: 2/3;
+  height: 30px;
+  font-size: small;
+}
+
+form p {
+  grid-column: 2/3;
+}
+
+.signup-form-button {
+  margin: 10px;
+  height: 40px;
+  width: 80px;
+  font-size: medium;
+  border: 1px solid grey;
+  border-radius: 5px;
+  background-color: beige;
+}
+
+.form-error {
+  color: red;
+  font-size: small;
+}
