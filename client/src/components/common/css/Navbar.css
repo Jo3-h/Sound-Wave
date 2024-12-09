@@ -72,6 +72,16 @@
   text-decoration: none;
 }
 
+.login-button {
+  color: white;
+  height: 60%;
+  width: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+
 .dropdown-menu {
   display: none;
   top: 50px;
@@ -105,4 +115,88 @@
 .spotify-dropdown-button-container:hover .dropdown-menu {
   display: block;
   cursor: pointer;
+}
+
+.user-profile-picture {
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+}
+
+.user-profile-container {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  outline: none; /* Optional: Remove focus outline */
+}
+
+.user-profile-picture {
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+}
+
+/* Common styles for dropdown menus */
+.dropdown-menu,
+.profile-dropdown-menu {
+  display: none;
+  top: 50px;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  min-width: 150px;
+  z-index: 1000;
+  cursor: pointer;
+}
+
+/* Dropdown links styling */
+.dropdown-menu a,
+.dropdown-menu Link,
+.profile-dropdown-menu a,
+.profile-dropdown-menu Link {
+  display: block;
+  padding: 8px 16px;
+  color: #333;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Hover effects */
+.dropdown-menu a:hover,
+.dropdown-menu Link:hover,
+.profile-dropdown-menu a:hover,
+.profile-dropdown-menu Link:hover {
+  background-color: #f0f0f0;
+  cursor: pointer;
+}
+
+/* Show dropdown on hover */
+.spotify-dropdown-button-container:hover .dropdown-menu {
+  display: block;
+}
+
+.user-profile-container:focus-within .profile-dropdown-menu,
+.user-profile-container:hover .profile-dropdown-menu {
+  display: block;
+}
+
+.profile-dropdown-menu {
+  position: absolute;
+  top: 50px;
+  right: 20px;
+}
+
+.logout-button {
+  background-color: white;
+  font-size: 12px;
+  width: 100%;
+  height: 34px;
+  text-align: left;
+  padding-left: 16px;
+  border: none;
+}
+
+.logout-button:hover {
+  background-color: #f0f0f0;
 }

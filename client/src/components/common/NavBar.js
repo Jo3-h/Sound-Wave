@@ -1,11 +1,32 @@
-import React from "react";
+import React, { useState, useRef } from "react";
 import { useUser } from "../../context/UserContext";
 import { Link } from "react-router-dom";
 
 import "./css/Navbar.css";
 
 export default function NavBar() {
-  const { user } = useUser();
+  const { user, logout } = useUser();
+  const [dropdownVisible, setDropdownVisible] = useState(false);
+  const dropdownRef = useRef(null);
+
+  const handleLogout = () => {
+    logout();
+    console.log("Logging out...");
+    window.location = "/";
+  };
+
+  const toggleDropdown = () => {
+    setDropdownVisible((prev) => !prev);
+  };
+
+  const closeDropdown = (e) => {
+    if (dropdownRef.current && !dropdownRef.current.contains(e.relatedTarget)) {
+      setDropdownVisible(false);
+    }
+  };
+  const handleImageError = (e) => {
+    e.target.src = "/profile_pictures/default-profile-pic.jpg"; // Set the fallback image path
+  };
 
   return (
     <>
@@ -29,7 +50,13 @@ export default function NavBar() {
                 <Link to="/song-guesser">Song Guesser</Link>
               </div>
             </div>
-            {!user && <div className="login-button-container">login</div>}
+            {!user && (
+              <div className="login-button-container">
+                <Link to="/login" className="login-button">
+                  Login
+                </Link>
+              </div>
+            )}
             {!user && (
               <div className="signup-button-container">
                 <Link to="/signup" className="signup-button">
@@ -37,49 +64,35 @@ export default function NavBar() {
                 </Link>
               </div>
             )}
+            {user && <div>{user.username}</div>}
+            {user && (
+              <div
+                className="user-profile-container"
+                onClick={toggleDropdown}
+                tabIndex={0} // To make the container focusable
+                onBlur={closeDropdown}
+                ref={dropdownRef}
+              >
+                <img
+                  className="user-profile-picture"
+                  src={`/profile_pictures/${user.profile_pic}`}
+                  alt="User Profile"
+                  onError={handleImageError}
+                />
+                {dropdownVisible && (
+                  <div className="profile-dropdown-menu">
+                    <Link to="/profile">Profile</Link>
+                    <Link to="/settings">Settings</Link>
+                    <button className="logout-button" onClick={handleLogout}>
+                      Logout
+                    </button>
+                  </div>
+                )}
+              </div>
+            )}
           </div>
         </div>
       </div>
-      {/* <Navbar bg="black" variant="dark" expand="lg">
-        <Container>
-          <Navbar.Brand
-            className="m-auto"
-            style={{ color: "red", fontWeight: "bold" }}
-            as={Link}
-            to="/"
-          >
-            S o u n d W a v e
-          </Navbar.Brand>
-
-          
-          <Navbar.Toggle aria-controls="basic-navbar-nav" />
-          <Navbar.Collapse id="basic-navbar-nav">
-            <Nav className="me-auto ms-auto">
-              <Nav.Link as={Link} to="/statistics">
-                Stats
-              </Nav.Link>
-              <Nav.Link as={Link} to="/song-countdown">
-                Countdown
-              </Nav.Link>
-            </Nav>
-
-      
-            <Nav className="ms-auto">
-              <Nav.Link as={Link} to="/login">
-                <Button
-                  variant="outline-light bg-white text-black"
-                  style={{
-                    fontFamily:
-                      "Barlow, Open Sans, Lucida Grande, Helvetica Neue, Helvetica, Arial, Sans-serif",
-                  }}
-                >
-                  SIGNUP
-                </Button>
-              </Nav.Link>
-            </Nav>
-          </Navbar.Collapse>
-        </Container>
-      </Navbar> */}
     </>
   );
 }

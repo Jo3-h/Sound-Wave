@@ -12,7 +12,11 @@ const spotifyApi = new SpotifyWebApi({
   clientId: "af336f24a30e439b88ed899c0813426a",
 });
 
-export default function MusicPlayer({ accessToken, setPlayingTrack }) {
+export default function StreamMusic({
+  setPlayingTrack,
+  setAccessToken,
+  accessToken,
+}) {
   const [search, setSearch] = useState("");
   const [searchResults, setSearchResults] = useState([]);
 

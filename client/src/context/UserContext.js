@@ -12,13 +12,21 @@ export const UserProvider = ({ children }) => {
   // Check if there is a user session when the app loads
   useEffect(() => {
     const loggedInUser = localStorage.getItem("user"); // Check if user data is stored in localStorage
-    if (loggedInUser) {
-      setUser(JSON.parse(loggedInUser)); // If yes, set the user state
+    const token = localStorage.getItem("token");
+    if (loggedInUser && token) {
+      try {
+        const parsedUser = JSON.parse(loggedInUser);
+        setUser(parsedUser); // If yes, set the user state
+      } catch (error) {
+        console.error("Error parsing user data from localStorage:", error);
+        localStorage.removeItem("user"); // Remove invalid user data from localStorage
+      }
     }
   }, []);
 
-  const login = (userData) => {
+  const login = (userData, token) => {
     setUser(userData);
+    localStorage.setItem("token", token); // Store token in localStorage
     localStorage.setItem("user", JSON.stringify(userData)); // Store user data in localStorage
   };
 

@@ -1,0 +1,26 @@
+.login-container {
+  height: auto;
+  width: 400px;
+  border-radius: 10px;
+  background-color: #ededed;
+  justify-items: center;
+  padding: 20px;
+}
+
+.form-container {
+  width: 100%;
+  height: auto;
+  display: grid;
+  row-gap: 10px;
+  align-content: center;
+}
+
+.login-form-button {
+  margin: 10px;
+  height: 40px;
+  width: 80px;
+  font-size: medium;
+  border: 1px solid grey;
+  border-radius: 5px;
+  background-color: beige;
+}

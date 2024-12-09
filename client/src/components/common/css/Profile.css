@@ -1,4 +1,4 @@
-.signup-container {
+.profile-container {
   width: 400px;
   height: auto;
   background-color: #ededed;
@@ -7,7 +7,7 @@
   justify-items: center;
 }
 
-.signup-label {
+.profile-label {
   font-weight: bolder;
   letter-spacing: 5px;
 }
@@ -38,28 +38,19 @@ form p {
   grid-column: 2/3;
 }
 
-.signup-form-button {
+.user-profile-picture-preview {
+  grid-column: 2/3;
+  height: 150px;
+  width: 150px;
+  border-radius: 150px;
+}
+
+.save-details-button {
   margin: 10px;
   height: 40px;
-  width: 80px;
+  width: 120px;
   font-size: medium;
   border: 1px solid grey;
   border-radius: 5px;
   background-color: beige;
-}
-
-.form-error {
-  color: red;
-  font-size: small;
-}
-
-.login-link {
-  color: black;
-  font-size: small;
-  display: block;
-}
-
-.login-link:hover {
-  cursor: pointer;
-  text-decoration: underline;
 }
