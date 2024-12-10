@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
+import { Link } from "react-router-dom";
 import "./css/SignUp.css";
 
 const SignUp = () => {
@@ -78,6 +79,7 @@ const SignUp = () => {
         .catch((error) => {
           console.error("Error signing up user:", error);
         });
+      window.location = "/login";
     } else {
       console.log("Form submission failed: Validation errors");
     }
@@ -127,6 +129,9 @@ const SignUp = () => {
         <button className="signup-form-button" onClick={(e) => onSubmit(e)}>
           SIGN UP
         </button>
+        <Link className="login-link" to="/login">
+          Already have an account? Login here!
+        </Link>
       </div>
     </div>
   );

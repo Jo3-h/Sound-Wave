@@ -27,7 +27,11 @@ Usage:
 require("dotenv").config();
 const express = require("express");
 const cors = require("cors");
+const path = require("path");
 const bodyParser = require("body-parser");
+const bcrypt = require("bcrypt");
+const jwt = require("jsonwebtoken");
+const multer = require("multer");
 const { sequelize, User } = require("./db");
 const SpotifyWebApi = require("spotify-web-api-node");
 const app = express();
@@ -51,6 +55,18 @@ const spotifyApi = new SpotifyWebApi({
   clientId: process.env.CLIENT_ID,
   clientSecret: process.env.CLIENT_SECRET,
 });
+
+// Set up storage for profile pictures
+const storage = multer.diskStorage({
+  destination: function (req, file, cb) {
+    cb(null, path.join(__dirname, "../client/public/profile_pictures"));
+  },
+  filename: function (req, file, cb) {
+    const username = req.body.username || "default-profile-pic";
+    cb(null, `${username}.jpg`);
+  },
+});
+const upload = multer({ storage });
 
 /*
 Logging function to display to server terminal for debugging purposes
@@ -324,6 +340,86 @@ app.post("/api/signup", async (req, res) => {
     console.error("Error creating user:", error);
   }
 });
+
+app.post("/api/login", async (req, res) => {
+  logRequest(req, "INFO", "Logging in user");
+  const { username, password } = req.body;
+  try {
+    // check that user exists in database
+    const user = await User.findOne({ where: { username } });
+    if (!user) {
+      return res.status(404).json({ error: "User not found" });
+    }
+
+    // check that password is correct
+    const validPassword = await bcrypt.compare(password, user.password);
+    if (!validPassword) {
+      return res.status(404).json({ error: "Invalid password" });
+    }
+
+    // create JWT token
+    const token = jwt.sign(
+      { id: user.id, email: user.email },
+      process.env.JWT_SECRET,
+      { expiresIn: "1h" }
+    );
+    return res.json({
+      token,
+      user: {
+        id: user.id,
+        firstName: user.first_name,
+        lastName: user.last_name,
+        email: user.email,
+        username: user.username,
+        profile_pic: user.profile_pic,
+      },
+    });
+  } catch (error) {
+    console.error("Error logging in user:", error);
+    if (!res.headersSent) {
+      return res.status(500).json({ error: "Error logging in user" });
+    }
+  }
+});
+
+app.post(
+  "/api/update-user",
+  upload.single("profile_image"),
+  async (req, res) => {
+    logRequest(req, "INFO", "Updating user details");
+
+    const { id, firstName, lastName, username, email, password, password2 } =
+      req.body;
+    if (!id) {
+      return res.status(400).json({ error: "Missing form data" });
+    }
+
+    try {
+      // check that user exists in database
+      const user = await User.findOne({ where: { id: id } });
+      if (!user) {
+        return res.status(404).json({ error: "User not found" });
+      }
+
+      // update user details
+      user.username = username;
+      user.first_name = firstName;
+      user.last_name = lastName;
+
+      // save new profile picture
+      if (req.file) {
+        user.profile_pic = req.file.path;
+      }
+
+      // save changes to database
+      await user.save();
+      res.json(user);
+    } catch (error) {
+      res.status(500).json({ error: "Error updating user details" });
+      console.error("Error updating user details:", error);
+    }
+  }
+);
 
 // starting the application listening on port 3001
 app.listen(3001);

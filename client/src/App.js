@@ -1,26 +1,14 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import { useEffect, useState } from "react";
-import {
-  BrowserRouter as Router,
-  Route,
-  Routes,
-  Navigate,
-} from "react-router-dom";
+import { BrowserRouter as Router } from "react-router-dom";
 
 // import custom functional components
-import Login from "./components/common/Login";
-import MusicPlayer from "./components/musicPlayer/MusicPlayer";
-import Dashboard from "./components/dashboard/Dashboard";
+import AppRoutes from "./routes/Routes";
 import Layout from "./components/common/Layout";
-import Player from "./components/common/Player";
-import SongCountdown from "./components/countdown/SongCountdown";
-import StatisticsDashboard from "./components/statistics/statisticsDashboard";
-import SongGuesser from "./components/songGuesser/SongGuesser";
-import ProtectedRoute from "./components/common/ProtectedRoute";
+import Player from "./components/common/MusicPlayer";
 
 // import global styles
 import "./global.css";
-import SignUp from "./components/common/SignUp";
 
 function App() {
   // get state from dashboard components
@@ -40,58 +28,12 @@ function App() {
   return (
     <Router>
       <Layout>
-        <Routes>
-          <Route path="/" element={<Navigate to="/dashboard" replace />} />
-          <Route path="/dashboard" element={<Dashboard />} />
-          <Route path="/login" element={<Login />} />
-          <Route
-            path="/music-player"
-            element={
-              <ProtectedRoute
-                element={MusicPlayer}
-                setPlayingTrack={setPlayingTrack}
-                setAccessToken={setAccessToken}
-                accessToken={accessToken}
-              />
-            }
-          />
-          <Route
-            path="/statistics"
-            element={
-              <ProtectedRoute
-                element={StatisticsDashboard}
-                setPlayingTrack={setPlayingTrack}
-                setAccessToken={setAccessToken}
-                playerRef={playerRef}
-                accessToken={accessToken}
-              />
-            }
-          />
-          <Route
-            path="/song-countdown"
-            element={
-              <ProtectedRoute
-                element={SongCountdown}
-                setPlayingTrack={setPlayingTrack}
-                setAccessToken={setAccessToken}
-                playerRef={playerRef}
-                accessToken={accessToken}
-              />
-            }
-          />
-          <Route
-            path="/song-guesser"
-            element={
-              <ProtectedRoute
-                element={SongGuesser}
-                setPlayingTrack={setPlayingTrack}
-                setAccessToken={setAccessToken}
-                accessToken={accessToken}
-              />
-            }
-          />
-          <Route path="/signup" element={<SignUp />} />
-        </Routes>
+        <AppRoutes
+          setPlayingTrack={setPlayingTrack}
+          setAccessToken={setAccessToken}
+          accessToken={accessToken}
+          playerRef={playerRef}
+        />
         {accessToken && (
           <Player
             accessToken={accessToken}

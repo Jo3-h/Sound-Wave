@@ -58,7 +58,7 @@ module.exports = (sequelize, DataTypes) => {
           }
         },
         beforeUpdate: async (user) => {
-          if (user.password) {
+          if (user.changed("password")) {
             const salt = await bcrypt.genSalt(10);
             user.password = await bcrypt.hash(user.password, salt);
           }
@@ -66,6 +66,15 @@ module.exports = (sequelize, DataTypes) => {
       },
     }
   );
+
+  // define associations for User model
+  User.associate = function (models) {
+    // User can have many reviews
+    User.hasMany(models.Review, {
+      foreignKey: "user_id",
+      as: "reviews",
+    });
+  };
 
   return User;
 };

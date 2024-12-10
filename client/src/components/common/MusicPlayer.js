@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from "react";
 import { useLocation } from "react-router-dom";
 import SpotifyPlayer from "react-spotify-web-playback";
 
-export default function Player({ accessToken, trackUri, getPlayerRef }) {
+export default function MusicPlayer({ accessToken, trackUri, getPlayerRef }) {
   const [play, setPlay] = useState(false);
   const playerRef = useRef(null);
   const location = useLocation();
