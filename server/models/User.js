@@ -67,5 +67,14 @@ module.exports = (sequelize, DataTypes) => {
     }
   );
 
+  // define associations for User model
+  User.associate = function (models) {
+    // User can have many reviews
+    User.hasMany(models.Review, {
+      foreignKey: "user_id",
+      as: "reviews",
+    });
+  };
+
   return User;
 };
