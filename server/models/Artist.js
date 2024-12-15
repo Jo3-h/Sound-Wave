@@ -17,7 +17,7 @@ module.exports = (sequelize, DataTypes) => {
         allowNull: true,
       },
       image: {
-        type: DataTypes.VARCHAR,
+        type: DataTypes.STRING,
         allowNull: true,
       },
     },
@@ -31,6 +31,7 @@ module.exports = (sequelize, DataTypes) => {
     // Artist can have many albums
     Artist.hasMany(models.Album, {
       foreignKey: "artist_id",
+      as: "artistAlbums",
     });
 
     // Many-to-many relationship between Artist and Track through Album
@@ -38,6 +39,7 @@ module.exports = (sequelize, DataTypes) => {
       through: models.Album,
       foreignKey: "artist_id",
       otherKey: "track_id",
+      as: "artistTracks",
     });
   };
 

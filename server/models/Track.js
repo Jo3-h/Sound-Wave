@@ -31,6 +31,7 @@ module.exports = (sequelize, DataTypes) => {
     // Track belongs to an album
     Track.belongsTo(models.Album, {
       foreignKey: "album_id",
+      as: "trackAlbum",
     });
 
     // Many-to-many relationship between Track and Artist through Album
@@ -38,14 +39,17 @@ module.exports = (sequelize, DataTypes) => {
       through: models.Album,
       foreignKey: "track_id",
       otherKey: "artist_id",
+      as: "trackArtists",
     });
 
     // Track can have many reviews
     Track.hasMany(models.Review, {
       foreignKey: "entity_id",
       constraints: false,
-      as: "reviews",
       scope: { entity_type: "track" },
+      as: "trackReviews",
     });
   };
+
+  return Track;
 };

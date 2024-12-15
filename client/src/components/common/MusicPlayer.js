@@ -7,6 +7,7 @@ export default function MusicPlayer({ accessToken, trackUri, getPlayerRef }) {
   const playerRef = useRef(null);
   const location = useLocation();
   const isCountdownPath = location.pathname === "/song-countdown";
+  const isGuesserPath = location.pathname === "/song-guesser";
 
   useEffect(() => {
     // Play the track if trackUri is valid
@@ -47,6 +48,13 @@ export default function MusicPlayer({ accessToken, trackUri, getPlayerRef }) {
           display: none !important;
         }
       `}</style>
+      )}
+      {isGuesserPath && (
+        <style>
+          {`.rswp__active, ._InfoRSWP __1jmym9x {
+          display: none !important;
+          }`}
+        </style>
       )}
       <SpotifyPlayer
         token={accessToken}

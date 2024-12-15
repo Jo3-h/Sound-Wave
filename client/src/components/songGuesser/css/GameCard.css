@@ -1,0 +1,103 @@
+.game-card-container {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.game-card-image {
+  height: 100%;
+  aspect-ratio: 1/1;
+  border-radius: 10px;
+  border: solid 2px black;
+}
+
+.song-info-container {
+  width: 200px;
+  margin: 0 10px 0 10px;
+  align-content: center;
+}
+
+.song-title {
+  font-weight: bolder;
+  margin: 20px 20px 10px 10px;
+  font-size: 14px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.lives-array {
+  display: flex;
+  width: 80%;
+  height: 20px;
+  margin: 0 20px 0 10px;
+}
+
+.lives-array .life-icon-active {
+  height: 20px;
+  width: auto;
+  margin: 0 5px 0 0;
+}
+
+.lives-array .life-icon-inactive {
+  height: 20px;
+  width: auto;
+  margin: 0 5px 0 0;
+  filter: grayscale(100%);
+}
+
+.streak-array {
+  display: flex;
+  width: 80%;
+  height: 20px;
+
+  margin: 10px 20px 0 10px;
+}
+
+.streak-icon {
+  height: 20px;
+  width: auto;
+  margin: 0 10px 0 0;
+}
+
+.streak-text {
+  font-size: 14px;
+}
+
+.song-artist {
+  font-weight: bold;
+  margin: 10px 20px 20px 10px;
+  font-size: 12px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.game-stats-container {
+  height: 100%;
+  width: 200px;
+  align-content: center;
+  padding: 10px;
+}
+
+.stats-title {
+  font-weight: bolder;
+}
+
+.stats-item {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0 0 0;
+}
+
+.stats-label {
+  font-size: 12px;
+}
+
+.stats-value {
+  font-size: 12px;
+  font-weight: bold;
+  color: red;
+}

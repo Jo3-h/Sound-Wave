@@ -35,7 +35,7 @@ module.exports = (sequelize, DataTypes) => {
     // Review belongs to a User
     Review.belongsTo(models.User, {
       foreignKey: "user_id",
-      as: "user",
+      as: "userReview",
     });
 
     // Review belongs to an Album
