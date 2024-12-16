@@ -35,19 +35,21 @@ module.exports = (sequelize, DataTypes) => {
     // Album belongs to an Artist
     Album.belongsTo(models.Artist, {
       foreignKey: "artist_id",
+      as: "albumArtist",
     });
 
     // Album can have many tracks
     Album.hasMany(models.Track, {
       foreignKey: "album_id",
+      as: "albumTracks",
     });
 
     // Album can have many reviews
     Album.hasMany(models.Review, {
       foreignKey: "entity_id",
       constraints: false,
-      as: "reviews",
       scope: { entity_type: "album" },
+      as: "albumReviews",
     });
   };
 

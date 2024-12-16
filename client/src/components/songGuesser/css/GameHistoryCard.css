@@ -1,0 +1,56 @@
+.game-card-container-master {
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: white;
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+.header-text-section {
+  display: grid;
+  height: 20px;
+  grid-template-columns: 1fr 2fr 2fr 2fr 2fr;
+  align-items: center; /* Center the text vertically */
+  width: 100%;
+  font-size: 10px;
+  padding: 0px 20px 0px 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.header-text {
+  text-align: center; /* Center the text horizontally */
+}
+
+.guess-card {
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr 2fr 2fr; /* Use the same grid template */
+  align-items: center; /* Center the content vertically */
+  width: 100%;
+  padding: 10px 20px 10px 20px;
+  border: 1px solid black;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.game-history-card-image {
+  height: 50px;
+  aspect-ratio: 1/1;
+  border-radius: 5px;
+}
+
+.flex-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.guess-card-text {
+  text-align: center; /* Center the text horizontally */
+  padding: 10px;
+  font-size: 10px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
