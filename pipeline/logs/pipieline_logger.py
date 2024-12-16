@@ -8,7 +8,7 @@ from datetime import datetime
 import socket
 import getpass
 
-def log_process(message: str, log_file: str):
+def log_process(message: str, level: str, log_file: str):
 
     # check if the log file exists
     if not os.path.exists(log_file):
@@ -28,8 +28,8 @@ def log_process(message: str, log_file: str):
 
     # write the log message to the log file
     with open(log_file, "a") as file:
-        file.write(f'[{current_time}] [{ip_address}] [{username}]\n')
-        file.write("    -> " + message + "\n\n")
+        file.write(f'[{level.upper()}] [{current_time}] [{ip_address}] [{username}] ')
+        file.write(" -> " + message + "\n")
 
     
     return

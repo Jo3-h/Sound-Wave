@@ -14,7 +14,7 @@ LOG_FILE = "logs/etl_pipeline.log"
 def main():
 
     # Set the log file path
-    log_process("Starting the ETL pipeline", LOG_FILE)
+    log_process("Starting the ETL pipeline", "INFO", LOG_FILE)
 
     return
 

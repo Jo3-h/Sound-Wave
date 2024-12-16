@@ -34,20 +34,32 @@ const jwt = require("jsonwebtoken");
 const multer = require("multer");
 const { sequelize, User } = require("./db");
 const SpotifyWebApi = require("spotify-web-api-node");
+const { error } = require("console");
 const app = express();
 app.use(cors());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
+
+let db_connection = false;
 
 // Initialise Sequelize ORM
 sequelize
   .sync()
   .then(() => {
     console.log("Database & tables created!");
+    db_connection = true;
   })
   .catch((error) => {
     console.error("Error syncing database:", error);
   });
+
+// Middleware to check database connection
+const checkDBConnection = (req, res, next) => {
+  if (!db_connection) {
+    return res.status(500).json({ error: "Database connection error" });
+  }
+  next();
+};
 
 // Initialize Spotify API with client credentials
 const spotifyApi = new SpotifyWebApi({
@@ -310,7 +322,7 @@ app.get("/user-stats", (req, res) => {
  * "username": <string>
  * }
  */
-app.post("/api/check-username", async (req, res) => {
+app.post("/api/check-username", checkDBConnection, async (req, res) => {
   logRequest(req, "INFO", "Checking username availability");
   const username = req.body.username;
 
@@ -328,7 +340,7 @@ app.post("/api/check-username", async (req, res) => {
   }
 });
 
-app.post("/api/signup", async (req, res) => {
+app.post("/api/signup", checkDBConnection, async (req, res) => {
   logRequest(req, "INFO", "Creating new user");
   const { username, email, password } = req.body;
 
@@ -341,7 +353,7 @@ app.post("/api/signup", async (req, res) => {
   }
 });
 
-app.post("/api/login", async (req, res) => {
+app.post("/api/login", checkDBConnection, async (req, res) => {
   logRequest(req, "INFO", "Logging in user");
   const { username, password } = req.body;
   try {
@@ -384,6 +396,7 @@ app.post("/api/login", async (req, res) => {
 
 app.post(
   "/api/update-user",
+  checkDBConnection,
   upload.single("profile_image"),
   async (req, res) => {
     logRequest(req, "INFO", "Updating user details");
