@@ -1,0 +1,187 @@
+id                                   title                             duration_s          genre                album_id                            
+7554b5aa-5ac1-4031-a3d4-d7d41ab3bf07                            Nikes 314000.0                                  0da340a0-6ad7-4fc2-a272-6f94393a7831
+91bde2d1-8afe-424a-9a9a-0d5c383c0a38                              Ivy 249000.0                                  0da340a0-6ad7-4fc2-a272-6f94393a7831
+926061d3-2134-45ce-9898-716ed6580762                     Pink + White 185000.0                                  0da340a0-6ad7-4fc2-a272-6f94393a7831
+42e56061-fd1b-4b73-9f1b-96b433fdc57b                      Be Yourself  87000.0                                  0da340a0-6ad7-4fc2-a272-6f94393a7831
+d4674950-7ce4-4313-8cc9-e57b02e960d0                             Solo 257000.0                                  0da340a0-6ad7-4fc2-a272-6f94393a7831
+aa8bdf02-a3e0-41af-89a0-69326346b801                       Skyline To 185000.0                                  0da340a0-6ad7-4fc2-a272-6f94393a7831
+80cd0f5d-a849-42fb-8372-80b4586fc984                     Self Control 250000.0                                  0da340a0-6ad7-4fc2-a272-6f94393a7831
+f47172f0-e407-4b6c-883a-3c3502921ee4                         Good Guy  67000.0                                  0da340a0-6ad7-4fc2-a272-6f94393a7831
+2df6b3b5-fd8c-462b-84a7-d324468b4405                           Nights 307000.0                                  0da340a0-6ad7-4fc2-a272-6f94393a7831
+ec14b707-08d6-4015-be53-c2b877daca86                   Solo (reprise)  79000.0                                  0da340a0-6ad7-4fc2-a272-6f94393a7831
+dae778b5-ffd0-4931-9b56-f4813d6bbb4f                     Pretty Sweet 158000.0                                  0da340a0-6ad7-4fc2-a272-6f94393a7831
+75b466ac-cb67-4a15-8f4a-edce2a688037                   Facebook Story  69000.0                                  0da340a0-6ad7-4fc2-a272-6f94393a7831
+c8a5441b-659d-4658-ba37-cf5c10985625                     Close to You  86000.0                                  0da340a0-6ad7-4fc2-a272-6f94393a7831
+5a3e5dcc-8d33-4946-94f0-315dc1997a6c                    White Ferrari 249000.0                                  0da340a0-6ad7-4fc2-a272-6f94393a7831
+0f141cac-c27b-4231-937b-0e4f87107e85                        Seigfried 335000.0                                  0da340a0-6ad7-4fc2-a272-6f94393a7831
+4cae19ed-abfb-4966-8a9f-3266dbbff2ac                         Godspeed 178000.0                                  0da340a0-6ad7-4fc2-a272-6f94393a7831
+19c1582b-ac27-49f3-88e6-d13a1f33f908                      Futura Free 564000.0                                  0da340a0-6ad7-4fc2-a272-6f94393a7831
+e681ceec-be60-4602-8f64-9373c16e7f81                   Acura Integurl 117000.0                                  143eb007-3c7f-4bf7-ae20-f1e3f8269035
+676c3418-a1ab-4537-bc95-7fcba8ae738c                    Bedtime Story 218000.0                                  143eb007-3c7f-4bf7-ae20-f1e3f8269035
+f5611f35-d1b4-4709-9fb4-da9ebf9f2999                          Blasted 237000.0                                  143eb007-3c7f-4bf7-ae20-f1e3f8269035
+fa9f09b5-a26b-41b9-bbdd-a4c0edb36a42                 Bricks and Steel 247000.0                                  143eb007-3c7f-4bf7-ae20-f1e3f8269035
+7d050a5d-09a0-4548-8d32-fd05149aff98                    Broken Pieces  77000.0                                  143eb007-3c7f-4bf7-ae20-f1e3f8269035
+90bb95ae-c816-4863-857f-39a9b323b49f           Can’t Be the Last Time 254000.0                                  143eb007-3c7f-4bf7-ae20-f1e3f8269035
+c0ac3b4a-f368-4d15-a128-033854aa0dff                         Day Away 212000.0                                  143eb007-3c7f-4bf7-ae20-f1e3f8269035
+903f620c-02bb-4714-b9cb-528116f1fe6c                            Denim 262000.0                                  143eb007-3c7f-4bf7-ae20-f1e3f8269035
+427f2028-ddbd-4a64-83d7-463c785ce552                             Done 204000.0                                  143eb007-3c7f-4bf7-ae20-f1e3f8269035
+3855ad34-8f3e-4496-a21c-44ceca6f5830              Dying for Your Love 212000.0                                  143eb007-3c7f-4bf7-ae20-f1e3f8269035
+d4f74bfb-3aa3-40ce-b7ca-81222d4fbc1b                           Flight 221000.0                                  143eb007-3c7f-4bf7-ae20-f1e3f8269035
+4e1603e2-cdac-4124-8a19-10eaaf2e14cc                            Focus 185000.0                                  143eb007-3c7f-4bf7-ae20-f1e3f8269035
+5fc3e153-eca8-4e9a-bb93-9bac45b26afe                           Follow 207000.0                                  143eb007-3c7f-4bf7-ae20-f1e3f8269035
+62f6fda8-fb3c-46e3-af85-751cef2d3aa2                            Go Up 254000.0                                  143eb007-3c7f-4bf7-ae20-f1e3f8269035
+71958102-1c0e-4fb2-bcb3-2bd9cf9f0ce7                     Got the Keys 202000.0                                  143eb007-3c7f-4bf7-ae20-f1e3f8269035
+61b5f35d-65f4-4bc7-9a02-1f2f5fb6d018                      Greedy Love 220000.0                                  143eb007-3c7f-4bf7-ae20-f1e3f8269035
+d40a9ed0-e2a6-4a03-aa2c-7b729385915c                    Hardest Thing 245000.0                                  143eb007-3c7f-4bf7-ae20-f1e3f8269035
+a8e8e395-58d7-4362-9b11-b40027912bd1                       Holly Baby 218000.0                                  143eb007-3c7f-4bf7-ae20-f1e3f8269035
+186ffe87-c72d-4ed7-b7d1-e58c13ee716a                      I Need Love 212000.0                                  143eb007-3c7f-4bf7-ae20-f1e3f8269035
+ad103d8f-3a93-4c1e-a950-b12f2c066fff                   If I’m in Love 145000.0                                  143eb007-3c7f-4bf7-ae20-f1e3f8269035
+8d8c11e8-2084-476e-9fb6-cbfb9f710cac                           J.O. B 181000.0                                  143eb007-3c7f-4bf7-ae20-f1e3f8269035
+91ba6c14-58d4-4225-b99b-632192171b81                         Kamikaze 219000.0                                  143eb007-3c7f-4bf7-ae20-f1e3f8269035
+f2b8efa7-40ce-4a40-a1e5-b357fad37645                      Know Better 198000.0                                  143eb007-3c7f-4bf7-ae20-f1e3f8269035
+99f22ff9-5994-4d44-b4f4-0fb05a2ad1f5                           Lights 211000.0                                  143eb007-3c7f-4bf7-ae20-f1e3f8269035
+1188dcce-cfee-4f7b-b492-4118fc16b52b                  Lonny (new mix) 249000.0                                  143eb007-3c7f-4bf7-ae20-f1e3f8269035
+50af9026-795e-4783-98cc-05b1e4cb6914        Lost Angel (no 2nd verse) 276000.0                                  143eb007-3c7f-4bf7-ae20-f1e3f8269035
+74a12dba-2fc6-4653-acd6-207d8087f408                       Lost Angel 276000.0                                  143eb007-3c7f-4bf7-ae20-f1e3f8269035
+cdddaa69-a2d4-4fa8-a177-c0c56f8b34a4               Love on My (piano) 193000.0                                  143eb007-3c7f-4bf7-ae20-f1e3f8269035
+8d773662-b43c-4d13-8595-c0d9986e7c79                      Miss You So 264000.0                                  143eb007-3c7f-4bf7-ae20-f1e3f8269035
+7d48c61b-4be6-43df-aa06-492bc42f2b1a                        No Bonnie 224000.0                                  143eb007-3c7f-4bf7-ae20-f1e3f8269035
+7774626f-157b-4706-b65e-f672750c3893                          No Love 172000.0                                  143eb007-3c7f-4bf7-ae20-f1e3f8269035
+be326bd1-5757-4fec-91cc-40137d34b994                         Non-Stop 217000.0                                  143eb007-3c7f-4bf7-ae20-f1e3f8269035
+b5caf8e5-f667-42c9-b4c3-a4078109dd06                      Ohh in Love 195000.0                                  143eb007-3c7f-4bf7-ae20-f1e3f8269035
+2df5e556-8041-4090-9845-6720e27b4ac0                       Old Terror 204000.0                                  143eb007-3c7f-4bf7-ae20-f1e3f8269035
+29edc870-5818-4c1e-8377-dbb02043420c                         One Look 227000.0                                  143eb007-3c7f-4bf7-ae20-f1e3f8269035
+4b7c81ac-8ee8-4971-bf3a-d0f42dae01f7                         Open Air 215000.0                                  143eb007-3c7f-4bf7-ae20-f1e3f8269035
+e7567c40-7a08-4d21-8a2f-01d47fd607c8                         Overload 231000.0                                  143eb007-3c7f-4bf7-ae20-f1e3f8269035
+ef401f60-0609-4034-8d76-79779a009165                     Private Show 214000.0                                  143eb007-3c7f-4bf7-ae20-f1e3f8269035
+00b128d0-0a73-46d5-b2b4-96bb3bd72ccd                          Quickly 229000.0                                  143eb007-3c7f-4bf7-ae20-f1e3f8269035
+8e044663-a8af-48b8-90c7-82610fcf1ec7                   Read the Stars 195000.0                                  143eb007-3c7f-4bf7-ae20-f1e3f8269035
+094eb266-3d07-41cd-a5cf-701fc0a5a8b8                            Ready 249000.0                                  143eb007-3c7f-4bf7-ae20-f1e3f8269035
+5575633d-2d5e-416f-81b4-5c10b21584b4                             Real 234000.0                                  143eb007-3c7f-4bf7-ae20-f1e3f8269035
+b9cb8385-4d99-4a06-9660-50298964a8cb                      Rewind That 221000.0                                  143eb007-3c7f-4bf7-ae20-f1e3f8269035
+4d2ceaec-2874-47b5-a350-8f43f19d8dd4          Richest Man in the Room 227000.0                                  143eb007-3c7f-4bf7-ae20-f1e3f8269035
+0e3ee578-ec1c-4780-b6df-d315a63d1f51                      Rocket Love 242000.0                                  143eb007-3c7f-4bf7-ae20-f1e3f8269035
+5a7f1d97-6d87-4889-8ca4-4da310b20ccb              Scared of Beautiful 246000.0                                  143eb007-3c7f-4bf7-ae20-f1e3f8269035
+a7913894-06ac-4b69-8e3c-d43bb5142252              She Won’t Say Hello 196000.0                                  143eb007-3c7f-4bf7-ae20-f1e3f8269035
+87c44595-5511-4d66-9403-29810b003af4                           Simply 228000.0                                  143eb007-3c7f-4bf7-ae20-f1e3f8269035
+8793490f-aa43-453e-9c4f-6ba4176830d8                   So Comfortable 212000.0                                  143eb007-3c7f-4bf7-ae20-f1e3f8269035
+4c3a9be2-ba21-442e-8a67-bc3f581e3f90                         So Fresh  93000.0                                  143eb007-3c7f-4bf7-ae20-f1e3f8269035
+59d12850-fc1a-4843-a76a-a9d1b301d293                   Standing Still 227000.0                                  143eb007-3c7f-4bf7-ae20-f1e3f8269035
+c870df34-b67b-4635-9ff6-0a41745132d1                   Stay If You Go 182000.0                                  143eb007-3c7f-4bf7-ae20-f1e3f8269035
+a20f12db-69db-4311-bc27-336268caf607                   Sucka for Love 199000.0                                  143eb007-3c7f-4bf7-ae20-f1e3f8269035
+ce4c55d5-2c21-47b3-8af2-e1bc02ca28c6                  Sucker for Love 185000.0                                  143eb007-3c7f-4bf7-ae20-f1e3f8269035
+c9561daa-9545-42eb-8e02-6fc7aba7248e                  Surprise Ending 218000.0                                  143eb007-3c7f-4bf7-ae20-f1e3f8269035
+80fe8265-e8bc-42b5-90e4-14c550241e9c                            Taste 206000.0                                  143eb007-3c7f-4bf7-ae20-f1e3f8269035
+48681eec-2bfe-44f5-acf8-033ef9ee6eb3                         The City 222000.0                                  143eb007-3c7f-4bf7-ae20-f1e3f8269035
+f6c22d47-4e52-4554-aa94-b74d620414ea                     Time Machine 208000.0                                  143eb007-3c7f-4bf7-ae20-f1e3f8269035
+bbbc7e9a-85b3-48aa-8fde-018f13075018                         Together 269000.0                                  143eb007-3c7f-4bf7-ae20-f1e3f8269035
+7cf34a09-3d71-4ac3-adbf-04aec5f05605                          Tonight 163000.0                                  143eb007-3c7f-4bf7-ae20-f1e3f8269035
+0f43b118-63e0-4b37-b644-7f2f1ec8d148                            Truce 213000.0                                  143eb007-3c7f-4bf7-ae20-f1e3f8269035
+ef880a7d-2210-4509-8ab4-37903c875c92                          Wake Up 219000.0                                  143eb007-3c7f-4bf7-ae20-f1e3f8269035
+4d8a04ae-02e9-41f0-bfec-3b251fcd9641                    When I’m Done 204000.0                                  143eb007-3c7f-4bf7-ae20-f1e3f8269035
+e293ce81-69f9-4cde-9c0e-336ff16dc973                      Rocket Love      NaN                                  1a75468e-b63c-45ee-8824-ac61b21bffe8
+75930753-8ca8-48d9-9c5a-6d31956cc1c4                     Time Machine      NaN                                  1a75468e-b63c-45ee-8824-ac61b21bffe8
+1532732e-4e3e-46d4-83f7-120c126ac07a             Heartbreak + Jet Lag      NaN                                  1a75468e-b63c-45ee-8824-ac61b21bffe8
+54bd132a-fa68-4305-9425-b909196c51dd                    Bedtime Story      NaN                                  1a75468e-b63c-45ee-8824-ac61b21bffe8
+b1f2fae7-351b-48e6-ab27-b7d9c2488f58                           Voodoo      NaN                                  1a75468e-b63c-45ee-8824-ac61b21bffe8
+846205d3-d6a9-4307-8fb2-022c49542938                            White      NaN                                  1a75468e-b63c-45ee-8824-ac61b21bffe8
+8b8bc4d7-fdd4-4086-abee-67b9e50cdf44                          No Love      NaN                                  1a75468e-b63c-45ee-8824-ac61b21bffe8
+9fe699df-be04-4ff4-a058-c1ea819dafbb                          4 Tears      NaN                                  1a75468e-b63c-45ee-8824-ac61b21bffe8
+f372e031-0583-483b-90f2-9c56f305abbb                   Acura Integurl      NaN                                  1a75468e-b63c-45ee-8824-ac61b21bffe8
+1d8f37ad-9aa7-4200-bff3-6bc42feaeceb                         Analog 2      NaN                                  1a75468e-b63c-45ee-8824-ac61b21bffe8
+a213e982-47ca-48f0-b3be-fb6ec901baa2                      Whip Appeal      NaN                                  1a75468e-b63c-45ee-8824-ac61b21bffe8
+a0d3971e-2f62-4bd9-ae41-86c497816df8              Pyrite (Fools Gold)      NaN                                  1a75468e-b63c-45ee-8824-ac61b21bffe8
+c47a3c07-8124-4b92-8156-fd4bff412aa6              Scared Of Beautiful      NaN                                  1a75468e-b63c-45ee-8824-ac61b21bffe8
+9407ab88-94f3-43a1-8301-240d51f03ea0                         Wise Man      NaN                                  1a75468e-b63c-45ee-8824-ac61b21bffe8
+f6a21ad7-eed0-4def-9c2d-f986b63c2c16             Heartbreak + Jet Lag 175098.0                                  b08e36e5-762e-4e81-81bd-0ea49996e461
+ef3f1687-bf54-45b7-a385-3d44fd4e5c96                   Summer Remains 200980.0                                  b08e36e5-762e-4e81-81bd-0ea49996e461
+2fa5ff51-0af2-4236-9840-306456c960bd                        I Need It 254442.0                                  b08e36e5-762e-4e81-81bd-0ea49996e461
+6a8355c5-1b4c-49cf-8f99-c10f39a6d73c                  Good Decoration 157335.0                                  b08e36e5-762e-4e81-81bd-0ea49996e461
+c79edb5b-e898-4cb7-b3b5-8e87faafb397                 Orion (Oh, Ryan) 216137.0                                  b08e36e5-762e-4e81-81bd-0ea49996e461
+a4543ab2-ffda-4fd4-bcc9-b20f1ce71f8e                             Math 178682.0                                  b08e36e5-762e-4e81-81bd-0ea49996e461
+9b096e90-edca-469c-9eb9-853db6352681                              PDA 276897.0                                  b08e36e5-762e-4e81-81bd-0ea49996e461
+1941a14c-f951-492b-a798-0bca45d7c045                       Big Enough 198000.0                                  b08e36e5-762e-4e81-81bd-0ea49996e461
+88ba390e-2d79-4979-9110-f1493055d4ea                    Back (To You) 222328.0                                  b08e36e5-762e-4e81-81bd-0ea49996e461
+f223c4a7-850d-4337-a6e6-504f9354f63a                      Best Seller 242685.0                                  b08e36e5-762e-4e81-81bd-0ea49996e461
+6fa90d54-88b5-4e91-842d-b576b1f1bb87            Theme Music (snippet)  50651.0                                  b08e36e5-762e-4e81-81bd-0ea49996e461
+5a4cd8da-af2a-440c-9f5f-5ecb3ad21241                              Try 190249.0                                  b08e36e5-762e-4e81-81bd-0ea49996e461
+5d3a249c-c913-4db5-bd39-0ca6c108c7ea                           Let Me 204622.0                                  b08e36e5-762e-4e81-81bd-0ea49996e461
+e3402f85-23b1-4e8a-961b-138bd7a6dcad                       Dreamkilla 190328.0                                  b08e36e5-762e-4e81-81bd-0ea49996e461
+ec139e47-25c6-4ecc-b15f-494ccb9549db                      Back to You 224862.0                                  b08e36e5-762e-4e81-81bd-0ea49996e461
+8584bfaf-3258-4fed-ba8d-3772ed6c0a23                           Static 261198.0                                  b08e36e5-762e-4e81-81bd-0ea49996e461
+a820dfe0-f250-406f-8eaf-59acc54c6e4a                       Light Show 216032.0                                  b08e36e5-762e-4e81-81bd-0ea49996e461
+d75a4cf2-10c8-4bfa-b98b-ce8c1a4c6f67                Trouble (snippet) 103262.0                                  b08e36e5-762e-4e81-81bd-0ea49996e461
+18162333-1c6d-4e8a-bccc-4eece0732837             Pyrite (Fool’s Gold) 246831.0                                  b08e36e5-762e-4e81-81bd-0ea49996e461
+f993dda1-5bc9-4856-b7c1-77f8c2d08daf                         U Got It 198275.0                                  b08e36e5-762e-4e81-81bd-0ea49996e461
+c53f3551-d600-4b19-8f29-5e9d632837ff                          4 Tears 105691.0                                  b08e36e5-762e-4e81-81bd-0ea49996e461
+7df17984-b575-4a19-b991-6ce57870b098                          Bend Ya 228444.0                                  b08e36e5-762e-4e81-81bd-0ea49996e461
+5807f0dd-10f0-46df-a447-fd94a1280067                       Get My Gun 228760.0                                  b08e36e5-762e-4e81-81bd-0ea49996e461
+442154eb-8441-4c45-86e7-bb552b2adb95                   Acura Integurl 117472.0                                  b08e36e5-762e-4e81-81bd-0ea49996e461
+d88ea95e-5303-4534-8886-a46d1939aebf              Reach for the Stars 123141.0                                  b08e36e5-762e-4e81-81bd-0ea49996e461
+aa195efc-b4aa-4506-ab08-f591f7b83c45          Thinking About You (OG) 192339.0                                  b08e36e5-762e-4e81-81bd-0ea49996e461
+33ab3282-77ef-48a7-884f-23bfbf907406                Cameras (snippet)  44538.0                                  b08e36e5-762e-4e81-81bd-0ea49996e461
+0e4c7c8f-6e57-4f88-a82d-29b540eca1f5                       Blue Whale 205772.0                                  b08e36e5-762e-4e81-81bd-0ea49996e461
+1f4ffc1c-b2f3-4de4-b538-fb576e0cacfe                           Voodoo  97071.0                                  b08e36e5-762e-4e81-81bd-0ea49996e461
+170b7752-21c2-4b09-ac7f-c80890fb1903                      Whip Appeal 278569.0                                  b08e36e5-762e-4e81-81bd-0ea49996e461
+155d7d7c-0f1c-44e5-861a-97e4f700c263                          Wiseman 231183.0                                  b08e36e5-762e-4e81-81bd-0ea49996e461
+4c9a3aa3-d755-4bdc-a720-249ae60b2ff2                             Hero 165541.0                                  b08e36e5-762e-4e81-81bd-0ea49996e461
+1a178daf-da77-4765-89d2-4ace2a9e3155        Thinking Bout You (remix) 278308.0                                  b08e36e5-762e-4e81-81bd-0ea49996e461
+8f49ae13-6966-41d4-bf9a-308a8f03bac4                      Without You 350171.0                                  b08e36e5-762e-4e81-81bd-0ea49996e461
+0fb4f13e-0e10-4f35-975b-79bdcd2aeeac                      Golden Girl 298970.0                                  b08e36e5-762e-4e81-81bd-0ea49996e461
+3c0bcc7f-b736-4507-b7a6-ae10827ce3d9              Pink Matter (remix) 316413.0                                  b08e36e5-762e-4e81-81bd-0ea49996e461
+a623a948-eaaa-4cc3-b57b-fdeb12ab30c4                    Eyes Like Sky 221579.0                                  b08e36e5-762e-4e81-81bd-0ea49996e461
+56b14737-b3ea-4628-a294-9bda7cb3bf38 Thinking About You (SBTRKT edit) 190380.0                                  b08e36e5-762e-4e81-81bd-0ea49996e461
+361fc40a-01bd-4a73-a064-1b6a9bb2515d        Whip Appeal (SBTRKT edit) 240222.0                                  b08e36e5-762e-4e81-81bd-0ea49996e461
+3bcd142d-245f-4b1f-a5b0-278c77792871                       Lovely Day 215771.0                                  b08e36e5-762e-4e81-81bd-0ea49996e461
+efadd68f-a924-45f8-bc62-53abdba1479f                          Memrise 117901.0                                  b08e36e5-762e-4e81-81bd-0ea49996e461
+b15e90eb-1dfc-4ed6-9664-6bf28450a268                     You Are Luhh 299629.0                                  b08e36e5-762e-4e81-81bd-0ea49996e461
+d149e910-eb15-45fd-82e1-92db26548a75      At Your Best (You Are Love) 320986.0                                  b69366e3-8145-405e-9220-c0a575f23474
+013abbb0-37b3-46ab-86eb-138c6155551b                          Alabama  84506.0                                  b69366e3-8145-405e-9220-c0a575f23474
+e661df29-7170-4ca2-8c19-212302a3aedb                             Mine  32013.0                                  b69366e3-8145-405e-9220-c0a575f23474
+d13ac4ce-5368-4b78-8687-e3c5c0a85f51                       U.N.I.T.Y. 173586.0                                  b69366e3-8145-405e-9220-c0a575f23474
+27e36e29-54ee-4cc9-949b-f08a3fcce5bf                 In a Certain Way  11120.0                                  b69366e3-8145-405e-9220-c0a575f23474
+c39fcf86-ed5e-42b2-aa3c-afdaf5205a03               Commes Des Garcons  58746.0                                  b69366e3-8145-405e-9220-c0a575f23474
+fd668095-e5fb-4b24-b987-bb246679c73e                           Xenons  31106.0                                  b69366e3-8145-405e-9220-c0a575f23474
+6032433d-e8c7-4dd1-af90-cfdcc8c71581                       Honey Baby   9066.0                                  b69366e3-8145-405e-9220-c0a575f23474
+9a2d9af9-5226-4493-a3c2-0ebb4a16f908                           Wither 153600.0                                  b69366e3-8145-405e-9220-c0a575f23474
+84efff3a-3fd5-4b17-a9ad-f458b3129bcc                          Hublots 108320.0                                  b69366e3-8145-405e-9220-c0a575f23474
+cb4731cb-37d1-44ee-b48d-05bf0b1f4ed2                In Here Somewhere 104866.0                                  b69366e3-8145-405e-9220-c0a575f23474
+8a2d159d-0226-4fdf-95fc-8f673f57cdf8                      Slide on Me 186786.0                                  b69366e3-8145-405e-9220-c0a575f23474
+25b9085e-a0fb-4f30-bb14-b7322018b300                         Sideways 113946.0                                  b69366e3-8145-405e-9220-c0a575f23474
+5a0dcfd1-42d2-4d97-b17d-fbef7317d90b                          Florida  75426.0                                  b69366e3-8145-405e-9220-c0a575f23474
+2e159b24-ae44-488d-8155-3aca6ce323cb       Impietas / Deathwish (ASR) 115586.0                                  b69366e3-8145-405e-9220-c0a575f23474
+8555101c-f782-42a3-9354-fbd53f44826b                           Rushes 205560.0                                  b69366e3-8145-405e-9220-c0a575f23474
+52977af7-33b3-4eae-81b6-959c4fefc126                        Rushes To 132426.0                                  b69366e3-8145-405e-9220-c0a575f23474
+4c9c6eaa-5be4-4b0e-a1f9-2434709aa5e6                            Higgs 218853.0                                  b69366e3-8145-405e-9220-c0a575f23474
+bca45fcf-054b-45a4-b95e-05ee1f146a31                  Mitsubishi Sony 170506.0                                  b69366e3-8145-405e-9220-c0a575f23474
+34b33dd0-f8b4-448c-9613-38e2c9990059                         Novacane 302000.0                                  c2dde373-d47b-45a9-8b7e-0a9f5f011ed4
+a09ffe96-f8ae-4fec-92ea-49e6f3fa90c7                        Goldeneye  18000.0                                  c2dde373-d47b-45a9-8b7e-0a9f5f011ed4
+59a42c1a-00ea-4214-a3a1-90cc56f7d456              There Will Be Tears 194000.0                                  c2dde373-d47b-45a9-8b7e-0a9f5f011ed4
+5e1cddfb-3603-4aa8-8514-0bb1a7d99fbb                    Electric Feel 224000.0                                  c2dde373-d47b-45a9-8b7e-0a9f5f011ed4
+f297743b-d7f7-4596-a453-92d0fe723052                        Swim Good 256000.0                                  c2dde373-d47b-45a9-8b7e-0a9f5f011ed4
+8e3839ed-d5fd-40f3-bdd0-4cdf1ff1fd5f                   Street Fighter  22000.0                                  c2dde373-d47b-45a9-8b7e-0a9f5f011ed4
+e643ed7d-e2d8-4487-a26a-293428971268                       We All Try 171000.0                                  c2dde373-d47b-45a9-8b7e-0a9f5f011ed4
+105504ad-fcfa-4609-b3ee-bf98e210c1df                 Strawberry Swing 235000.0                                  c2dde373-d47b-45a9-8b7e-0a9f5f011ed4
+1b50636e-ff2d-40a3-aae2-2253510edb75                             Dust 153000.0                                  c2dde373-d47b-45a9-8b7e-0a9f5f011ed4
+a5028bdf-73e0-4c43-978a-52621adbf688                       Lovecrimes 240000.0                                  c2dde373-d47b-45a9-8b7e-0a9f5f011ed4
+6e907f26-d2e1-4872-9e0d-13ed8ffac845                  Songs for Women 253000.0                                  c2dde373-d47b-45a9-8b7e-0a9f5f011ed4
+db1d828b-b25a-4aa2-a6a7-19eb79bd2b9c                  Bitches Talkin’  22000.0                                  c2dde373-d47b-45a9-8b7e-0a9f5f011ed4
+3db0f900-8366-4316-a938-408521055e22                     Soul Calibur  18000.0                                  c2dde373-d47b-45a9-8b7e-0a9f5f011ed4
+85f1c671-de19-4d07-92f3-f0844d20accb                            Start  45000.0                                  f8f4167d-897c-4b25-a171-638374d1dfa4
+79d721db-5c9e-40f1-8c85-d1235dd3c831                 Thinkin Bout You 200000.0                                  f8f4167d-897c-4b25-a171-638374d1dfa4
+c650bb98-8557-42d0-aaa6-2c3258de4fe5                       Fertilizer  39000.0                                  f8f4167d-897c-4b25-a171-638374d1dfa4
+f68cc123-8eeb-45d2-9478-931ae4cf3303                     Sierra Leone 148000.0                                  f8f4167d-897c-4b25-a171-638374d1dfa4
+2e1a7c4e-283b-454e-ab77-78e4f54f0525                       Sweet Life 262000.0                                  f8f4167d-897c-4b25-a171-638374d1dfa4
+9d33f287-b2c3-4645-b55d-3254ae28e829                   Not Just Money  59000.0                                  f8f4167d-897c-4b25-a171-638374d1dfa4
+e9968b85-5c8e-48ce-91b7-ed9d164a666e                  Super Rich Kids 304000.0                                  f8f4167d-897c-4b25-a171-638374d1dfa4
+92d0f95c-e97e-4ad2-af0f-5ca48c32a152                      Pilot Jones 184000.0                                  f8f4167d-897c-4b25-a171-638374d1dfa4
+95c54e21-bd85-488a-8f40-c0fb0f9e9122                       Crack Rock 224000.0                                  f8f4167d-897c-4b25-a171-638374d1dfa4
+1ae6d7ed-cd3e-4d87-94ce-85ca0e4b0bb4                         Pyramids 592000.0                                  f8f4167d-897c-4b25-a171-638374d1dfa4
+8fd13904-c86a-44f7-aee6-0dbfcf9a7a24                             Lost 234000.0                                  f8f4167d-897c-4b25-a171-638374d1dfa4
+25fcf80b-b339-464c-9964-57b572e960fc                            White  76000.0                                  f8f4167d-897c-4b25-a171-638374d1dfa4
+24ba0390-f31e-447c-be1d-5652cc826b63                            Monks 200000.0                                  f8f4167d-897c-4b25-a171-638374d1dfa4
+129f0b3f-e82f-44db-8681-8bb896e42ab6                     Bad Religion 175000.0                                  f8f4167d-897c-4b25-a171-638374d1dfa4
+1233c742-3b8a-4c79-9739-bfea0a7ee6ba                      Pink Matter 268000.0                                  f8f4167d-897c-4b25-a171-638374d1dfa4
+e89499c2-2041-4a83-b307-69d6a164cbb9                     Forrest Gump 194000.0                                  f8f4167d-897c-4b25-a171-638374d1dfa4
+502d7503-1434-492e-b44d-9788a542df96                              End 134000.0                                  f8f4167d-897c-4b25-a171-638374d1dfa4
+c397f48a-b45e-4927-a3ca-badfb659ea1a                      Golden Girl      NaN                                  f8f4167d-897c-4b25-a171-638374d1dfa4
