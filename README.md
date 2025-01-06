@@ -1,6 +1,6 @@
-# SOUNDWAVE Player Clone  
+# SOUNDWAVE Full-Stack Application
 
-Welcome to the **SOUNDWAVE Player Clone** project! This application is a Spotify-inspired music player that integrates Spotify Web API analytics with interactive features, offering a unique blend of music streaming and data insights.  
+Soundwave is a full-stack application engineering project designed to for music enthusiasts to analyse, review, and stream their favourite music. The platform integrates with Spotify and MusicBrainz APIs to obtain music data and stream music based on the users spotify playlist and account details. Included in this project is a web-based front-end to provide a user friendly interface, a back-end to handle server side endpoints and communicate with the database, and a data integration pipeline to popoulate the projects' connected database with existing music data.
 
 ---
 
@@ -19,11 +19,14 @@ Welcome to the **SOUNDWAVE Player Clone** project! This application is a Spotify
 
 ## Project Overview  
 
-The **SOUNDWAVE Player Clone** is a React-based web application designed to showcase technical expertise in frontend development, API integration, and data analytics. It provides users with:  
+**SOUNDWAVE** is a React-based web application designed to showcase technical expertise in frontend development, backend development, API integration, data integration pipelines, and relational database management. It provides users with:  
 
 - A music player integrated with Spotify.  
-- A countdown game for a fun, interactive experience.  
-- Detailed Spotify stats and insights.  
+- A countdown-style music streaming game, a fun way to engage with your music library
+- A song-guessing music streaming game.
+- Detailed Spotify stats and insights display.
+- Music / Album discovery.
+- Album / Song rating and review capacity.
 
 ---
 
@@ -31,7 +34,8 @@ The **SOUNDWAVE Player Clone** is a React-based web application designed to show
 
 ### **Music Player with Spotify Integration**  
 - Plays tracks using Spotify Web API Node.  
-- Dynamically displays playlists and songs.  
+- Dynamically displays playlists and songs.
+- Capacity for searching Artists / Tracks  
 
 ### **Countdown Game**  
 - Timer feature for music listening sessions.  
@@ -65,10 +69,20 @@ The **SOUNDWAVE Player Clone** is a React-based web application designed to show
 ### **Backend**  
 - **Node.js**: Server-side logic.  
 - **Spotify Web API Node**: Integration with Spotify's API.  
-- **MySQL**: Database for user information and session persistence.  
+- **MySQL**: Database for user information and session persistence hosted on Amazon Web Services (AWS).
+- **dotenv**: For storage of secret database credentials.
+
+### **Data Integration Pipeline**
+- **Python**: Primary data pipeline language.
+- **Beautiful Soup**: To extract current highest streamed artists on spotify.
+- **Music Brainz API**: To extract Artist / Album / Track meta data.
+- **Pandas**: For data wrangling and transformation after extraction
+- **MySql.connector**: For connection to and communication with externally hosted relational Database.
+- **dotenv**: For storage of sensitive project secrets
 
 ### **Tools and Libraries**  
-- **bcrypt**: For hashing user passwords.  
+- **bcrypt**: For hashing user passwords.
+- **Sequelize**: For creating and managing database entities and relationships.
 - **Docker CLI**: Optional for environment management.  
 
 ---
