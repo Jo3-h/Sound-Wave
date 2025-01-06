@@ -3,7 +3,7 @@ from config import DB_HOSTNAME, DB_NAME, DB_USER, DB_PASSWORD, LOG_FILE
 import mysql.connector
 import pandas as pd
 
-def load_artists(artists_df: pd.DataFrame):
+def load_artists(artists_df: pd.DataFrame, truncate: bool = False):
 
     # create a connection to the database
     db_config = {
@@ -24,8 +24,12 @@ def load_artists(artists_df: pd.DataFrame):
         connection = mysql.connector.connect(**db_config)
         cursor = connection.cursor()
 
+        # if truncate is True, delete all records from the table
+        if truncate:
+            cursor.execute("TRUNCATE TABLE Artists")
+
         # Load the artists data into the database
-        for index, row in artists_df.iterrows():
+        for _, row in artists_df.iterrows():
             cursor.execute(
                 "INSERT INTO Artists (id, name, bio, image) VALUES (%s, %s, %s, %s)",
                 (row['id'], row['name'], row['bio'], row['image'])

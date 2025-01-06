@@ -1,4 +1,5 @@
 import pandas as pd
+from logs import dump_df    
 
 def transform(album: dict):
 
@@ -6,9 +7,8 @@ def transform(album: dict):
         "id": album["id"] or "",
         "title": album["title"] or "",
         "release_date": album["first-release-date"] or "",
-        "image": "",
+        "image": album["image"] or "",
         "artist_id": album["artist_id"] or "",
-        "track_id": "",
     }
 
 def transform_albums(albums_data: list):

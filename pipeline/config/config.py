@@ -6,6 +6,7 @@ import os
 
 load_dotenv()
 
+VERBOSE = True
 LOG_FILE = "logs/etl_pipeline.log"
 LOG_DIR = "logs/test_files"
 

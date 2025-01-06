@@ -1,99 +1,106 @@
 [
   {
+    "primary-type": "Album",
     "disambiguation": "",
-    "title": "Blonde",
+    "id": "0da340a0-6ad7-4fc2-a272-6f94393a7831",
     "secondary-type-ids": [],
-    "secondary-types": [],
     "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
     "first-release-date": "2016-08-20",
-    "primary-type": "Album",
-    "id": "0da340a0-6ad7-4fc2-a272-6f94393a7831",
-    "artist_id": "e520459c-dff4-491d-a6e4-c97be35e0044"
+    "title": "Blonde",
+    "secondary-types": [],
+    "artist_id": "e520459c-dff4-491d-a6e4-c97be35e0044",
+    "image": "http://coverartarchive.org/release-group/0da340a0-6ad7-4fc2-a272-6f94393a7831/front"
   },
   {
-    "secondary-types": [
-      "Compilation",
-      "Mixtape/Street"
-    ],
+    "disambiguation": "",
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "id": "143eb007-3c7f-4bf7-ae20-f1e3f8269035",
     "secondary-type-ids": [
       "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
       "15c1b1f5-d893-3375-a1db-e180c5ae15ed"
     ],
-    "id": "143eb007-3c7f-4bf7-ae20-f1e3f8269035",
-    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
     "first-release-date": "2010",
     "primary-type": "Album",
-    "disambiguation": "",
+    "secondary-types": [
+      "Compilation",
+      "Mixtape/Street"
+    ],
     "title": "The Lonny Breaux Collection",
-    "artist_id": "e520459c-dff4-491d-a6e4-c97be35e0044"
+    "artist_id": "e520459c-dff4-491d-a6e4-c97be35e0044",
+    "image": "http://coverartarchive.org/release-group/143eb007-3c7f-4bf7-ae20-f1e3f8269035/front"
   },
   {
     "primary-type": "Album",
-    "first-release-date": "2013-07-04",
+    "disambiguation": "",
     "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
     "id": "1a75468e-b63c-45ee-8824-ac61b21bffe8",
     "secondary-type-ids": [
       "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
     ],
+    "first-release-date": "2013-07-04",
+    "title": "unreleased, MISC.",
     "secondary-types": [
       "Compilation"
     ],
-    "title": "unreleased, MISC.",
-    "disambiguation": "",
-    "artist_id": "e520459c-dff4-491d-a6e4-c97be35e0044"
+    "artist_id": "e520459c-dff4-491d-a6e4-c97be35e0044",
+    "image": "http://coverartarchive.org/release-group/1a75468e-b63c-45ee-8824-ac61b21bffe8/front"
   },
   {
-    "title": "undocumented, RARE.",
-    "disambiguation": "",
-    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
-    "first-release-date": "2017-06-01",
-    "primary-type": "Album",
-    "id": "b08e36e5-762e-4e81-81bd-0ea49996e461",
-    "secondary-type-ids": [
-      "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
-      "15c1b1f5-d893-3375-a1db-e180c5ae15ed"
-    ],
     "secondary-types": [
       "Compilation",
       "Mixtape/Street"
     ],
-    "artist_id": "e520459c-dff4-491d-a6e4-c97be35e0044"
+    "title": "undocumented, RARE.",
+    "primary-type": "Album",
+    "disambiguation": "",
+    "id": "b08e36e5-762e-4e81-81bd-0ea49996e461",
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "first-release-date": "2017-06-01",
+    "secondary-type-ids": [
+      "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+      "15c1b1f5-d893-3375-a1db-e180c5ae15ed"
+    ],
+    "artist_id": "e520459c-dff4-491d-a6e4-c97be35e0044",
+    "image": "http://coverartarchive.org/release-group/b08e36e5-762e-4e81-81bd-0ea49996e461/front"
   },
   {
+    "disambiguation": "",
+    "id": "b69366e3-8145-405e-9220-c0a575f23474",
     "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "secondary-type-ids": [],
     "first-release-date": "2016-08-19",
     "primary-type": "Album",
-    "id": "b69366e3-8145-405e-9220-c0a575f23474",
-    "secondary-type-ids": [],
     "secondary-types": [],
     "title": "Endless",
-    "disambiguation": "",
-    "artist_id": "e520459c-dff4-491d-a6e4-c97be35e0044"
+    "artist_id": "e520459c-dff4-491d-a6e4-c97be35e0044",
+    "image": "http://coverartarchive.org/release-group/b69366e3-8145-405e-9220-c0a575f23474/front"
   },
   {
+    "title": "nostalgia,ULTRA.",
     "secondary-types": [
       "Mixtape/Street"
     ],
+    "disambiguation": "",
+    "id": "c2dde373-d47b-45a9-8b7e-0a9f5f011ed4",
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
     "secondary-type-ids": [
       "15c1b1f5-d893-3375-a1db-e180c5ae15ed"
     ],
-    "id": "c2dde373-d47b-45a9-8b7e-0a9f5f011ed4",
-    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
-    "primary-type": "Album",
     "first-release-date": "2011-02-16",
-    "disambiguation": "",
-    "title": "nostalgia,ULTRA.",
-    "artist_id": "e520459c-dff4-491d-a6e4-c97be35e0044"
+    "primary-type": "Album",
+    "artist_id": "e520459c-dff4-491d-a6e4-c97be35e0044",
+    "image": "http://coverartarchive.org/release-group/c2dde373-d47b-45a9-8b7e-0a9f5f011ed4/front"
   },
   {
+    "secondary-types": [],
     "title": "channel ORANGE",
+    "primary-type": "Album",
     "disambiguation": "",
     "id": "f8f4167d-897c-4b25-a171-638374d1dfa4",
-    "first-release-date": "2012-07-10",
-    "primary-type": "Album",
-    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
-    "secondary-types": [],
     "secondary-type-ids": [],
-    "artist_id": "e520459c-dff4-491d-a6e4-c97be35e0044"
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "first-release-date": "2012-07-10",
+    "artist_id": "e520459c-dff4-491d-a6e4-c97be35e0044",
+    "image": "http://coverartarchive.org/release-group/f8f4167d-897c-4b25-a171-638374d1dfa4/front"
   }
 ]
