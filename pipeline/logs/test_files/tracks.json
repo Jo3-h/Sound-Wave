@@ -1,377 +1,374 @@
 [
   {
-    "position": 1,
+    "number": "1",
     "recording": {
-      "title": "Nikes",
       "length": 314000,
+      "title": "Nikes",
+      "video": false,
       "id": "004eedd5-8396-4eef-9de2-940e5ca9a7c0",
       "first-release-date": "2016-08-20",
-      "disambiguation": "",
-      "video": false
+      "disambiguation": ""
     },
     "length": 314000,
     "id": "7554b5aa-5ac1-4031-a3d4-d7d41ab3bf07",
-    "number": "1",
     "title": "Nikes",
+    "position": 1,
     "album_id": "0da340a0-6ad7-4fc2-a272-6f94393a7831"
   },
   {
+    "number": "2",
     "recording": {
-      "video": false,
       "id": "fe8b367d-78ef-4ec3-9c9a-ff3435a65d5b",
+      "video": false,
       "first-release-date": "2015-04-14",
       "disambiguation": "",
       "length": 249000,
       "title": "Ivy"
     },
-    "position": 2,
     "length": 249000,
+    "position": 2,
     "id": "91bde2d1-8afe-424a-9a9a-0d5c383c0a38",
-    "number": "2",
     "title": "Ivy",
     "album_id": "0da340a0-6ad7-4fc2-a272-6f94393a7831"
   },
   {
-    "id": "926061d3-2134-45ce-9898-716ed6580762",
     "number": "3",
-    "title": "Pink + White",
     "recording": {
       "title": "Pink + White",
       "length": 185000,
       "first-release-date": "2016-08-20",
+      "video": false,
       "id": "d90934be-302a-4e0d-a1dd-b94df3421f33",
-      "disambiguation": "",
-      "video": false
+      "disambiguation": ""
     },
-    "position": 3,
     "length": 185000,
+    "position": 3,
+    "id": "926061d3-2134-45ce-9898-716ed6580762",
+    "title": "Pink + White",
     "album_id": "0da340a0-6ad7-4fc2-a272-6f94393a7831"
   },
   {
     "length": 87000,
-    "recording": {
-      "length": 87000,
-      "video": false,
-      "disambiguation": "",
-      "first-release-date": "2016-08-20",
-      "id": "8fd48f3d-03b3-4767-abdf-95a8c4e082e6",
-      "title": "Be Yourself"
-    },
     "position": 4,
+    "id": "42e56061-fd1b-4b73-9f1b-96b433fdc57b",
     "title": "Be Yourself",
     "number": "4",
-    "id": "42e56061-fd1b-4b73-9f1b-96b433fdc57b",
+    "recording": {
+      "disambiguation": "",
+      "first-release-date": "2016-08-20",
+      "video": false,
+      "id": "8fd48f3d-03b3-4767-abdf-95a8c4e082e6",
+      "title": "Be Yourself",
+      "length": 87000
+    },
     "album_id": "0da340a0-6ad7-4fc2-a272-6f94393a7831"
   },
   {
     "length": 257000,
     "position": 5,
-    "recording": {
-      "title": "Solo",
-      "length": 257000,
-      "id": "c954a317-0690-4749-abcb-39f74423509e",
-      "first-release-date": "2016-08-20",
-      "disambiguation": "",
-      "video": false
-    },
+    "id": "d4674950-7ce4-4313-8cc9-e57b02e960d0",
     "title": "Solo",
     "number": "5",
-    "id": "d4674950-7ce4-4313-8cc9-e57b02e960d0",
+    "recording": {
+      "length": 257000,
+      "title": "Solo",
+      "video": false,
+      "first-release-date": "2016-08-20",
+      "id": "c954a317-0690-4749-abcb-39f74423509e",
+      "disambiguation": ""
+    },
     "album_id": "0da340a0-6ad7-4fc2-a272-6f94393a7831"
   },
   {
+    "number": "6",
     "recording": {
       "length": 185000,
-      "video": false,
+      "title": "Skyline To",
       "disambiguation": "",
-      "id": "1cb2d6e8-22dc-44f1-b82a-bfe82f18cfde",
+      "video": false,
       "first-release-date": "2016-08-20",
-      "title": "Skyline To"
+      "id": "1cb2d6e8-22dc-44f1-b82a-bfe82f18cfde"
     },
-    "position": 6,
     "length": 185000,
+    "position": 6,
     "id": "aa8bdf02-a3e0-41af-89a0-69326346b801",
-    "number": "6",
     "title": "Skyline To",
     "album_id": "0da340a0-6ad7-4fc2-a272-6f94393a7831"
   },
   {
-    "position": 7,
     "recording": {
-      "length": 250000,
       "disambiguation": "",
       "first-release-date": "2016-08-20",
-      "id": "039326dc-e853-4de8-84c5-dd91c31d4256",
       "video": false,
-      "title": "Self Control"
+      "id": "039326dc-e853-4de8-84c5-dd91c31d4256",
+      "title": "Self Control",
+      "length": 250000
     },
-    "length": 250000,
     "number": "7",
-    "id": "80cd0f5d-a849-42fb-8372-80b4586fc984",
+    "position": 7,
     "title": "Self Control",
+    "id": "80cd0f5d-a849-42fb-8372-80b4586fc984",
+    "length": 250000,
     "album_id": "0da340a0-6ad7-4fc2-a272-6f94393a7831"
   },
   {
-    "length": 67000,
-    "recording": {
-      "title": "Good Guy",
-      "video": false,
-      "first-release-date": "2016-08-20",
-      "id": "c4625cbf-f5a8-46d9-baa5-ba8c3b9127bc",
-      "disambiguation": "",
-      "length": 67000
-    },
     "position": 8,
     "title": "Good Guy",
     "id": "f47172f0-e407-4b6c-883a-3c3502921ee4",
+    "length": 67000,
+    "recording": {
+      "title": "Good Guy",
+      "length": 67000,
+      "first-release-date": "2016-08-20",
+      "id": "c4625cbf-f5a8-46d9-baa5-ba8c3b9127bc",
+      "video": false,
+      "disambiguation": ""
+    },
     "number": "8",
     "album_id": "0da340a0-6ad7-4fc2-a272-6f94393a7831"
   },
   {
     "title": "Nights",
     "id": "2df6b3b5-fd8c-462b-84a7-d324468b4405",
-    "number": "9",
+    "position": 9,
     "length": 307000,
     "recording": {
       "length": 307000,
-      "video": false,
+      "title": "Nights",
       "disambiguation": "",
       "first-release-date": "2015-04-14",
-      "id": "3e341bc1-16e2-43e3-adf5-d7a8c2059b0d",
-      "title": "Nights"
+      "video": false,
+      "id": "3e341bc1-16e2-43e3-adf5-d7a8c2059b0d"
     },
-    "position": 9,
+    "number": "9",
     "album_id": "0da340a0-6ad7-4fc2-a272-6f94393a7831"
   },
   {
+    "title": "Solo (reprise)",
+    "id": "ec14b707-08d6-4015-be53-c2b877daca86",
     "position": 10,
+    "length": 79000,
     "recording": {
-      "title": "Solo (reprise)",
-      "video": false,
       "disambiguation": "",
       "first-release-date": "2016-08-20",
+      "video": false,
       "id": "c68ffb4b-3dfb-4a42-898b-f75606a4a988",
+      "title": "Solo (reprise)",
       "length": 79000
     },
-    "length": 79000,
-    "id": "ec14b707-08d6-4015-be53-c2b877daca86",
     "number": "10",
-    "title": "Solo (reprise)",
     "album_id": "0da340a0-6ad7-4fc2-a272-6f94393a7831"
   },
   {
     "length": 158000,
-    "recording": {
-      "length": 158000,
-      "video": false,
-      "first-release-date": "2015-04-14",
-      "id": "ab8d011f-b42a-4cd9-88e8-c0fac54f20a8",
-      "disambiguation": "",
-      "title": "Pretty Sweet"
-    },
     "position": 11,
     "title": "Pretty Sweet",
-    "number": "11",
     "id": "dae778b5-ffd0-4931-9b56-f4813d6bbb4f",
+    "number": "11",
+    "recording": {
+      "length": 158000,
+      "title": "Pretty Sweet",
+      "disambiguation": "",
+      "video": false,
+      "first-release-date": "2015-04-14",
+      "id": "ab8d011f-b42a-4cd9-88e8-c0fac54f20a8"
+    },
     "album_id": "0da340a0-6ad7-4fc2-a272-6f94393a7831"
   },
   {
-    "position": 12,
     "recording": {
-      "video": false,
-      "disambiguation": "",
+      "length": 69000,
+      "title": "Facebook Story",
       "id": "03632781-7a52-450b-b56b-b147ea06411a",
       "first-release-date": "2016-08-20",
-      "length": 69000,
-      "title": "Facebook Story"
+      "video": false,
+      "disambiguation": ""
     },
-    "length": 69000,
     "number": "12",
-    "id": "75b466ac-cb67-4a15-8f4a-edce2a688037",
     "title": "Facebook Story",
+    "id": "75b466ac-cb67-4a15-8f4a-edce2a688037",
+    "position": 12,
+    "length": 69000,
     "album_id": "0da340a0-6ad7-4fc2-a272-6f94393a7831"
   },
   {
+    "length": 86000,
+    "position": 13,
+    "title": "Close to You",
+    "id": "c8a5441b-659d-4658-ba37-cf5c10985625",
+    "number": "13",
     "recording": {
-      "title": "Close to You",
       "first-release-date": "2016-08-20",
+      "video": false,
       "id": "08d829c0-a4a2-403f-855b-955d8751b37c",
       "disambiguation": "",
-      "video": false,
+      "title": "Close to You",
       "length": 86000
     },
-    "position": 13,
-    "length": 86000,
-    "number": "13",
-    "id": "c8a5441b-659d-4658-ba37-cf5c10985625",
-    "title": "Close to You",
     "album_id": "0da340a0-6ad7-4fc2-a272-6f94393a7831"
   },
   {
+    "title": "White Ferrari",
+    "id": "5a3e5dcc-8d33-4946-94f0-315dc1997a6c",
+    "position": 14,
+    "length": 249000,
     "recording": {
       "title": "White Ferrari",
       "length": 249000,
       "disambiguation": "",
+      "video": false,
       "first-release-date": "2016-08-20",
-      "id": "a1f25623-f56c-4f36-bcce-67488d04e7cc",
-      "video": false
+      "id": "a1f25623-f56c-4f36-bcce-67488d04e7cc"
     },
-    "position": 14,
-    "length": 249000,
-    "id": "5a3e5dcc-8d33-4946-94f0-315dc1997a6c",
     "number": "14",
-    "title": "White Ferrari",
     "album_id": "0da340a0-6ad7-4fc2-a272-6f94393a7831"
   },
   {
-    "title": "Seigfried",
-    "number": "15",
-    "id": "0f141cac-c27b-4231-937b-0e4f87107e85",
     "length": 335000,
     "position": 15,
+    "title": "Seigfried",
+    "id": "0f141cac-c27b-4231-937b-0e4f87107e85",
+    "number": "15",
     "recording": {
       "title": "Seigfried",
       "length": 335000,
+      "disambiguation": "",
       "video": false,
-      "first-release-date": "2016-08-20",
       "id": "c3e901e3-f2fb-4b84-add4-ec16ce173476",
-      "disambiguation": ""
+      "first-release-date": "2016-08-20"
     },
     "album_id": "0da340a0-6ad7-4fc2-a272-6f94393a7831"
   },
   {
-    "title": "Godspeed",
+    "position": 16,
     "id": "4cae19ed-abfb-4966-8a9f-3266dbbff2ac",
-    "number": "16",
+    "title": "Godspeed",
     "length": 178000,
     "recording": {
+      "length": 177968,
       "title": "Godspeed",
-      "video": false,
+      "first-release-date": "2016-08-20",
       "id": "6f390fd7-6806-4d0c-aa34-7b748b7a099e",
-      "first-release-date": "2016-08-20",
-      "disambiguation": "",
-      "length": 177968
-    },
-    "position": 16,
-    "album_id": "0da340a0-6ad7-4fc2-a272-6f94393a7831"
-  },
-  {
-    "length": 564000,
-    "recording": {
-      "title": "Futura Free",
       "video": false,
-      "first-release-date": "2016-08-20",
-      "id": "c58cbe16-1cf3-4abe-8ecf-72efc3df47af",
-      "disambiguation": "",
-      "length": 564000
-    },
-    "position": 17,
-    "title": "Futura Free",
-    "number": "17",
-    "id": "19c1582b-ac27-49f3-88e6-d13a1f33f908",
-    "album_id": "0da340a0-6ad7-4fc2-a272-6f94393a7831"
-  },
-  {
-    "recording": {
-      "title": "Acura Integurl",
-      "id": "189f3923-dc96-4d87-bf06-38ac55beb0ef",
-      "length": 117000,
-      "video": false,
-      "first-release-date": "2010",
       "disambiguation": ""
     },
-    "length": 117000,
+    "number": "16",
+    "album_id": "0da340a0-6ad7-4fc2-a272-6f94393a7831"
+  },
+  {
+    "id": "19c1582b-ac27-49f3-88e6-d13a1f33f908",
+    "title": "Futura Free",
+    "position": 17,
+    "length": 564000,
+    "recording": {
+      "id": "c58cbe16-1cf3-4abe-8ecf-72efc3df47af",
+      "video": false,
+      "first-release-date": "2016-08-20",
+      "disambiguation": "",
+      "title": "Futura Free",
+      "length": 564000
+    },
+    "number": "17",
+    "album_id": "0da340a0-6ad7-4fc2-a272-6f94393a7831"
+  },
+  {
     "id": "e681ceec-be60-4602-8f64-9373c16e7f81",
-    "position": 1,
-    "title": "Acura Integurl",
     "number": "1",
+    "title": "Acura Integurl",
+    "position": 1,
+    "recording": {
+      "id": "189f3923-dc96-4d87-bf06-38ac55beb0ef",
+      "title": "Acura Integurl",
+      "disambiguation": "",
+      "first-release-date": "2010",
+      "video": false,
+      "length": 117000
+    },
+    "length": 117000,
     "album_id": "143eb007-3c7f-4bf7-ae20-f1e3f8269035"
   },
   {
+    "length": 218000,
+    "recording": {
+      "disambiguation": "",
+      "first-release-date": "2010",
+      "video": false,
+      "length": 218000,
+      "id": "170d28b0-5038-4667-b8d6-4119cde14c6d",
+      "title": "Bedtime Story"
+    },
     "title": "Bedtime Story",
     "position": 2,
     "number": "2",
     "id": "676c3418-a1ab-4537-bc95-7fcba8ae738c",
-    "length": 218000,
-    "recording": {
-      "video": false,
-      "length": 218000,
-      "disambiguation": "",
-      "first-release-date": "2010",
-      "title": "Bedtime Story",
-      "id": "170d28b0-5038-4667-b8d6-4119cde14c6d"
-    },
     "album_id": "143eb007-3c7f-4bf7-ae20-f1e3f8269035"
   },
   {
     "recording": {
-      "first-release-date": "2010",
-      "disambiguation": "",
-      "length": 237000,
-      "video": false,
+      "title": "Blasted",
       "id": "2d37611c-604a-48e6-8b3b-d9b19cbee792",
-      "title": "Blasted"
+      "video": false,
+      "length": 237000,
+      "disambiguation": "",
+      "first-release-date": "2010"
     },
     "length": 237000,
     "id": "f5611f35-d1b4-4709-9fb4-da9ebf9f2999",
-    "position": 3,
-    "title": "Blasted",
     "number": "3",
+    "title": "Blasted",
+    "position": 3,
     "album_id": "143eb007-3c7f-4bf7-ae20-f1e3f8269035"
   },
   {
+    "recording": {
+      "first-release-date": "2010",
+      "disambiguation": "",
+      "length": 247000,
+      "video": false,
+      "id": "41a6273b-316b-4cce-9595-2063b3275199",
+      "title": "Bricks and Steel"
+    },
+    "length": 247000,
+    "id": "fa9f09b5-a26b-41b9-bbdd-a4c0edb36a42",
     "position": 4,
     "title": "Bricks and Steel",
     "number": "4",
-    "id": "fa9f09b5-a26b-41b9-bbdd-a4c0edb36a42",
-    "length": 247000,
-    "recording": {
-      "length": 247000,
-      "video": false,
-      "first-release-date": "2010",
-      "disambiguation": "",
-      "title": "Bricks and Steel",
-      "id": "41a6273b-316b-4cce-9595-2063b3275199"
-    },
     "album_id": "143eb007-3c7f-4bf7-ae20-f1e3f8269035"
   },
   {
     "id": "7d050a5d-09a0-4548-8d32-fd05149aff98",
-    "title": "Broken Pieces",
     "position": 5,
+    "title": "Broken Pieces",
     "number": "5",
     "recording": {
-      "video": false,
-      "length": 77000,
       "disambiguation": "",
       "first-release-date": "2010",
-      "title": "Broken Pieces",
-      "id": "96503540-6c3a-472b-acb5-7c2d74e0644f"
+      "video": false,
+      "length": 77000,
+      "id": "96503540-6c3a-472b-acb5-7c2d74e0644f",
+      "title": "Broken Pieces"
     },
     "length": 77000,
     "album_id": "143eb007-3c7f-4bf7-ae20-f1e3f8269035"
   },
   {
-    "id": "90bb95ae-c816-4863-857f-39a9b323b49f",
-    "position": 6,
-    "title": "Can\u2019t Be the Last Time",
-    "number": "6",
     "recording": {
-      "title": "Can\u2019t Be the Last Time",
       "id": "4e4a9425-326d-4d8e-be06-a6497643209a",
-      "video": false,
-      "length": 254000,
+      "title": "Can\u2019t Be the Last Time",
       "disambiguation": "",
-      "first-release-date": "2010"
+      "first-release-date": "2010",
+      "video": false,
+      "length": 254000
     },
     "length": 254000,
+    "id": "90bb95ae-c816-4863-857f-39a9b323b49f",
+    "number": "6",
+    "title": "Can\u2019t Be the Last Time",
+    "position": 6,
     "album_id": "143eb007-3c7f-4bf7-ae20-f1e3f8269035"
   },
   {
-    "id": "c0ac3b4a-f368-4d15-a128-033854aa0dff",
-    "title": "Day Away",
-    "number": "7",
-    "position": 7,
+    "length": 212000,
     "recording": {
       "video": false,
       "length": 212000,
@@ -380,49 +377,52 @@
       "title": "Day Away",
       "id": "ba98914f-0baa-4cf2-b4cb-d6be7467cf0a"
     },
-    "length": 212000,
+    "title": "Day Away",
+    "position": 7,
+    "number": "7",
+    "id": "c0ac3b4a-f368-4d15-a128-033854aa0dff",
     "album_id": "143eb007-3c7f-4bf7-ae20-f1e3f8269035"
   },
   {
-    "title": "Denim",
     "number": "8",
+    "title": "Denim",
     "position": 8,
     "id": "903f620c-02bb-4714-b9cb-528116f1fe6c",
     "length": 262000,
     "recording": {
-      "first-release-date": "2010",
-      "disambiguation": "",
-      "length": 262000,
-      "video": false,
+      "title": "Denim",
       "id": "87d4f64b-a520-4072-8d6d-d07efbc68d31",
-      "title": "Denim"
-    },
-    "album_id": "143eb007-3c7f-4bf7-ae20-f1e3f8269035"
-  },
-  {
-    "recording": {
-      "title": "Done",
-      "id": "f7801f6a-8fea-4082-9833-080495e8edc4",
-      "length": 204000,
+      "length": 262000,
       "video": false,
       "first-release-date": "2010",
       "disambiguation": ""
     },
-    "length": 204000,
-    "id": "427f2028-ddbd-4a64-83d7-463c785ce552",
-    "number": "9",
-    "title": "Done",
-    "position": 9,
     "album_id": "143eb007-3c7f-4bf7-ae20-f1e3f8269035"
   },
   {
     "recording": {
-      "first-release-date": "2012",
+      "length": 204000,
+      "video": false,
+      "first-release-date": "2010",
       "disambiguation": "",
+      "title": "Done",
+      "id": "f7801f6a-8fea-4082-9833-080495e8edc4"
+    },
+    "length": 204000,
+    "id": "427f2028-ddbd-4a64-83d7-463c785ce552",
+    "position": 9,
+    "title": "Done",
+    "number": "9",
+    "album_id": "143eb007-3c7f-4bf7-ae20-f1e3f8269035"
+  },
+  {
+    "recording": {
+      "title": "Dying for Your Love",
+      "id": "473d6898-8c11-4997-97e8-9d02fe8ddd3c",
       "length": 212000,
       "video": false,
-      "id": "473d6898-8c11-4997-97e8-9d02fe8ddd3c",
-      "title": "Dying for Your Love"
+      "first-release-date": "2012",
+      "disambiguation": ""
     },
     "length": 212000,
     "id": "3855ad34-8f3e-4496-a21c-44ceca6f5830",
@@ -432,61 +432,61 @@
     "album_id": "143eb007-3c7f-4bf7-ae20-f1e3f8269035"
   },
   {
-    "title": "Flight",
-    "number": "11",
-    "position": 11,
-    "id": "d4f74bfb-3aa3-40ce-b7ca-81222d4fbc1b",
     "length": 221000,
     "recording": {
       "id": "fcb0491b-4dbb-4b49-b14a-8f0442c5b0f1",
       "title": "Flight",
-      "disambiguation": "",
       "first-release-date": "2010",
-      "video": false,
-      "length": 221000
+      "disambiguation": "",
+      "length": 221000,
+      "video": false
     },
+    "title": "Flight",
+    "number": "11",
+    "position": 11,
+    "id": "d4f74bfb-3aa3-40ce-b7ca-81222d4fbc1b",
     "album_id": "143eb007-3c7f-4bf7-ae20-f1e3f8269035"
   },
   {
-    "length": 185000,
     "recording": {
-      "first-release-date": "2010",
-      "disambiguation": "",
-      "length": 185000,
-      "video": false,
+      "title": "Focus",
       "id": "e53dedb2-c804-483c-842e-61bae585e859",
-      "title": "Focus"
-    },
-    "number": "12",
-    "title": "Focus",
-    "position": 12,
-    "id": "4e1603e2-cdac-4124-8a19-10eaaf2e14cc",
-    "album_id": "143eb007-3c7f-4bf7-ae20-f1e3f8269035"
-  },
-  {
-    "number": "13",
-    "title": "Follow",
-    "position": 13,
-    "id": "5fc3e153-eca8-4e9a-bb93-9bac45b26afe",
-    "length": 207000,
-    "recording": {
-      "title": "Follow",
-      "id": "fb575e48-7c77-4d52-8994-9189e6cbe2ac",
-      "length": 207000,
+      "length": 185000,
       "video": false,
       "first-release-date": "2010",
       "disambiguation": ""
     },
+    "length": 185000,
+    "id": "4e1603e2-cdac-4124-8a19-10eaaf2e14cc",
+    "position": 12,
+    "title": "Focus",
+    "number": "12",
+    "album_id": "143eb007-3c7f-4bf7-ae20-f1e3f8269035"
+  },
+  {
+    "id": "5fc3e153-eca8-4e9a-bb93-9bac45b26afe",
+    "title": "Follow",
+    "number": "13",
+    "position": 13,
+    "recording": {
+      "disambiguation": "",
+      "first-release-date": "2010",
+      "video": false,
+      "length": 207000,
+      "id": "fb575e48-7c77-4d52-8994-9189e6cbe2ac",
+      "title": "Follow"
+    },
+    "length": 207000,
     "album_id": "143eb007-3c7f-4bf7-ae20-f1e3f8269035"
   },
   {
     "recording": {
-      "video": false,
-      "length": 254000,
+      "id": "35fcd3f1-4f80-4ed7-8cd3-e5d350cf667e",
+      "title": "Go Up",
       "disambiguation": "",
       "first-release-date": "2010",
-      "title": "Go Up",
-      "id": "35fcd3f1-4f80-4ed7-8cd3-e5d350cf667e"
+      "video": false,
+      "length": 254000
     },
     "length": 254000,
     "id": "62f6fda8-fb3c-46e3-af85-751cef2d3aa2",
@@ -496,74 +496,71 @@
     "album_id": "143eb007-3c7f-4bf7-ae20-f1e3f8269035"
   },
   {
+    "length": 202000,
+    "recording": {
+      "id": "159f7a15-54bf-4aac-8513-6c7eda8ba303",
+      "title": "Got the Keys",
+      "disambiguation": "",
+      "first-release-date": "2010",
+      "video": false,
+      "length": 202000
+    },
     "number": "15",
     "title": "Got the Keys",
     "position": 15,
     "id": "71958102-1c0e-4fb2-bcb3-2bd9cf9f0ce7",
-    "length": 202000,
-    "recording": {
-      "length": 202000,
-      "video": false,
-      "first-release-date": "2010",
-      "disambiguation": "",
-      "title": "Got the Keys",
-      "id": "159f7a15-54bf-4aac-8513-6c7eda8ba303"
-    },
     "album_id": "143eb007-3c7f-4bf7-ae20-f1e3f8269035"
   },
   {
-    "recording": {
-      "video": false,
-      "length": 220000,
-      "disambiguation": "",
-      "first-release-date": "2010",
-      "title": "Greedy Love",
-      "id": "3ad4dc27-3ffb-4ac6-a6cd-f7216acea313"
-    },
-    "length": 220000,
     "id": "61b5f35d-65f4-4bc7-9a02-1f2f5fb6d018",
     "number": "16",
     "title": "Greedy Love",
     "position": 16,
-    "album_id": "143eb007-3c7f-4bf7-ae20-f1e3f8269035"
-  },
-  {
     "recording": {
-      "length": 245000,
-      "video": false,
+      "id": "3ad4dc27-3ffb-4ac6-a6cd-f7216acea313",
+      "title": "Greedy Love",
       "first-release-date": "2010",
       "disambiguation": "",
-      "title": "Hardest Thing",
-      "id": "967724ce-edcd-45b7-bffb-6a89e1decb0a"
+      "length": 220000,
+      "video": false
     },
+    "length": 220000,
+    "album_id": "143eb007-3c7f-4bf7-ae20-f1e3f8269035"
+  },
+  {
     "length": 245000,
-    "id": "d40a9ed0-e2a6-4a03-aa2c-7b729385915c",
-    "position": 17,
+    "recording": {
+      "title": "Hardest Thing",
+      "id": "967724ce-edcd-45b7-bffb-6a89e1decb0a",
+      "video": false,
+      "length": 245000,
+      "disambiguation": "",
+      "first-release-date": "2010"
+    },
     "title": "Hardest Thing",
+    "position": 17,
     "number": "17",
+    "id": "d40a9ed0-e2a6-4a03-aa2c-7b729385915c",
     "album_id": "143eb007-3c7f-4bf7-ae20-f1e3f8269035"
   },
   {
     "recording": {
+      "id": "81bbd09d-a85b-4944-a879-93c4531b9c59",
+      "title": "Holly Baby",
       "disambiguation": "",
       "first-release-date": "2010",
       "video": false,
-      "length": 218000,
-      "id": "81bbd09d-a85b-4944-a879-93c4531b9c59",
-      "title": "Holly Baby"
+      "length": 218000
     },
     "length": 218000,
     "id": "a8e8e395-58d7-4362-9b11-b40027912bd1",
-    "title": "Holly Baby",
     "position": 18,
+    "title": "Holly Baby",
     "number": "18",
     "album_id": "143eb007-3c7f-4bf7-ae20-f1e3f8269035"
   },
   {
-    "id": "186ffe87-c72d-4ed7-b7d1-e58c13ee716a",
-    "number": "19",
-    "title": "I Need Love",
-    "position": 19,
+    "length": 212000,
     "recording": {
       "disambiguation": "",
       "first-release-date": "2010",
@@ -572,23 +569,26 @@
       "id": "d3a8a554-bb39-4a88-9b6c-d1781b1aff76",
       "title": "I Need Love"
     },
-    "length": 212000,
+    "title": "I Need Love",
+    "number": "19",
+    "position": 19,
+    "id": "186ffe87-c72d-4ed7-b7d1-e58c13ee716a",
     "album_id": "143eb007-3c7f-4bf7-ae20-f1e3f8269035"
   },
   {
-    "id": "ad103d8f-3a93-4c1e-a950-b12f2c066fff",
-    "number": "20",
     "title": "If I\u2019m in Love",
+    "number": "20",
     "position": 20,
+    "id": "ad103d8f-3a93-4c1e-a950-b12f2c066fff",
+    "length": 145000,
     "recording": {
-      "length": 145000,
-      "video": false,
       "first-release-date": "2010",
       "disambiguation": "",
-      "title": "If I\u2019m in Love",
-      "id": "995a525e-71e7-47f4-9523-7f99425afcdd"
+      "length": 145000,
+      "video": false,
+      "id": "995a525e-71e7-47f4-9523-7f99425afcdd",
+      "title": "If I\u2019m in Love"
     },
-    "length": 145000,
     "album_id": "143eb007-3c7f-4bf7-ae20-f1e3f8269035"
   },
   {
@@ -602,35 +602,35 @@
     },
     "length": 181000,
     "id": "8d8c11e8-2084-476e-9fb6-cbfb9f710cac",
+    "number": "21",
     "title": "J.O. B",
     "position": 21,
-    "number": "21",
     "album_id": "143eb007-3c7f-4bf7-ae20-f1e3f8269035"
   },
   {
-    "id": "91ba6c14-58d4-4225-b99b-632192171b81",
-    "position": 23,
-    "title": "Kamikaze",
-    "number": "23",
+    "length": 219000,
     "recording": {
-      "id": "83b579ff-4e49-4994-be5a-ac1e9dcd8125",
-      "title": "Kamikaze",
       "disambiguation": "",
       "first-release-date": "2010",
       "video": false,
-      "length": 219000
+      "length": 219000,
+      "id": "83b579ff-4e49-4994-be5a-ac1e9dcd8125",
+      "title": "Kamikaze"
     },
-    "length": 219000,
+    "title": "Kamikaze",
+    "number": "23",
+    "position": 23,
+    "id": "91ba6c14-58d4-4225-b99b-632192171b81",
     "album_id": "143eb007-3c7f-4bf7-ae20-f1e3f8269035"
   },
   {
     "recording": {
-      "title": "Know Better",
-      "id": "771c6d0c-4629-4ef4-aaff-2c4aa03aec89",
-      "length": 198000,
-      "video": false,
+      "disambiguation": "",
       "first-release-date": "2010",
-      "disambiguation": ""
+      "video": false,
+      "length": 198000,
+      "id": "771c6d0c-4629-4ef4-aaff-2c4aa03aec89",
+      "title": "Know Better"
     },
     "length": 198000,
     "id": "f2b8efa7-40ce-4a40-a1e5-b357fad37645",
@@ -640,30 +640,30 @@
     "album_id": "143eb007-3c7f-4bf7-ae20-f1e3f8269035"
   },
   {
-    "id": "99f22ff9-5994-4d44-b4f4-0fb05a2ad1f5",
-    "number": "25",
     "title": "Lights",
     "position": 25,
-    "recording": {
-      "title": "Lights",
-      "id": "aee383cd-d759-453e-bb7d-37202b8d7aca",
-      "video": false,
-      "length": 211000,
-      "disambiguation": "",
-      "first-release-date": "2010"
-    },
+    "number": "25",
+    "id": "99f22ff9-5994-4d44-b4f4-0fb05a2ad1f5",
     "length": 211000,
+    "recording": {
+      "id": "aee383cd-d759-453e-bb7d-37202b8d7aca",
+      "title": "Lights",
+      "first-release-date": "2010",
+      "disambiguation": "",
+      "length": 211000,
+      "video": false
+    },
     "album_id": "143eb007-3c7f-4bf7-ae20-f1e3f8269035"
   },
   {
     "length": 249000,
     "recording": {
-      "id": "68f901c2-2115-4178-944e-7a99a6a82fe2",
-      "title": "Lonny (new mix)",
+      "length": 249000,
+      "video": false,
       "first-release-date": "2010",
       "disambiguation": "",
-      "length": 249000,
-      "video": false
+      "title": "Lonny (new mix)",
+      "id": "68f901c2-2115-4178-944e-7a99a6a82fe2"
     },
     "title": "Lonny (new mix)",
     "number": "26",
@@ -672,35 +672,35 @@
     "album_id": "143eb007-3c7f-4bf7-ae20-f1e3f8269035"
   },
   {
+    "recording": {
+      "title": "Lost Angel (no 2nd verse)",
+      "id": "a85d73ff-e05d-426c-beaf-6ddec7a9e6b1",
+      "video": false,
+      "length": 276000,
+      "disambiguation": "",
+      "first-release-date": "2010"
+    },
+    "length": 276000,
+    "id": "50af9026-795e-4783-98cc-05b1e4cb6914",
     "title": "Lost Angel (no 2nd verse)",
     "number": "27",
     "position": 27,
-    "id": "50af9026-795e-4783-98cc-05b1e4cb6914",
-    "length": 276000,
-    "recording": {
-      "id": "a85d73ff-e05d-426c-beaf-6ddec7a9e6b1",
-      "title": "Lost Angel (no 2nd verse)",
-      "first-release-date": "2010",
-      "disambiguation": "",
-      "length": 276000,
-      "video": false
-    },
     "album_id": "143eb007-3c7f-4bf7-ae20-f1e3f8269035"
   },
   {
-    "length": 276000,
-    "recording": {
-      "first-release-date": "2010",
-      "disambiguation": "",
-      "length": 276000,
-      "video": false,
-      "id": "3e7b46c0-2982-4acd-8b6a-b6285d19fbc9",
-      "title": "Lost Angel"
-    },
-    "position": 28,
-    "title": "Lost Angel",
-    "number": "28",
     "id": "74a12dba-2fc6-4653-acd6-207d8087f408",
+    "title": "Lost Angel",
+    "position": 28,
+    "number": "28",
+    "recording": {
+      "video": false,
+      "length": 276000,
+      "disambiguation": "",
+      "first-release-date": "2010",
+      "title": "Lost Angel",
+      "id": "3e7b46c0-2982-4acd-8b6a-b6285d19fbc9"
+    },
+    "length": 276000,
     "album_id": "143eb007-3c7f-4bf7-ae20-f1e3f8269035"
   },
   {
@@ -710,84 +710,80 @@
     "id": "cdddaa69-a2d4-4fa8-a177-c0c56f8b34a4",
     "length": 193000,
     "recording": {
-      "title": "Love on My (piano)",
       "id": "d97f4cf9-3fee-46da-a679-4afd8b4dc48c",
-      "video": false,
-      "length": 193000,
+      "title": "Love on My (piano)",
+      "first-release-date": "2010",
       "disambiguation": "",
-      "first-release-date": "2010"
+      "length": 193000,
+      "video": false
     },
     "album_id": "143eb007-3c7f-4bf7-ae20-f1e3f8269035"
   },
   {
+    "title": "Miss You So",
+    "position": 30,
+    "number": "30",
+    "id": "8d773662-b43c-4d13-8595-c0d9986e7c79",
+    "length": 264000,
     "recording": {
-      "id": "a58181e0-cf16-4da7-abed-d13e5a5c38b0",
-      "title": "Miss You So",
       "first-release-date": "2010",
       "disambiguation": "",
       "length": 264000,
-      "video": false
+      "video": false,
+      "id": "a58181e0-cf16-4da7-abed-d13e5a5c38b0",
+      "title": "Miss You So"
     },
-    "length": 264000,
-    "id": "8d773662-b43c-4d13-8595-c0d9986e7c79",
-    "number": "30",
-    "title": "Miss You So",
-    "position": 30,
     "album_id": "143eb007-3c7f-4bf7-ae20-f1e3f8269035"
   },
   {
+    "id": "7d48c61b-4be6-43df-aa06-492bc42f2b1a",
+    "number": "31",
+    "title": "No Bonnie",
+    "position": 31,
     "recording": {
-      "length": 224000,
-      "video": false,
-      "first-release-date": "2010",
-      "disambiguation": "",
+      "id": "6180a81b-d201-4f9f-8a4c-ebb1cf342df1",
       "title": "No Bonnie",
-      "id": "6180a81b-d201-4f9f-8a4c-ebb1cf342df1"
+      "disambiguation": "",
+      "first-release-date": "2010",
+      "video": false,
+      "length": 224000
     },
     "length": 224000,
-    "id": "7d48c61b-4be6-43df-aa06-492bc42f2b1a",
-    "position": 31,
-    "title": "No Bonnie",
-    "number": "31",
     "album_id": "143eb007-3c7f-4bf7-ae20-f1e3f8269035"
   },
   {
-    "position": 32,
-    "title": "No Love",
-    "number": "32",
-    "id": "7774626f-157b-4706-b65e-f672750c3893",
     "length": 172000,
     "recording": {
+      "id": "a725caac-83b8-4ec0-8c6f-98fdf347d838",
+      "title": "No Love",
       "first-release-date": "2010",
       "disambiguation": "",
       "length": 172000,
-      "video": false,
-      "id": "a725caac-83b8-4ec0-8c6f-98fdf347d838",
-      "title": "No Love"
+      "video": false
     },
+    "number": "32",
+    "title": "No Love",
+    "position": 32,
+    "id": "7774626f-157b-4706-b65e-f672750c3893",
     "album_id": "143eb007-3c7f-4bf7-ae20-f1e3f8269035"
   },
   {
+    "length": 217000,
     "recording": {
       "title": "Non-Stop",
       "id": "cadecf77-6102-4a5c-9d20-c41030142044",
-      "length": 217000,
       "video": false,
-      "first-release-date": "2010",
-      "disambiguation": ""
+      "length": 217000,
+      "disambiguation": "",
+      "first-release-date": "2010"
     },
-    "length": 217000,
-    "id": "be326bd1-5757-4fec-91cc-40137d34b994",
     "title": "Non-Stop",
-    "number": "33",
     "position": 33,
+    "number": "33",
+    "id": "be326bd1-5757-4fec-91cc-40137d34b994",
     "album_id": "143eb007-3c7f-4bf7-ae20-f1e3f8269035"
   },
   {
-    "id": "b5caf8e5-f667-42c9-b4c3-a4078109dd06",
-    "position": 34,
-    "title": "Ohh in Love",
-    "number": "34",
     "recording": {
       "title": "Ohh in Love",
       "id": "bd8994b1-dffb-4ba0-bb91-6434d7e04929",
@@ -797,80 +793,84 @@
       "first-release-date": "2010"
     },
     "length": 195000,
+    "id": "b5caf8e5-f667-42c9-b4c3-a4078109dd06",
+    "title": "Ohh in Love",
+    "number": "34",
+    "position": 34,
     "album_id": "143eb007-3c7f-4bf7-ae20-f1e3f8269035"
   },
   {
-    "id": "2df5e556-8041-4090-9845-6720e27b4ac0",
+    "length": 204000,
+    "recording": {
+      "video": false,
+      "length": 204000,
+      "disambiguation": "",
+      "first-release-date": "2010",
+      "title": "Old Terror",
+      "id": "4c209c9b-40df-41db-8de2-9ea95b93cd8d"
+    },
     "position": 35,
     "title": "Old Terror",
     "number": "35",
-    "recording": {
-      "id": "4c209c9b-40df-41db-8de2-9ea95b93cd8d",
-      "title": "Old Terror",
-      "disambiguation": "",
-      "first-release-date": "2010",
-      "video": false,
-      "length": 204000
-    },
-    "length": 204000,
+    "id": "2df5e556-8041-4090-9845-6720e27b4ac0",
     "album_id": "143eb007-3c7f-4bf7-ae20-f1e3f8269035"
   },
   {
     "title": "One Look",
-    "number": "36",
     "position": 36,
+    "number": "36",
     "id": "29edc870-5818-4c1e-8377-dbb02043420c",
     "length": 227000,
     "recording": {
-      "title": "One Look",
-      "id": "201a1492-9d69-4ac7-9a25-e7a8334d2dbc",
-      "length": 227000,
       "video": false,
+      "length": 227000,
+      "disambiguation": "",
       "first-release-date": "2010",
-      "disambiguation": ""
+      "title": "One Look",
+      "id": "201a1492-9d69-4ac7-9a25-e7a8334d2dbc"
     },
     "album_id": "143eb007-3c7f-4bf7-ae20-f1e3f8269035"
   },
   {
     "length": 215000,
     "recording": {
-      "first-release-date": "2010",
-      "disambiguation": "",
-      "length": 215000,
-      "video": false,
       "id": "8e4d0480-3524-40cf-86d9-9c704e6edcca",
-      "title": "Open Air"
+      "title": "Open Air",
+      "disambiguation": "",
+      "first-release-date": "2010",
+      "video": false,
+      "length": 215000
     },
     "title": "Open Air",
-    "number": "37",
     "position": 37,
+    "number": "37",
     "id": "4b7c81ac-8ee8-4971-bf3a-d0f42dae01f7",
     "album_id": "143eb007-3c7f-4bf7-ae20-f1e3f8269035"
   },
   {
-    "id": "e7567c40-7a08-4d21-8a2f-01d47fd607c8",
+    "length": 231000,
+    "recording": {
+      "id": "aa42d8e0-c16b-4b1f-9275-3683fcc72be2",
+      "title": "Overload",
+      "disambiguation": "",
+      "first-release-date": "2010",
+      "video": false,
+      "length": 231000
+    },
+    "position": 38,
     "title": "Overload",
     "number": "38",
-    "position": 38,
-    "recording": {
-      "length": 231000,
-      "video": false,
-      "first-release-date": "2010",
-      "disambiguation": "",
-      "title": "Overload",
-      "id": "aa42d8e0-c16b-4b1f-9275-3683fcc72be2"
-    },
-    "length": 231000,
+    "id": "e7567c40-7a08-4d21-8a2f-01d47fd607c8",
     "album_id": "143eb007-3c7f-4bf7-ae20-f1e3f8269035"
   },
   {
     "recording": {
-      "first-release-date": "2010",
-      "disambiguation": "",
+      "title": "Private Show",
+      "id": "62450b07-52b3-4d7e-a387-d579bfbc4e9a",
       "length": 214000,
       "video": false,
-      "id": "62450b07-52b3-4d7e-a387-d579bfbc4e9a",
-      "title": "Private Show"
+      "first-release-date": "2010",
+      "disambiguation": ""
     },
     "length": 214000,
     "id": "ef401f60-0609-4034-8d76-79779a009165",
@@ -880,147 +880,147 @@
     "album_id": "143eb007-3c7f-4bf7-ae20-f1e3f8269035"
   },
   {
+    "position": 40,
+    "title": "Quickly",
+    "number": "40",
+    "id": "00b128d0-0a73-46d5-b2b4-96bb3bd72ccd",
     "length": 229000,
     "recording": {
-      "video": false,
       "length": 229000,
-      "disambiguation": "",
+      "video": false,
       "first-release-date": "2010",
+      "disambiguation": "",
       "title": "Quickly",
       "id": "ae91c956-19d8-442d-bf4a-908f5abd5e53"
     },
-    "number": "40",
-    "title": "Quickly",
-    "position": 40,
-    "id": "00b128d0-0a73-46d5-b2b4-96bb3bd72ccd",
     "album_id": "143eb007-3c7f-4bf7-ae20-f1e3f8269035"
   },
   {
-    "id": "8e044663-a8af-48b8-90c7-82610fcf1ec7",
-    "title": "Read the Stars",
-    "position": 41,
-    "number": "41",
-    "recording": {
-      "id": "00f08e7e-7c7f-4f9f-b8f2-5986ba53476d",
-      "title": "Read the Stars",
-      "first-release-date": "2010",
-      "disambiguation": "",
-      "length": 195000,
-      "video": false
-    },
     "length": 195000,
+    "recording": {
+      "video": false,
+      "length": 195000,
+      "disambiguation": "",
+      "first-release-date": "2010",
+      "title": "Read the Stars",
+      "id": "00f08e7e-7c7f-4f9f-b8f2-5986ba53476d"
+    },
+    "title": "Read the Stars",
+    "number": "41",
+    "position": 41,
+    "id": "8e044663-a8af-48b8-90c7-82610fcf1ec7",
     "album_id": "143eb007-3c7f-4bf7-ae20-f1e3f8269035"
   },
   {
-    "length": 249000,
-    "recording": {
-      "length": 249000,
-      "video": false,
-      "first-release-date": "2010",
-      "disambiguation": "",
-      "title": "Ready",
-      "id": "c5e1c8bc-64c9-4690-a9e0-6c025721ff86"
-    },
+    "id": "094eb266-3d07-41cd-a5cf-701fc0a5a8b8",
+    "number": "42",
     "title": "Ready",
     "position": 42,
-    "number": "42",
-    "id": "094eb266-3d07-41cd-a5cf-701fc0a5a8b8",
+    "recording": {
+      "title": "Ready",
+      "id": "c5e1c8bc-64c9-4690-a9e0-6c025721ff86",
+      "video": false,
+      "length": 249000,
+      "disambiguation": "",
+      "first-release-date": "2010"
+    },
+    "length": 249000,
     "album_id": "143eb007-3c7f-4bf7-ae20-f1e3f8269035"
   },
   {
-    "length": 234000,
-    "recording": {
-      "id": "ad1e3ce4-07bf-46a9-b4fb-89059c5d89e9",
-      "title": "Real",
-      "disambiguation": "",
-      "first-release-date": "2010",
-      "video": false,
-      "length": 234000
-    },
+    "position": 43,
     "title": "Real",
     "number": "43",
-    "position": 43,
     "id": "5575633d-2d5e-416f-81b4-5c10b21584b4",
+    "length": 234000,
+    "recording": {
+      "first-release-date": "2010",
+      "disambiguation": "",
+      "length": 234000,
+      "video": false,
+      "id": "ad1e3ce4-07bf-46a9-b4fb-89059c5d89e9",
+      "title": "Real"
+    },
     "album_id": "143eb007-3c7f-4bf7-ae20-f1e3f8269035"
   },
   {
+    "number": "44",
+    "title": "Rewind That",
+    "position": 44,
+    "id": "b9cb8385-4d99-4a06-9660-50298964a8cb",
     "length": 221000,
     "recording": {
+      "title": "Rewind That",
+      "id": "b1a41f16-cfaf-4c51-b4b3-582867bfe295",
       "video": false,
       "length": 221000,
       "disambiguation": "",
-      "first-release-date": "2010",
-      "title": "Rewind That",
-      "id": "b1a41f16-cfaf-4c51-b4b3-582867bfe295"
+      "first-release-date": "2010"
     },
-    "position": 44,
-    "title": "Rewind That",
-    "number": "44",
-    "id": "b9cb8385-4d99-4a06-9660-50298964a8cb",
     "album_id": "143eb007-3c7f-4bf7-ae20-f1e3f8269035"
   },
   {
-    "id": "4d2ceaec-2874-47b5-a350-8f43f19d8dd4",
-    "number": "45",
-    "title": "Richest Man in the Room",
-    "position": 45,
     "recording": {
-      "video": false,
       "length": 227000,
-      "disambiguation": "",
+      "video": false,
       "first-release-date": "2010",
+      "disambiguation": "",
       "title": "Richest Man in the Room",
       "id": "7918551f-8ce8-4458-b9da-4dd2e198686a"
     },
     "length": 227000,
+    "id": "4d2ceaec-2874-47b5-a350-8f43f19d8dd4",
+    "title": "Richest Man in the Room",
+    "number": "45",
+    "position": 45,
     "album_id": "143eb007-3c7f-4bf7-ae20-f1e3f8269035"
   },
   {
-    "length": 242000,
+    "id": "0e3ee578-ec1c-4780-b6df-d315a63d1f51",
+    "position": 46,
+    "title": "Rocket Love",
+    "number": "46",
     "recording": {
       "title": "Rocket Love",
       "id": "6fff3ebf-4c7f-4aed-b807-112fa4994cca",
-      "length": 242000,
       "video": false,
-      "first-release-date": "2010",
-      "disambiguation": ""
+      "length": 242000,
+      "disambiguation": "",
+      "first-release-date": "2010"
     },
-    "number": "46",
-    "title": "Rocket Love",
-    "position": 46,
-    "id": "0e3ee578-ec1c-4780-b6df-d315a63d1f51",
+    "length": 242000,
     "album_id": "143eb007-3c7f-4bf7-ae20-f1e3f8269035"
   },
   {
-    "length": 246000,
+    "id": "5a7f1d97-6d87-4889-8ca4-4da310b20ccb",
+    "title": "Scared of Beautiful",
+    "position": 47,
+    "number": "47",
     "recording": {
-      "video": false,
       "length": 246000,
-      "disambiguation": "",
+      "video": false,
       "first-release-date": "2010",
+      "disambiguation": "",
       "title": "Scared of Beautiful",
       "id": "2af64e20-38f9-4dc9-8db6-9d6026257dc2"
     },
-    "position": 47,
-    "title": "Scared of Beautiful",
-    "number": "47",
-    "id": "5a7f1d97-6d87-4889-8ca4-4da310b20ccb",
+    "length": 246000,
     "album_id": "143eb007-3c7f-4bf7-ae20-f1e3f8269035"
   },
   {
-    "id": "a7913894-06ac-4b69-8e3c-d43bb5142252",
     "title": "She Won\u2019t Say Hello",
     "number": "48",
     "position": 48,
-    "recording": {
-      "disambiguation": "",
-      "first-release-date": "2010",
-      "video": false,
-      "length": 196000,
-      "id": "55339a88-f02b-4c03-9f94-f5ef3b29e1ab",
-      "title": "She Won\u2019t Say Hello"
-    },
+    "id": "a7913894-06ac-4b69-8e3c-d43bb5142252",
     "length": 196000,
+    "recording": {
+      "id": "55339a88-f02b-4c03-9f94-f5ef3b29e1ab",
+      "title": "She Won\u2019t Say Hello",
+      "first-release-date": "2010",
+      "disambiguation": "",
+      "length": 196000,
+      "video": false
+    },
     "album_id": "143eb007-3c7f-4bf7-ae20-f1e3f8269035"
   },
   {
@@ -1028,34 +1028,39 @@
     "recording": {
       "id": "6098d639-c3cb-420e-90f2-549689382ddb",
       "title": "Simply",
-      "disambiguation": "",
       "first-release-date": "2010",
-      "video": false,
-      "length": 228000
+      "disambiguation": "",
+      "length": 228000,
+      "video": false
     },
-    "position": 49,
     "title": "Simply",
     "number": "49",
+    "position": 49,
     "id": "87c44595-5511-4d66-9403-29810b003af4",
     "album_id": "143eb007-3c7f-4bf7-ae20-f1e3f8269035"
   },
   {
-    "title": "So Comfortable",
-    "number": "50",
-    "position": 50,
-    "id": "8793490f-aa43-453e-9c4f-6ba4176830d8",
     "length": 212000,
     "recording": {
-      "first-release-date": "2010",
-      "disambiguation": "",
+      "title": "So Comfortable",
+      "id": "9e49909a-c928-480d-9c85-393f545db7f7",
       "length": 212000,
       "video": false,
-      "id": "9e49909a-c928-480d-9c85-393f545db7f7",
-      "title": "So Comfortable"
+      "first-release-date": "2010",
+      "disambiguation": ""
     },
+    "number": "50",
+    "title": "So Comfortable",
+    "position": 50,
+    "id": "8793490f-aa43-453e-9c4f-6ba4176830d8",
     "album_id": "143eb007-3c7f-4bf7-ae20-f1e3f8269035"
   },
   {
+    "number": "51",
+    "title": "So Fresh",
+    "position": 51,
+    "id": "4c3a9be2-ba21-442e-8a67-bc3f581e3f90",
+    "length": 93000,
     "recording": {
       "title": "So Fresh",
       "id": "d23a6a5f-2bc9-41cd-b51c-119a346799b8",
@@ -1064,209 +1069,204 @@
       "disambiguation": "",
       "first-release-date": "2010"
     },
-    "length": 93000,
-    "id": "4c3a9be2-ba21-442e-8a67-bc3f581e3f90",
-    "number": "51",
-    "title": "So Fresh",
-    "position": 51,
     "album_id": "143eb007-3c7f-4bf7-ae20-f1e3f8269035"
   },
   {
-    "length": 227000,
-    "recording": {
-      "first-release-date": "2010",
-      "disambiguation": "",
-      "length": 227000,
-      "video": false,
-      "id": "3c0af8d7-c63c-4d6a-951b-777e89c13e36",
-      "title": "Standing Still"
-    },
+    "id": "59d12850-fc1a-4843-a76a-a9d1b301d293",
+    "position": 52,
     "title": "Standing Still",
     "number": "52",
-    "position": 52,
-    "id": "59d12850-fc1a-4843-a76a-a9d1b301d293",
+    "recording": {
+      "length": 227000,
+      "video": false,
+      "first-release-date": "2010",
+      "disambiguation": "",
+      "title": "Standing Still",
+      "id": "3c0af8d7-c63c-4d6a-951b-777e89c13e36"
+    },
+    "length": 227000,
     "album_id": "143eb007-3c7f-4bf7-ae20-f1e3f8269035"
   },
   {
     "id": "c870df34-b67b-4635-9ff6-0a41745132d1",
+    "number": "53",
     "title": "Stay If You Go",
     "position": 53,
-    "number": "53",
     "recording": {
-      "id": "69869a0f-3d9b-4531-80ef-eda40f70bbff",
-      "title": "Stay If You Go",
-      "first-release-date": "2010",
       "disambiguation": "",
+      "first-release-date": "2010",
+      "video": false,
       "length": 182000,
-      "video": false
+      "id": "69869a0f-3d9b-4531-80ef-eda40f70bbff",
+      "title": "Stay If You Go"
     },
     "length": 182000,
     "album_id": "143eb007-3c7f-4bf7-ae20-f1e3f8269035"
   },
   {
-    "id": "a20f12db-69db-4311-bc27-336268caf607",
     "title": "Sucka for Love",
-    "position": 54,
     "number": "54",
-    "recording": {
-      "title": "Sucka for Love",
-      "id": "e902cfd7-df06-478e-acad-833fb46704c1",
-      "video": false,
-      "length": 199000,
-      "disambiguation": "",
-      "first-release-date": "2010"
-    },
+    "position": 54,
+    "id": "a20f12db-69db-4311-bc27-336268caf607",
     "length": 199000,
+    "recording": {
+      "id": "e902cfd7-df06-478e-acad-833fb46704c1",
+      "title": "Sucka for Love",
+      "disambiguation": "",
+      "first-release-date": "2010",
+      "video": false,
+      "length": 199000
+    },
     "album_id": "143eb007-3c7f-4bf7-ae20-f1e3f8269035"
   },
   {
     "id": "ce4c55d5-2c21-47b3-8af2-e1bc02ca28c6",
-    "position": 55,
     "title": "Sucker for Love",
+    "position": 55,
     "number": "55",
     "recording": {
-      "length": 185000,
-      "video": false,
-      "first-release-date": "2010",
-      "disambiguation": "",
       "title": "Sucker for Love",
-      "id": "cfe8338c-5432-45ce-bf8c-7ac37250bdfe"
+      "id": "cfe8338c-5432-45ce-bf8c-7ac37250bdfe",
+      "video": false,
+      "length": 185000,
+      "disambiguation": "",
+      "first-release-date": "2010"
     },
     "length": 185000,
     "album_id": "143eb007-3c7f-4bf7-ae20-f1e3f8269035"
   },
   {
+    "number": "56",
+    "title": "Surprise Ending",
+    "position": 56,
+    "id": "c9561daa-9545-42eb-8e02-6fc7aba7248e",
     "length": 218000,
     "recording": {
-      "first-release-date": "2010",
-      "disambiguation": "",
+      "title": "Surprise Ending",
+      "id": "f2e38bdc-8f19-49de-9000-ab6031661fc0",
       "length": 218000,
       "video": false,
-      "id": "f2e38bdc-8f19-49de-9000-ab6031661fc0",
-      "title": "Surprise Ending"
-    },
-    "position": 56,
-    "title": "Surprise Ending",
-    "number": "56",
-    "id": "c9561daa-9545-42eb-8e02-6fc7aba7248e",
-    "album_id": "143eb007-3c7f-4bf7-ae20-f1e3f8269035"
-  },
-  {
-    "title": "Taste",
-    "position": 57,
-    "number": "57",
-    "id": "80fe8265-e8bc-42b5-90e4-14c550241e9c",
-    "length": 206000,
-    "recording": {
-      "title": "Taste",
-      "id": "ff6425de-47bf-46d4-8c90-b70f8d694f52",
-      "video": false,
-      "length": 206000,
-      "disambiguation": "",
-      "first-release-date": "2010"
-    },
-    "album_id": "143eb007-3c7f-4bf7-ae20-f1e3f8269035"
-  },
-  {
-    "length": 222000,
-    "recording": {
-      "video": false,
-      "length": 212000,
-      "disambiguation": "",
       "first-release-date": "2010",
-      "title": "The City",
-      "id": "ab67d1f4-0a58-4172-9f21-148be29c1101"
+      "disambiguation": ""
     },
+    "album_id": "143eb007-3c7f-4bf7-ae20-f1e3f8269035"
+  },
+  {
+    "id": "80fe8265-e8bc-42b5-90e4-14c550241e9c",
+    "title": "Taste",
+    "number": "57",
+    "position": 57,
+    "recording": {
+      "length": 206000,
+      "video": false,
+      "first-release-date": "2010",
+      "disambiguation": "",
+      "title": "Taste",
+      "id": "ff6425de-47bf-46d4-8c90-b70f8d694f52"
+    },
+    "length": 206000,
+    "album_id": "143eb007-3c7f-4bf7-ae20-f1e3f8269035"
+  },
+  {
     "title": "The City",
     "position": 58,
     "number": "58",
     "id": "48681eec-2bfe-44f5-acf8-033ef9ee6eb3",
-    "album_id": "143eb007-3c7f-4bf7-ae20-f1e3f8269035"
-  },
-  {
-    "number": "59",
-    "title": "Time Machine",
-    "position": 59,
-    "id": "f6c22d47-4e52-4554-aa94-b74d620414ea",
-    "length": 208000,
+    "length": 222000,
     "recording": {
-      "title": "Time Machine",
-      "id": "1dc1e379-e8ea-4b7d-9dc8-967fa0c4078b",
-      "video": false,
-      "length": 208000,
+      "id": "ab67d1f4-0a58-4172-9f21-148be29c1101",
+      "title": "The City",
+      "first-release-date": "2010",
       "disambiguation": "",
-      "first-release-date": "2010"
+      "length": 212000,
+      "video": false
     },
     "album_id": "143eb007-3c7f-4bf7-ae20-f1e3f8269035"
   },
   {
-    "number": "60",
-    "title": "Together",
-    "position": 60,
-    "id": "bbbc7e9a-85b3-48aa-8fde-018f13075018",
-    "length": 269000,
+    "id": "f6c22d47-4e52-4554-aa94-b74d620414ea",
+    "number": "59",
+    "title": "Time Machine",
+    "position": 59,
     "recording": {
       "disambiguation": "",
       "first-release-date": "2010",
       "video": false,
+      "length": 208000,
+      "id": "1dc1e379-e8ea-4b7d-9dc8-967fa0c4078b",
+      "title": "Time Machine"
+    },
+    "length": 208000,
+    "album_id": "143eb007-3c7f-4bf7-ae20-f1e3f8269035"
+  },
+  {
+    "id": "bbbc7e9a-85b3-48aa-8fde-018f13075018",
+    "number": "60",
+    "title": "Together",
+    "position": 60,
+    "recording": {
+      "first-release-date": "2010",
+      "disambiguation": "",
       "length": 269000,
+      "video": false,
       "id": "afc45d8c-1b22-43d1-a17c-debb9ec8a871",
       "title": "Together"
     },
+    "length": 269000,
     "album_id": "143eb007-3c7f-4bf7-ae20-f1e3f8269035"
   },
   {
     "length": 163000,
     "recording": {
-      "video": false,
-      "length": 163000,
-      "disambiguation": "",
-      "first-release-date": "2010",
       "title": "Tonight",
-      "id": "a85f72f1-28c1-4a51-86dc-0f269e32f5f3"
+      "id": "a85f72f1-28c1-4a51-86dc-0f269e32f5f3",
+      "length": 163000,
+      "video": false,
+      "first-release-date": "2010",
+      "disambiguation": ""
     },
-    "number": "61",
     "title": "Tonight",
     "position": 61,
+    "number": "61",
     "id": "7cf34a09-3d71-4ac3-adbf-04aec5f05605",
     "album_id": "143eb007-3c7f-4bf7-ae20-f1e3f8269035"
   },
   {
-    "length": 213000,
-    "recording": {
-      "id": "cfe565e1-4657-41a2-ab9f-2abd5911ab51",
-      "title": "Truce",
-      "first-release-date": "2010",
-      "disambiguation": "",
-      "length": 213000,
-      "video": false
-    },
+    "number": "62",
     "title": "Truce",
     "position": 62,
-    "number": "62",
     "id": "0f43b118-63e0-4b37-b644-7f2f1ec8d148",
+    "length": 213000,
+    "recording": {
+      "title": "Truce",
+      "id": "cfe565e1-4657-41a2-ab9f-2abd5911ab51",
+      "length": 213000,
+      "video": false,
+      "first-release-date": "2010",
+      "disambiguation": ""
+    },
     "album_id": "143eb007-3c7f-4bf7-ae20-f1e3f8269035"
   },
   {
-    "id": "ef880a7d-2210-4509-8ab4-37903c875c92",
-    "position": 63,
-    "title": "Wake Up",
-    "number": "63",
-    "recording": {
-      "first-release-date": "2010",
-      "disambiguation": "",
-      "length": 219000,
-      "video": false,
-      "id": "f81ac8e3-320d-4029-af37-4d6037b37b1b",
-      "title": "Wake Up"
-    },
     "length": 219000,
+    "recording": {
+      "title": "Wake Up",
+      "id": "f81ac8e3-320d-4029-af37-4d6037b37b1b",
+      "video": false,
+      "length": 219000,
+      "disambiguation": "",
+      "first-release-date": "2010"
+    },
+    "title": "Wake Up",
+    "position": 63,
+    "number": "63",
+    "id": "ef880a7d-2210-4509-8ab4-37903c875c92",
     "album_id": "143eb007-3c7f-4bf7-ae20-f1e3f8269035"
   },
   {
     "id": "4d8a04ae-02e9-41f0-bfec-3b251fcd9641",
-    "title": "When I\u2019m Done",
     "position": 64,
+    "title": "When I\u2019m Done",
     "number": "64",
     "recording": {
       "title": "When I\u2019m Done",
@@ -1280,283 +1280,283 @@
     "album_id": "143eb007-3c7f-4bf7-ae20-f1e3f8269035"
   },
   {
-    "recording": {
-      "title": "Rocket Love",
-      "disambiguation": "",
-      "first-release-date": "2013-07-04",
-      "id": "1503a3c8-4c69-40d5-b84d-2a4309c9abf0",
-      "video": false,
-      "length": 242625
-    },
-    "position": 1,
     "length": null,
     "number": "1",
     "id": "e293ce81-69f9-4cde-9c0e-336ff16dc973",
+    "position": 1,
     "title": "Rocket Love",
+    "recording": {
+      "id": "1503a3c8-4c69-40d5-b84d-2a4309c9abf0",
+      "first-release-date": "2013-07-04",
+      "video": false,
+      "length": 242625,
+      "disambiguation": "",
+      "title": "Rocket Love"
+    },
     "album_id": "1a75468e-b63c-45ee-8824-ac61b21bffe8"
   },
   {
     "length": null,
-    "position": 2,
+    "number": "2",
+    "id": "75930753-8ca8-48d9-9c5a-6d31956cc1c4",
     "recording": {
-      "title": "Time Machine",
       "length": 208399,
+      "title": "Time Machine",
       "disambiguation": "",
+      "video": false,
       "first-release-date": "2013-07-04",
-      "id": "77084611-fa84-4389-b7f9-94fc11f9432a",
-      "video": false
+      "id": "77084611-fa84-4389-b7f9-94fc11f9432a"
     },
     "title": "Time Machine",
-    "id": "75930753-8ca8-48d9-9c5a-6d31956cc1c4",
-    "number": "2",
+    "position": 2,
     "album_id": "1a75468e-b63c-45ee-8824-ac61b21bffe8"
   },
   {
-    "length": null,
-    "recording": {
-      "title": "Heartbreak + Jet Lag",
-      "length": 174962,
-      "id": "9d3f3e13-64a5-4349-95b7-34140c382c7e",
-      "first-release-date": "2013-07-04",
-      "disambiguation": "",
-      "video": false
-    },
     "position": 3,
     "title": "Heartbreak + Jet Lag",
+    "recording": {
+      "length": 174962,
+      "title": "Heartbreak + Jet Lag",
+      "disambiguation": "",
+      "video": false,
+      "first-release-date": "2013-07-04",
+      "id": "9d3f3e13-64a5-4349-95b7-34140c382c7e"
+    },
     "number": "3",
+    "length": null,
     "id": "1532732e-4e3e-46d4-83f7-120c126ac07a",
     "album_id": "1a75468e-b63c-45ee-8824-ac61b21bffe8"
   },
   {
-    "length": null,
     "recording": {
-      "first-release-date": "2013-07-04",
-      "id": "9259676b-d3d3-4bef-bc11-0fd581c1b473",
+      "title": "Bedtime Story",
       "disambiguation": "",
-      "video": false,
       "length": 218917,
-      "title": "Bedtime Story"
+      "first-release-date": "2013-07-04",
+      "video": false,
+      "id": "9259676b-d3d3-4bef-bc11-0fd581c1b473"
     },
     "position": 4,
     "title": "Bedtime Story",
     "id": "54bd132a-fa68-4305-9425-b909196c51dd",
+    "length": null,
     "number": "4",
     "album_id": "1a75468e-b63c-45ee-8824-ac61b21bffe8"
   },
   {
-    "id": "b1f2fae7-351b-48e6-ab27-b7d9c2488f58",
-    "number": "5",
-    "title": "Voodoo",
     "position": 5,
+    "title": "Voodoo",
     "recording": {
-      "length": 97071,
-      "video": false,
       "id": "8bcbb552-4ca5-4d2e-a285-df5455807eb5",
       "first-release-date": "2013-07-04",
+      "video": false,
       "disambiguation": "",
-      "title": "Voodoo"
+      "title": "Voodoo",
+      "length": 97071
     },
     "length": null,
+    "number": "5",
+    "id": "b1f2fae7-351b-48e6-ab27-b7d9c2488f58",
     "album_id": "1a75468e-b63c-45ee-8824-ac61b21bffe8"
   },
   {
+    "id": "846205d3-d6a9-4307-8fb2-022c49542938",
+    "number": "6",
+    "length": null,
+    "position": 6,
+    "title": "White",
     "recording": {
+      "disambiguation": "",
+      "title": "White",
       "length": 122996,
       "id": "7d57d601-4f94-4642-86a7-4ac2776e946a",
       "first-release-date": "2013-07-04",
-      "disambiguation": "",
-      "video": false,
-      "title": "White"
+      "video": false
     },
-    "position": 6,
-    "length": null,
-    "id": "846205d3-d6a9-4307-8fb2-022c49542938",
-    "number": "6",
-    "title": "White",
     "album_id": "1a75468e-b63c-45ee-8824-ac61b21bffe8"
   },
   {
     "position": 7,
-    "recording": {
-      "video": false,
-      "id": "6937e6d5-d988-4b2d-bc8c-a7da55ed8f49",
-      "first-release-date": "2013-07-04",
-      "disambiguation": "",
-      "length": 172895,
-      "title": "No Love"
-    },
-    "length": null,
-    "id": "8b8bc4d7-fdd4-4086-abee-67b9e50cdf44",
-    "number": "7",
     "title": "No Love",
+    "recording": {
+      "length": 172895,
+      "title": "No Love",
+      "disambiguation": "",
+      "video": false,
+      "first-release-date": "2013-07-04",
+      "id": "6937e6d5-d988-4b2d-bc8c-a7da55ed8f49"
+    },
+    "id": "8b8bc4d7-fdd4-4086-abee-67b9e50cdf44",
+    "length": null,
+    "number": "7",
     "album_id": "1a75468e-b63c-45ee-8824-ac61b21bffe8"
   },
   {
-    "title": "4 Tears",
+    "length": null,
     "number": "8",
     "id": "9fe699df-be04-4ff4-a058-c1ea819dafbb",
-    "length": null,
+    "title": "4 Tears",
     "position": 8,
     "recording": {
-      "title": "4 Tears",
-      "disambiguation": "",
       "first-release-date": "2013-07-04",
-      "id": "d69163e6-cc44-44c1-815d-731c281e336d",
       "video": false,
-      "length": 105952
+      "id": "d69163e6-cc44-44c1-815d-731c281e336d",
+      "length": 105952,
+      "title": "4 Tears",
+      "disambiguation": ""
     },
     "album_id": "1a75468e-b63c-45ee-8824-ac61b21bffe8"
   },
   {
-    "title": "Acura Integurl",
-    "id": "f372e031-0583-483b-90f2-9c56f305abbb",
-    "number": "9",
     "length": null,
+    "number": "9",
+    "id": "f372e031-0583-483b-90f2-9c56f305abbb",
     "position": 9,
+    "title": "Acura Integurl",
     "recording": {
+      "disambiguation": "",
       "title": "Acura Integurl",
       "length": 117469,
-      "video": false,
-      "disambiguation": "",
       "id": "e1f59a71-75b2-4c15-8d16-7ab713321168",
-      "first-release-date": "2013-07-04"
+      "first-release-date": "2013-07-04",
+      "video": false
     },
     "album_id": "1a75468e-b63c-45ee-8824-ac61b21bffe8"
   },
   {
-    "number": "10",
-    "id": "1d8f37ad-9aa7-4200-bff3-6bc42feaeceb",
-    "title": "Analog 2",
     "position": 10,
+    "title": "Analog 2",
     "recording": {
       "title": "Analog 2",
-      "id": "f551fd5c-6b73-4580-a7ef-8e03ba7a7649",
+      "disambiguation": "",
+      "length": 276456,
       "first-release-date": "2013-07-04",
+      "video": false,
+      "id": "f551fd5c-6b73-4580-a7ef-8e03ba7a7649"
+    },
+    "number": "10",
+    "length": null,
+    "id": "1d8f37ad-9aa7-4200-bff3-6bc42feaeceb",
+    "album_id": "1a75468e-b63c-45ee-8824-ac61b21bffe8"
+  },
+  {
+    "recording": {
+      "length": 278593,
+      "title": "Whip Appeal",
       "disambiguation": "",
       "video": false,
-      "length": 276456
-    },
-    "length": null,
-    "album_id": "1a75468e-b63c-45ee-8824-ac61b21bffe8"
-  },
-  {
-    "length": null,
-    "position": 11,
-    "recording": {
-      "title": "Whip Appeal",
-      "length": 278593,
-      "disambiguation": "",
-      "id": "1f585c75-0e61-4d17-94f5-8f721f6ab12e",
       "first-release-date": "2013-07-04",
-      "video": false
+      "id": "1f585c75-0e61-4d17-94f5-8f721f6ab12e"
     },
     "title": "Whip Appeal",
-    "id": "a213e982-47ca-48f0-b3be-fb6ec901baa2",
+    "position": 11,
+    "length": null,
     "number": "11",
+    "id": "a213e982-47ca-48f0-b3be-fb6ec901baa2",
     "album_id": "1a75468e-b63c-45ee-8824-ac61b21bffe8"
   },
   {
-    "length": null,
+    "title": "Pyrite (Fools Gold)",
+    "position": 12,
     "recording": {
-      "title": "Pyrite (Fools Gold)",
-      "length": 246874,
       "id": "dba194d8-858f-450f-ab1e-07043b954740",
       "first-release-date": "2013-07-04",
+      "video": false,
+      "length": 246874,
       "disambiguation": "",
-      "video": false
+      "title": "Pyrite (Fools Gold)"
     },
-    "position": 12,
-    "title": "Pyrite (Fools Gold)",
-    "id": "a0d3971e-2f62-4bd9-ae41-86c497816df8",
+    "length": null,
     "number": "12",
+    "id": "a0d3971e-2f62-4bd9-ae41-86c497816df8",
     "album_id": "1a75468e-b63c-45ee-8824-ac61b21bffe8"
   },
   {
     "title": "Scared Of Beautiful",
-    "number": "13",
-    "id": "c47a3c07-8124-4b92-8156-fd4bff412aa6",
-    "length": null,
+    "position": 13,
     "recording": {
+      "length": 246456,
       "title": "Scared Of Beautiful",
-      "video": false,
       "disambiguation": "",
       "first-release-date": "2013-07-04",
-      "id": "d9f4c53c-ae7c-4d57-9e8a-5b0b84b8c0e1",
-      "length": 246456
+      "video": false,
+      "id": "d9f4c53c-ae7c-4d57-9e8a-5b0b84b8c0e1"
     },
-    "position": 13,
+    "length": null,
+    "number": "13",
+    "id": "c47a3c07-8124-4b92-8156-fd4bff412aa6",
     "album_id": "1a75468e-b63c-45ee-8824-ac61b21bffe8"
   },
   {
     "id": "9407ab88-94f3-43a1-8301-240d51f03ea0",
+    "length": null,
     "number": "14",
+    "position": 14,
     "title": "Wise Man",
     "recording": {
-      "length": 231201,
-      "id": "620aee66-8a23-4ccb-a8bb-fefb6f80e615",
-      "first-release-date": "2013-07-04",
+      "title": "Wise Man",
       "disambiguation": "",
+      "length": 231201,
       "video": false,
-      "title": "Wise Man"
+      "first-release-date": "2013-07-04",
+      "id": "620aee66-8a23-4ccb-a8bb-fefb6f80e615"
     },
-    "position": 14,
-    "length": null,
     "album_id": "1a75468e-b63c-45ee-8824-ac61b21bffe8"
   },
   {
-    "id": "f6a21ad7-eed0-4def-9c2d-f986b63c2c16",
-    "number": "1",
-    "title": "Heartbreak + Jet Lag",
-    "position": 1,
     "recording": {
-      "id": "2c1b88a9-30ad-41db-bfb6-cdeed871614b",
-      "title": "Heartbreak + Jet Lag",
+      "length": 175098,
+      "video": false,
       "first-release-date": "2010",
       "disambiguation": "",
-      "length": 175098,
-      "video": false
+      "title": "Heartbreak + Jet Lag",
+      "id": "2c1b88a9-30ad-41db-bfb6-cdeed871614b"
     },
     "length": 175098,
+    "id": "f6a21ad7-eed0-4def-9c2d-f986b63c2c16",
+    "title": "Heartbreak + Jet Lag",
+    "position": 1,
+    "number": "1",
     "album_id": "b08e36e5-762e-4e81-81bd-0ea49996e461"
   },
   {
+    "id": "ef3f1687-bf54-45b7-a385-3d44fd4e5c96",
+    "number": "2",
+    "title": "Summer Remains",
+    "position": 2,
     "recording": {
-      "id": "ab8e1cb0-10e8-4ef4-b327-aa7f25df6bba",
-      "title": "Summer Remains",
-      "first-release-date": "2017-06-01",
-      "disambiguation": "",
+      "video": false,
       "length": 200980,
-      "video": false
+      "disambiguation": "",
+      "first-release-date": "2017-06-01",
+      "title": "Summer Remains",
+      "id": "ab8e1cb0-10e8-4ef4-b327-aa7f25df6bba"
     },
     "length": 200980,
-    "id": "ef3f1687-bf54-45b7-a385-3d44fd4e5c96",
-    "position": 2,
-    "title": "Summer Remains",
-    "number": "2",
     "album_id": "b08e36e5-762e-4e81-81bd-0ea49996e461"
   },
   {
     "length": 254442,
     "recording": {
-      "id": "3dad9a8f-fff3-44e0-a8c9-4d607e69c9bc",
       "title": "I Need It",
-      "disambiguation": "",
-      "first-release-date": "2010",
+      "id": "3dad9a8f-fff3-44e0-a8c9-4d607e69c9bc",
       "video": false,
-      "length": 254442
+      "length": 254442,
+      "disambiguation": "",
+      "first-release-date": "2010"
     },
-    "title": "I Need It",
     "number": "3",
+    "title": "I Need It",
     "position": 3,
     "id": "2fa5ff51-0af2-4236-9840-306456c960bd",
     "album_id": "b08e36e5-762e-4e81-81bd-0ea49996e461"
   },
   {
     "recording": {
-      "video": false,
       "length": 157335,
-      "disambiguation": "",
+      "video": false,
       "first-release-date": "2013-07-04",
+      "disambiguation": "",
       "title": "Good Decoration",
       "id": "e45b6031-0ee1-4751-8b9e-163b1e592de1"
     },
@@ -1568,51 +1568,51 @@
     "album_id": "b08e36e5-762e-4e81-81bd-0ea49996e461"
   },
   {
-    "recording": {
-      "first-release-date": "2010",
-      "disambiguation": "",
-      "length": 216137,
-      "video": false,
-      "id": "6662147a-cc76-4e2c-af98-9b1da68a3534",
-      "title": "Orion (Oh, Ryan)"
-    },
-    "length": 216137,
-    "id": "c79edb5b-e898-4cb7-b3b5-8e87faafb397",
-    "number": "5",
     "title": "Orion (Oh, Ryan)",
+    "number": "5",
     "position": 5,
+    "id": "c79edb5b-e898-4cb7-b3b5-8e87faafb397",
+    "length": 216137,
+    "recording": {
+      "id": "6662147a-cc76-4e2c-af98-9b1da68a3534",
+      "title": "Orion (Oh, Ryan)",
+      "disambiguation": "",
+      "first-release-date": "2010",
+      "video": false,
+      "length": 216137
+    },
     "album_id": "b08e36e5-762e-4e81-81bd-0ea49996e461"
   },
   {
-    "id": "a4543ab2-ffda-4fd4-bcc9-b20f1ce71f8e",
     "number": "6",
     "title": "Math",
     "position": 6,
+    "id": "a4543ab2-ffda-4fd4-bcc9-b20f1ce71f8e",
+    "length": 178682,
     "recording": {
-      "first-release-date": "2010",
-      "disambiguation": "",
+      "title": "Math",
+      "id": "aa7b1ea4-c90e-4ca9-b725-06924fa68331",
       "length": 178682,
       "video": false,
-      "id": "aa7b1ea4-c90e-4ca9-b725-06924fa68331",
-      "title": "Math"
+      "first-release-date": "2010",
+      "disambiguation": ""
     },
-    "length": 178682,
     "album_id": "b08e36e5-762e-4e81-81bd-0ea49996e461"
   },
   {
-    "position": 7,
-    "title": "PDA",
-    "number": "7",
     "id": "9b096e90-edca-469c-9eb9-853db6352681",
-    "length": 276897,
+    "number": "7",
+    "title": "PDA",
+    "position": 7,
     "recording": {
-      "title": "PDA",
-      "id": "d7e01212-25f9-4adb-b196-98102822753d",
+      "first-release-date": "2017-06-01",
+      "disambiguation": "",
       "length": 276897,
       "video": false,
-      "first-release-date": "2017-06-01",
-      "disambiguation": ""
+      "id": "d7e01212-25f9-4adb-b196-98102822753d",
+      "title": "PDA"
     },
+    "length": 276897,
     "album_id": "b08e36e5-762e-4e81-81bd-0ea49996e461"
   },
   {
@@ -1620,98 +1620,102 @@
     "recording": {
       "id": "7c6671c8-d4f5-4fa9-8585-b307c011ba21",
       "title": "Big Enough",
-      "disambiguation": "",
       "first-release-date": "2020-04",
-      "video": false,
-      "length": 198000
+      "disambiguation": "",
+      "length": 198000,
+      "video": false
     },
-    "position": 8,
     "title": "Big Enough",
     "number": "8",
+    "position": 8,
     "id": "1941a14c-f951-492b-a798-0bca45d7c045",
     "album_id": "b08e36e5-762e-4e81-81bd-0ea49996e461"
   },
   {
-    "number": "9",
     "title": "Back (To You)",
     "position": 9,
+    "number": "9",
     "id": "88ba390e-2d79-4979-9110-f1493055d4ea",
     "length": 222328,
     "recording": {
-      "title": "Back (To You)",
       "id": "961283fe-e044-40e3-93c3-d42d6a066253",
-      "length": 222328,
-      "video": false,
+      "title": "Back (To You)",
       "first-release-date": "2017-06-01",
-      "disambiguation": ""
+      "disambiguation": "",
+      "length": 222328,
+      "video": false
     },
     "album_id": "b08e36e5-762e-4e81-81bd-0ea49996e461"
   },
   {
-    "number": "10",
-    "title": "Best Seller",
-    "position": 10,
-    "id": "f223c4a7-850d-4337-a6e6-504f9354f63a",
     "length": 242685,
     "recording": {
-      "id": "48f96ad3-3530-4c10-b723-8b5909edb333",
       "title": "Best Seller",
-      "first-release-date": "2013-07-04",
-      "disambiguation": "",
+      "id": "48f96ad3-3530-4c10-b723-8b5909edb333",
       "length": 242685,
-      "video": false
+      "video": false,
+      "first-release-date": "2013-07-04",
+      "disambiguation": ""
     },
+    "position": 10,
+    "title": "Best Seller",
+    "number": "10",
+    "id": "f223c4a7-850d-4337-a6e6-504f9354f63a",
     "album_id": "b08e36e5-762e-4e81-81bd-0ea49996e461"
   },
   {
-    "position": 11,
-    "title": "Theme Music (snippet)",
-    "number": "11",
-    "id": "6fa90d54-88b5-4e91-842d-b576b1f1bb87",
     "length": 50651,
     "recording": {
-      "id": "9f97b0ae-966b-40b9-ba76-04a7bea85730",
-      "title": "Theme Music (snippet)",
-      "first-release-date": "2013-07-04",
       "disambiguation": "",
-      "length": 50651,
-      "video": false
-    },
-    "album_id": "b08e36e5-762e-4e81-81bd-0ea49996e461"
-  },
-  {
-    "id": "5a4cd8da-af2a-440c-9f5f-5ecb3ad21241",
-    "position": 12,
-    "title": "Try",
-    "number": "12",
-    "recording": {
-      "title": "Try",
-      "id": "5989d78b-7ada-4118-85eb-a7b84a6a3caa",
+      "first-release-date": "2013-07-04",
       "video": false,
-      "length": 190249,
-      "disambiguation": "",
-      "first-release-date": "2013-07-04"
+      "length": 50651,
+      "id": "9f97b0ae-966b-40b9-ba76-04a7bea85730",
+      "title": "Theme Music (snippet)"
     },
-    "length": 190249,
+    "number": "11",
+    "title": "Theme Music (snippet)",
+    "position": 11,
+    "id": "6fa90d54-88b5-4e91-842d-b576b1f1bb87",
     "album_id": "b08e36e5-762e-4e81-81bd-0ea49996e461"
   },
   {
-    "id": "5d3a249c-c913-4db5-bd39-0ca6c108c7ea",
-    "position": 13,
-    "title": "Let Me",
-    "number": "13",
+    "length": 190249,
     "recording": {
-      "disambiguation": "",
       "first-release-date": "2013-07-04",
+      "disambiguation": "",
+      "length": 190249,
+      "video": false,
+      "id": "5989d78b-7ada-4118-85eb-a7b84a6a3caa",
+      "title": "Try"
+    },
+    "number": "12",
+    "title": "Try",
+    "position": 12,
+    "id": "5a4cd8da-af2a-440c-9f5f-5ecb3ad21241",
+    "album_id": "b08e36e5-762e-4e81-81bd-0ea49996e461"
+  },
+  {
+    "length": 204622,
+    "recording": {
       "video": false,
       "length": 204622,
-      "id": "124c6fc8-7b81-46d4-8946-2fedff7e5eb5",
-      "title": "Let Me"
+      "disambiguation": "",
+      "first-release-date": "2013-07-04",
+      "title": "Let Me",
+      "id": "124c6fc8-7b81-46d4-8946-2fedff7e5eb5"
     },
-    "length": 204622,
+    "title": "Let Me",
+    "number": "13",
+    "position": 13,
+    "id": "5d3a249c-c913-4db5-bd39-0ca6c108c7ea",
     "album_id": "b08e36e5-762e-4e81-81bd-0ea49996e461"
   },
   {
+    "id": "e3402f85-23b1-4e8a-961b-138bd7a6dcad",
+    "title": "Dreamkilla",
+    "number": "14",
+    "position": 14,
     "recording": {
       "length": 190328,
       "video": false,
@@ -1721,125 +1725,125 @@
       "id": "e92341e7-085a-4cde-a54a-50a4d656a3aa"
     },
     "length": 190328,
-    "id": "e3402f85-23b1-4e8a-961b-138bd7a6dcad",
-    "title": "Dreamkilla",
-    "number": "14",
-    "position": 14,
     "album_id": "b08e36e5-762e-4e81-81bd-0ea49996e461"
   },
   {
-    "length": 224862,
     "recording": {
+      "title": "Back to You",
+      "id": "6e112237-59f1-4333-8664-5d6f9eacf400",
       "video": false,
       "length": 224862,
       "disambiguation": "",
-      "first-release-date": "2017-06-01",
-      "title": "Back to You",
-      "id": "6e112237-59f1-4333-8664-5d6f9eacf400"
+      "first-release-date": "2017-06-01"
     },
-    "number": "15",
-    "title": "Back to You",
-    "position": 15,
+    "length": 224862,
     "id": "ec139e47-25c6-4ecc-b15f-494ccb9549db",
+    "position": 15,
+    "title": "Back to You",
+    "number": "15",
     "album_id": "b08e36e5-762e-4e81-81bd-0ea49996e461"
   },
   {
-    "id": "8584bfaf-3258-4fed-ba8d-3772ed6c0a23",
-    "title": "Static",
-    "position": 16,
-    "number": "16",
     "recording": {
-      "title": "Static",
-      "id": "1227dbaa-a399-481e-9099-4386f9bc8df2",
-      "video": false,
-      "length": 261198,
-      "disambiguation": "",
-      "first-release-date": "2013-07-04"
-    },
-    "length": 261198,
-    "album_id": "b08e36e5-762e-4e81-81bd-0ea49996e461"
-  },
-  {
-    "length": 216032,
-    "recording": {
-      "id": "c4633cad-2adb-4f24-a881-bbec4673c508",
-      "title": "Light Show",
       "disambiguation": "",
       "first-release-date": "2013-07-04",
       "video": false,
-      "length": 216032
+      "length": 261198,
+      "id": "1227dbaa-a399-481e-9099-4386f9bc8df2",
+      "title": "Static"
     },
-    "title": "Light Show",
-    "number": "17",
-    "position": 17,
-    "id": "a820dfe0-f250-406f-8eaf-59acc54c6e4a",
+    "length": 261198,
+    "id": "8584bfaf-3258-4fed-ba8d-3772ed6c0a23",
+    "title": "Static",
+    "number": "16",
+    "position": 16,
     "album_id": "b08e36e5-762e-4e81-81bd-0ea49996e461"
   },
   {
-    "length": 103262,
+    "id": "a820dfe0-f250-406f-8eaf-59acc54c6e4a",
+    "number": "17",
+    "title": "Light Show",
+    "position": 17,
     "recording": {
-      "title": "Trouble (snippet)",
-      "id": "26988e95-069f-4cc4-8a76-89d574ed0572",
+      "title": "Light Show",
+      "id": "c4633cad-2adb-4f24-a881-bbec4673c508",
+      "length": 216032,
+      "video": false,
+      "first-release-date": "2013-07-04",
+      "disambiguation": ""
+    },
+    "length": 216032,
+    "album_id": "b08e36e5-762e-4e81-81bd-0ea49996e461"
+  },
+  {
+    "recording": {
+      "disambiguation": "",
+      "first-release-date": "2017-06-01",
       "video": false,
       "length": 103262,
-      "disambiguation": "",
-      "first-release-date": "2017-06-01"
+      "id": "26988e95-069f-4cc4-8a76-89d574ed0572",
+      "title": "Trouble (snippet)"
     },
+    "length": 103262,
+    "id": "d75a4cf2-10c8-4bfa-b98b-ce8c1a4c6f67",
     "title": "Trouble (snippet)",
     "position": 18,
     "number": "18",
-    "id": "d75a4cf2-10c8-4bfa-b98b-ce8c1a4c6f67",
     "album_id": "b08e36e5-762e-4e81-81bd-0ea49996e461"
   },
   {
-    "recording": {
-      "length": 246831,
-      "video": false,
-      "first-release-date": "2017-06-01",
-      "disambiguation": "",
-      "title": "Pyrite (Fool\u2019s Gold)",
-      "id": "915b3f05-7b28-4c8d-bede-1c3c0f16b090"
-    },
     "length": 246831,
-    "id": "18162333-1c6d-4e8a-bccc-4eece0732837",
+    "recording": {
+      "id": "915b3f05-7b28-4c8d-bede-1c3c0f16b090",
+      "title": "Pyrite (Fool\u2019s Gold)",
+      "disambiguation": "",
+      "first-release-date": "2017-06-01",
+      "video": false,
+      "length": 246831
+    },
     "position": 19,
     "title": "Pyrite (Fool\u2019s Gold)",
     "number": "19",
+    "id": "18162333-1c6d-4e8a-bccc-4eece0732837",
     "album_id": "b08e36e5-762e-4e81-81bd-0ea49996e461"
   },
   {
-    "position": 20,
-    "title": "U Got It",
-    "number": "20",
-    "id": "f993dda1-5bc9-4856-b7c1-77f8c2d08daf",
     "length": 198275,
     "recording": {
-      "video": false,
       "length": 198275,
-      "disambiguation": "",
+      "video": false,
       "first-release-date": "2013-07-04",
+      "disambiguation": "",
       "title": "U Got It",
       "id": "905b1be7-4f96-4ce0-bc69-98b9628486c4"
     },
+    "title": "U Got It",
+    "number": "20",
+    "position": 20,
+    "id": "f993dda1-5bc9-4856-b7c1-77f8c2d08daf",
     "album_id": "b08e36e5-762e-4e81-81bd-0ea49996e461"
   },
   {
-    "position": 21,
-    "title": "4 Tears",
-    "number": "21",
-    "id": "c53f3551-d600-4b19-8f29-5e9d632837ff",
-    "length": 105691,
     "recording": {
+      "title": "4 Tears",
+      "id": "05735d60-8ee1-4cad-912c-5954c8888635",
       "video": false,
       "length": 105691,
       "disambiguation": "",
-      "first-release-date": "2017-06-01",
-      "title": "4 Tears",
-      "id": "05735d60-8ee1-4cad-912c-5954c8888635"
+      "first-release-date": "2017-06-01"
     },
+    "length": 105691,
+    "id": "c53f3551-d600-4b19-8f29-5e9d632837ff",
+    "title": "4 Tears",
+    "number": "21",
+    "position": 21,
     "album_id": "b08e36e5-762e-4e81-81bd-0ea49996e461"
   },
   {
+    "id": "7df17984-b575-4a19-b991-6ce57870b098",
+    "number": "22",
+    "title": "Bend Ya",
+    "position": 22,
     "recording": {
       "id": "5bf7b2cc-51ec-4332-ad06-389c92c50606",
       "title": "Bend Ya",
@@ -1849,82 +1853,77 @@
       "video": false
     },
     "length": 228444,
-    "id": "7df17984-b575-4a19-b991-6ce57870b098",
-    "position": 22,
-    "title": "Bend Ya",
-    "number": "22",
     "album_id": "b08e36e5-762e-4e81-81bd-0ea49996e461"
   },
   {
-    "id": "5807f0dd-10f0-46df-a447-fd94a1280067",
-    "number": "23",
     "title": "Get My Gun",
     "position": 23,
+    "number": "23",
+    "id": "5807f0dd-10f0-46df-a447-fd94a1280067",
+    "length": 228760,
     "recording": {
       "id": "3bd1b030-f80c-4358-a574-231f486d31dd",
       "title": "Get My Gun",
-      "disambiguation": "",
       "first-release-date": "2017-12",
-      "video": false,
-      "length": 228760
+      "disambiguation": "",
+      "length": 228760,
+      "video": false
     },
-    "length": 228760,
     "album_id": "b08e36e5-762e-4e81-81bd-0ea49996e461"
   },
   {
+    "id": "442154eb-8441-4c45-86e7-bb552b2adb95",
+    "number": "24",
+    "title": "Acura Integurl",
+    "position": 24,
     "recording": {
       "id": "375ca91d-4a11-4988-8aa9-003c612c83c1",
       "title": "Acura Integurl",
-      "disambiguation": "",
       "first-release-date": "2017-06-01",
-      "video": false,
-      "length": 117472
+      "disambiguation": "",
+      "length": 117472,
+      "video": false
     },
     "length": 117472,
-    "id": "442154eb-8441-4c45-86e7-bb552b2adb95",
-    "position": 24,
-    "title": "Acura Integurl",
-    "number": "24",
     "album_id": "b08e36e5-762e-4e81-81bd-0ea49996e461"
   },
   {
+    "length": 123141,
     "recording": {
+      "id": "2d51f80b-d314-4116-b838-dbbb6c1ced4d",
+      "title": "Reach for the Stars",
       "disambiguation": "",
       "first-release-date": "2018-01",
       "video": false,
-      "length": 123141,
-      "id": "2d51f80b-d314-4116-b838-dbbb6c1ced4d",
-      "title": "Reach for the Stars"
+      "length": 123141
     },
-    "length": 123141,
-    "id": "d88ea95e-5303-4534-8886-a46d1939aebf",
     "position": 25,
     "title": "Reach for the Stars",
     "number": "25",
+    "id": "d88ea95e-5303-4534-8886-a46d1939aebf",
     "album_id": "b08e36e5-762e-4e81-81bd-0ea49996e461"
   },
   {
+    "position": 26,
     "title": "Thinking About You (OG)",
     "number": "26",
-    "position": 26,
     "id": "aa195efc-b4aa-4506-ab08-f591f7b83c45",
     "length": 192339,
     "recording": {
+      "id": "f05f18d2-9f55-4a5e-8a9e-50c619e7f447",
+      "title": "Thinking About You (OG)",
       "first-release-date": "2017-06-01",
       "disambiguation": "",
       "length": 192339,
-      "video": false,
-      "id": "f05f18d2-9f55-4a5e-8a9e-50c619e7f447",
-      "title": "Thinking About You (OG)"
+      "video": false
     },
     "album_id": "b08e36e5-762e-4e81-81bd-0ea49996e461"
   },
   {
-    "number": "27",
-    "title": "Cameras (snippet)",
-    "position": 27,
     "id": "33ab3282-77ef-48a7-884f-23bfbf907406",
-    "length": 44538,
+    "position": 27,
+    "title": "Cameras (snippet)",
+    "number": "27",
     "recording": {
       "id": "12c99f3b-eca0-461b-9aba-6c91250e3fc0",
       "title": "Cameras (snippet)",
@@ -1933,16 +1932,17 @@
       "video": false,
       "length": 44538
     },
+    "length": 44538,
     "album_id": "b08e36e5-762e-4e81-81bd-0ea49996e461"
   },
   {
     "recording": {
-      "disambiguation": "",
-      "first-release-date": "2013-07-04",
       "video": false,
       "length": 205772,
-      "id": "03c768f1-56bd-4d2a-bcd8-e68c1c596f4c",
-      "title": "Blue Whale"
+      "disambiguation": "",
+      "first-release-date": "2013-07-04",
+      "title": "Blue Whale",
+      "id": "03c768f1-56bd-4d2a-bcd8-e68c1c596f4c"
     },
     "length": 205772,
     "id": "0e4c7c8f-6e57-4f88-a82d-29b540eca1f5",
@@ -1952,70 +1952,74 @@
     "album_id": "b08e36e5-762e-4e81-81bd-0ea49996e461"
   },
   {
-    "length": 97071,
-    "recording": {
-      "id": "8bcbb552-4ca5-4d2e-a285-df5455807eb5",
-      "title": "Voodoo",
-      "first-release-date": "2013-07-04",
-      "disambiguation": "",
-      "length": 97071,
-      "video": false
-    },
-    "title": "Voodoo",
-    "number": "29",
-    "position": 29,
     "id": "1f4ffc1c-b2f3-4de4-b538-fb576e0cacfe",
+    "title": "Voodoo",
+    "position": 29,
+    "number": "29",
+    "recording": {
+      "disambiguation": "",
+      "first-release-date": "2013-07-04",
+      "video": false,
+      "length": 97071,
+      "id": "8bcbb552-4ca5-4d2e-a285-df5455807eb5",
+      "title": "Voodoo"
+    },
+    "length": 97071,
     "album_id": "b08e36e5-762e-4e81-81bd-0ea49996e461"
   },
   {
+    "position": 30,
+    "title": "Whip Appeal",
+    "number": "30",
+    "id": "170b7752-21c2-4b09-ac7f-c80890fb1903",
     "length": 278569,
     "recording": {
+      "title": "Whip Appeal",
+      "id": "ec0dc060-7fff-43da-b45c-efbffe8c16e0",
       "length": 278569,
       "video": false,
       "first-release-date": "2017-06-01",
-      "disambiguation": "",
-      "title": "Whip Appeal",
-      "id": "ec0dc060-7fff-43da-b45c-efbffe8c16e0"
+      "disambiguation": ""
     },
-    "title": "Whip Appeal",
-    "number": "30",
-    "position": 30,
-    "id": "170b7752-21c2-4b09-ac7f-c80890fb1903",
     "album_id": "b08e36e5-762e-4e81-81bd-0ea49996e461"
   },
   {
-    "length": 231183,
     "recording": {
       "title": "Wiseman",
       "id": "8a4f3c7f-69bc-41ca-bd67-7371bc483fdc",
+      "video": false,
       "length": 231183,
-      "video": false,
-      "first-release-date": "2012",
-      "disambiguation": ""
-    },
-    "number": "31",
-    "title": "Wiseman",
-    "position": 31,
-    "id": "155d7d7c-0f1c-44e5-861a-97e4f700c263",
-    "album_id": "b08e36e5-762e-4e81-81bd-0ea49996e461"
-  },
-  {
-    "title": "Hero",
-    "position": 32,
-    "number": "32",
-    "id": "4c9a3aa3-d755-4bdc-a720-249ae60b2ff2",
-    "length": 165541,
-    "recording": {
-      "video": false,
-      "length": 165541,
       "disambiguation": "",
-      "first-release-date": "2013-07-04",
-      "title": "Hero",
-      "id": "20d44350-6bc8-4da1-a076-7d6d2f22f4af"
+      "first-release-date": "2012"
     },
+    "length": 231183,
+    "id": "155d7d7c-0f1c-44e5-861a-97e4f700c263",
+    "title": "Wiseman",
+    "number": "31",
+    "position": 31,
     "album_id": "b08e36e5-762e-4e81-81bd-0ea49996e461"
   },
   {
+    "id": "4c9a3aa3-d755-4bdc-a720-249ae60b2ff2",
+    "title": "Hero",
+    "number": "32",
+    "position": 32,
+    "recording": {
+      "first-release-date": "2013-07-04",
+      "disambiguation": "",
+      "length": 165541,
+      "video": false,
+      "id": "20d44350-6bc8-4da1-a076-7d6d2f22f4af",
+      "title": "Hero"
+    },
+    "length": 165541,
+    "album_id": "b08e36e5-762e-4e81-81bd-0ea49996e461"
+  },
+  {
+    "id": "1a178daf-da77-4765-89d2-4ace2a9e3155",
+    "title": "Thinking Bout You (remix)",
+    "position": 33,
+    "number": "33",
     "recording": {
       "disambiguation": "",
       "first-release-date": "2017-06-01",
@@ -2025,17 +2029,9 @@
       "title": "Thinking Bout You (remix)"
     },
     "length": 278308,
-    "id": "1a178daf-da77-4765-89d2-4ace2a9e3155",
-    "number": "33",
-    "title": "Thinking Bout You (remix)",
-    "position": 33,
     "album_id": "b08e36e5-762e-4e81-81bd-0ea49996e461"
   },
   {
-    "number": "35",
-    "title": "Without You",
-    "position": 35,
-    "id": "8f49ae13-6966-41d4-bf9a-308a8f03bac4",
     "length": 350171,
     "recording": {
       "title": "Without You",
@@ -2045,934 +2041,938 @@
       "first-release-date": "2017-06-01",
       "disambiguation": ""
     },
+    "number": "35",
+    "title": "Without You",
+    "position": 35,
+    "id": "8f49ae13-6966-41d4-bf9a-308a8f03bac4",
     "album_id": "b08e36e5-762e-4e81-81bd-0ea49996e461"
   },
   {
+    "id": "0fb4f13e-0e10-4f35-975b-79bdcd2aeeac",
+    "number": "36",
+    "title": "Golden Girl",
+    "position": 36,
     "recording": {
-      "id": "f88653a5-669c-4528-a6b8-c832749b1053",
-      "title": "Golden Girl",
-      "first-release-date": "2017-06-01",
       "disambiguation": "",
+      "first-release-date": "2017-06-01",
+      "video": false,
       "length": 298970,
-      "video": false
+      "id": "f88653a5-669c-4528-a6b8-c832749b1053",
+      "title": "Golden Girl"
     },
     "length": 298970,
-    "id": "0fb4f13e-0e10-4f35-975b-79bdcd2aeeac",
-    "title": "Golden Girl",
-    "number": "36",
-    "position": 36,
     "album_id": "b08e36e5-762e-4e81-81bd-0ea49996e461"
   },
   {
-    "title": "Pink Matter (remix)",
-    "position": 37,
-    "number": "37",
-    "id": "3c0bcc7f-b736-4507-b7a6-ae10827ce3d9",
-    "length": 316413,
     "recording": {
       "title": "Pink Matter (remix)",
       "id": "c9bebf2a-b912-4c61-b696-3b08e90e5ff3",
-      "length": 316413,
       "video": false,
-      "first-release-date": "2013-01-11",
-      "disambiguation": ""
+      "length": 316413,
+      "disambiguation": "",
+      "first-release-date": "2013-01-11"
     },
+    "length": 316413,
+    "id": "3c0bcc7f-b736-4507-b7a6-ae10827ce3d9",
+    "title": "Pink Matter (remix)",
+    "number": "37",
+    "position": 37,
     "album_id": "b08e36e5-762e-4e81-81bd-0ea49996e461"
   },
   {
-    "length": 221579,
-    "recording": {
-      "first-release-date": "2013-07-04",
-      "disambiguation": "",
-      "length": 221579,
-      "video": false,
-      "id": "66787182-5122-46f6-89a3-b34ad963f02d",
-      "title": "Eyes Like Sky"
-    },
     "number": "38",
     "title": "Eyes Like Sky",
     "position": 38,
     "id": "a623a948-eaaa-4cc3-b57b-fdeb12ab30c4",
+    "length": 221579,
+    "recording": {
+      "title": "Eyes Like Sky",
+      "id": "66787182-5122-46f6-89a3-b34ad963f02d",
+      "video": false,
+      "length": 221579,
+      "disambiguation": "",
+      "first-release-date": "2013-07-04"
+    },
     "album_id": "b08e36e5-762e-4e81-81bd-0ea49996e461"
   },
   {
-    "id": "56b14737-b3ea-4628-a294-9bda7cb3bf38",
-    "position": 39,
-    "title": "Thinking About You (SBTRKT edit)",
-    "number": "39",
+    "length": 190380,
     "recording": {
-      "title": "Thinking About You (SBTRKT edit)",
-      "id": "a2935609-7340-4ba2-a52f-2963b592d16a",
+      "disambiguation": "",
+      "first-release-date": "2017-06-01",
       "video": false,
       "length": 190380,
-      "disambiguation": "",
-      "first-release-date": "2017-06-01"
+      "id": "a2935609-7340-4ba2-a52f-2963b592d16a",
+      "title": "Thinking About You (SBTRKT edit)"
     },
-    "length": 190380,
+    "title": "Thinking About You (SBTRKT edit)",
+    "number": "39",
+    "position": 39,
+    "id": "56b14737-b3ea-4628-a294-9bda7cb3bf38",
     "album_id": "b08e36e5-762e-4e81-81bd-0ea49996e461"
   },
   {
-    "id": "361fc40a-01bd-4a73-a064-1b6a9bb2515d",
     "title": "Whip Appeal (SBTRKT edit)",
-    "number": "40",
     "position": 40,
-    "recording": {
-      "title": "Whip Appeal (SBTRKT edit)",
-      "id": "a889c817-6e96-4d53-9fc4-aac507e3f692",
-      "video": false,
-      "length": 240222,
-      "disambiguation": "",
-      "first-release-date": "2017-06-01"
-    },
+    "number": "40",
+    "id": "361fc40a-01bd-4a73-a064-1b6a9bb2515d",
     "length": 240222,
+    "recording": {
+      "id": "a889c817-6e96-4d53-9fc4-aac507e3f692",
+      "title": "Whip Appeal (SBTRKT edit)",
+      "first-release-date": "2017-06-01",
+      "disambiguation": "",
+      "length": 240222,
+      "video": false
+    },
     "album_id": "b08e36e5-762e-4e81-81bd-0ea49996e461"
   },
   {
+    "recording": {
+      "first-release-date": "2010",
+      "disambiguation": "",
+      "length": 215771,
+      "video": false,
+      "id": "82532def-915e-4058-8560-11cfd3e79f63",
+      "title": "Lovely Day"
+    },
+    "length": 215771,
+    "id": "3bcd142d-245f-4b1f-a5b0-278c77792871",
+    "position": 41,
     "title": "Lovely Day",
     "number": "41",
-    "position": 41,
-    "id": "3bcd142d-245f-4b1f-a5b0-278c77792871",
-    "length": 215771,
-    "recording": {
-      "title": "Lovely Day",
-      "id": "82532def-915e-4058-8560-11cfd3e79f63",
-      "video": false,
-      "length": 215771,
-      "disambiguation": "",
-      "first-release-date": "2010"
-    },
     "album_id": "b08e36e5-762e-4e81-81bd-0ea49996e461"
   },
   {
     "id": "efadd68f-a924-45f8-bc62-53abdba1479f",
-    "title": "Memrise",
     "number": "42",
+    "title": "Memrise",
     "position": 42,
     "recording": {
+      "title": "Memrise",
+      "id": "e6c9fc25-1a5a-4cbf-ac90-793aa9b39743",
       "length": 117901,
       "video": false,
       "first-release-date": "2017-06-01",
-      "disambiguation": "",
-      "title": "Memrise",
-      "id": "e6c9fc25-1a5a-4cbf-ac90-793aa9b39743"
+      "disambiguation": ""
     },
     "length": 117901,
     "album_id": "b08e36e5-762e-4e81-81bd-0ea49996e461"
   },
   {
+    "position": 43,
+    "title": "You Are Luhh",
+    "number": "43",
+    "id": "b15e90eb-1dfc-4ed6-9664-6bf28450a268",
+    "length": 299629,
     "recording": {
-      "video": false,
-      "length": 299629,
       "disambiguation": "",
       "first-release-date": "2013-07-04",
-      "title": "You Are Luhh",
-      "id": "4af6ccd1-06e8-4122-90ee-9ab486894c5b"
+      "video": false,
+      "length": 299629,
+      "id": "4af6ccd1-06e8-4122-90ee-9ab486894c5b",
+      "title": "You Are Luhh"
     },
-    "length": 299629,
-    "id": "b15e90eb-1dfc-4ed6-9664-6bf28450a268",
-    "number": "43",
-    "title": "You Are Luhh",
-    "position": 43,
     "album_id": "b08e36e5-762e-4e81-81bd-0ea49996e461"
   },
   {
-    "position": 1,
     "length": 320986,
-    "recording": {
-      "video": false,
-      "title": "At Your Best (You Are Love)",
-      "id": "467730f1-ce7f-4d04-a98a-09beebaf8f4e",
-      "first-release-date": "2016-08-19",
-      "disambiguation": "",
-      "length": 320000
-    },
-    "title": "At Your Best (You Are Love)",
-    "number": "1",
     "id": "d149e910-eb15-45fd-82e1-92db26548a75",
+    "title": "At Your Best (You Are Love)",
+    "position": 1,
+    "number": "1",
+    "recording": {
+      "length": 320000,
+      "title": "At Your Best (You Are Love)",
+      "disambiguation": "",
+      "video": false,
+      "first-release-date": "2016-08-19",
+      "id": "467730f1-ce7f-4d04-a98a-09beebaf8f4e"
+    },
     "album_id": "b69366e3-8145-405e-9220-c0a575f23474"
   },
   {
+    "number": "2",
     "recording": {
       "title": "Alabama",
+      "length": 84506,
       "video": false,
-      "id": "38632088-7fec-4ec3-91f2-140bee3e6733",
       "first-release-date": "2017-11-27",
-      "disambiguation": "",
-      "length": 84506
+      "id": "38632088-7fec-4ec3-91f2-140bee3e6733",
+      "disambiguation": ""
     },
     "length": 84506,
-    "position": 2,
-    "number": "2",
     "id": "013abbb0-37b3-46ab-86eb-138c6155551b",
     "title": "Alabama",
+    "position": 2,
     "album_id": "b69366e3-8145-405e-9220-c0a575f23474"
   },
   {
-    "number": "3",
-    "id": "e661df29-7170-4ca2-8c19-212302a3aedb",
-    "title": "Mine",
-    "length": 32013,
     "position": 3,
+    "title": "Mine",
+    "id": "e661df29-7170-4ca2-8c19-212302a3aedb",
+    "length": 32013,
     "recording": {
       "title": "Mine",
+      "length": 32000,
+      "disambiguation": "",
       "video": false,
       "id": "3a158079-afb9-4269-9666-7ef7ac8625cf",
-      "first-release-date": "2017-11-27",
-      "disambiguation": "",
-      "length": 32000
+      "first-release-date": "2017-11-27"
     },
+    "number": "3",
     "album_id": "b69366e3-8145-405e-9220-c0a575f23474"
   },
   {
-    "title": "U.N.I.T.Y.",
+    "recording": {
+      "length": 173586,
+      "title": "UNITY",
+      "disambiguation": "",
+      "video": false,
+      "first-release-date": "2017-11-27",
+      "id": "e82727ea-20b7-4070-9135-de5fdc710375"
+    },
     "number": "4",
+    "title": "U.N.I.T.Y.",
     "id": "d13ac4ce-5368-4b78-8687-e3c5c0a85f51",
     "position": 4,
     "length": 173586,
-    "recording": {
-      "length": 173586,
-      "disambiguation": "",
-      "first-release-date": "2017-11-27",
-      "id": "e82727ea-20b7-4070-9135-de5fdc710375",
-      "title": "UNITY",
-      "video": false
-    },
     "album_id": "b69366e3-8145-405e-9220-c0a575f23474"
   },
   {
     "recording": {
-      "id": "64821cff-6ae0-49a3-8d61-884937ba5c47",
-      "video": false,
       "title": "A Certain Way",
-      "first-release-date": "2016-08-19",
+      "length": 11000,
       "disambiguation": "",
-      "length": 11000
+      "video": false,
+      "id": "64821cff-6ae0-49a3-8d61-884937ba5c47",
+      "first-release-date": "2016-08-19"
     },
-    "length": 11120,
-    "position": 5,
     "number": "5",
     "id": "27e36e29-54ee-4cc9-949b-f08a3fcce5bf",
     "title": "In a Certain Way",
+    "position": 5,
+    "length": 11120,
     "album_id": "b69366e3-8145-405e-9220-c0a575f23474"
   },
   {
-    "title": "Commes Des Garcons",
-    "id": "c39fcf86-ed5e-42b2-aa3c-afdaf5205a03",
     "number": "6",
     "recording": {
-      "first-release-date": "2017-11-27",
-      "video": false,
-      "title": "Comme Des Gar\u00e7ons",
       "id": "a04dd1fd-91a1-4232-81ed-aa6bbf09447f",
-      "length": 58746,
-      "disambiguation": ""
+      "video": false,
+      "first-release-date": "2017-11-27",
+      "disambiguation": "",
+      "title": "Comme Des Gar\u00e7ons",
+      "length": 58746
     },
-    "position": 6,
     "length": 58746,
+    "id": "c39fcf86-ed5e-42b2-aa3c-afdaf5205a03",
+    "title": "Commes Des Garcons",
+    "position": 6,
     "album_id": "b69366e3-8145-405e-9220-c0a575f23474"
   },
   {
-    "id": "fd668095-e5fb-4b24-b987-bb246679c73e",
     "number": "7",
-    "title": "Xenons",
     "recording": {
-      "id": "25bf90e6-dcd3-4028-b954-b04946021447",
       "title": "Xenons",
+      "length": 31000,
+      "id": "25bf90e6-dcd3-4028-b954-b04946021447",
       "video": false,
       "first-release-date": "2016-08-19",
-      "disambiguation": "",
-      "length": 31000
+      "disambiguation": ""
     },
     "length": 31106,
+    "id": "fd668095-e5fb-4b24-b987-bb246679c73e",
+    "title": "Xenons",
     "position": 7,
     "album_id": "b69366e3-8145-405e-9220-c0a575f23474"
   },
   {
     "recording": {
+      "length": 9000,
       "title": "Honey Baby",
       "video": false,
+      "first-release-date": "2017-11-27",
       "id": "99cc0279-212c-4a87-9b4c-d4a7c53e4006",
-      "first-release-date": "2017-11-27",
-      "disambiguation": "",
-      "length": 9000
-    },
-    "position": 8,
-    "length": 9066,
-    "title": "Honey Baby",
-    "id": "6032433d-e8c7-4dd1-af90-cfdcc8c71581",
-    "number": "8",
-    "album_id": "b69366e3-8145-405e-9220-c0a575f23474"
-  },
-  {
-    "number": "9",
-    "id": "9a2d9af9-5226-4493-a3c2-0ebb4a16f908",
-    "title": "Wither",
-    "length": 153600,
-    "position": 9,
-    "recording": {
-      "length": 153600,
-      "disambiguation": "",
-      "first-release-date": "2017-11-27",
-      "title": "Wither",
-      "video": false,
-      "id": "bfa5ba86-b6ef-4f11-97ef-4157dca8b34c"
-    },
-    "album_id": "b69366e3-8145-405e-9220-c0a575f23474"
-  },
-  {
-    "recording": {
-      "first-release-date": "2017-11-27",
-      "video": false,
-      "title": "Hublots",
-      "id": "cd775ca2-1317-4a1c-adcd-5093fe191876",
-      "length": 105000,
       "disambiguation": ""
     },
-    "length": 108320,
-    "position": 10,
+    "number": "8",
+    "position": 8,
+    "title": "Honey Baby",
+    "id": "6032433d-e8c7-4dd1-af90-cfdcc8c71581",
+    "length": 9066,
+    "album_id": "b69366e3-8145-405e-9220-c0a575f23474"
+  },
+  {
+    "length": 153600,
+    "position": 9,
+    "title": "Wither",
+    "id": "9a2d9af9-5226-4493-a3c2-0ebb4a16f908",
+    "number": "9",
+    "recording": {
+      "id": "bfa5ba86-b6ef-4f11-97ef-4157dca8b34c",
+      "video": false,
+      "first-release-date": "2017-11-27",
+      "disambiguation": "",
+      "length": 153600,
+      "title": "Wither"
+    },
+    "album_id": "b69366e3-8145-405e-9220-c0a575f23474"
+  },
+  {
+    "recording": {
+      "first-release-date": "2017-11-27",
+      "video": false,
+      "id": "cd775ca2-1317-4a1c-adcd-5093fe191876",
+      "disambiguation": "",
+      "title": "Hublots",
+      "length": 105000
+    },
     "number": "10",
+    "position": 10,
     "id": "84efff3a-3fd5-4b17-a9ad-f458b3129bcc",
     "title": "Hublots",
+    "length": 108320,
     "album_id": "b69366e3-8145-405e-9220-c0a575f23474"
   },
   {
-    "title": "In Here Somewhere",
     "number": "11",
+    "recording": {
+      "length": 104000,
+      "title": "In Here Somewhere",
+      "disambiguation": "",
+      "id": "bec04986-bcca-45ca-b7f3-764e9838edd8",
+      "video": false,
+      "first-release-date": "2016-08-19"
+    },
+    "length": 104866,
+    "title": "In Here Somewhere",
     "id": "cb4731cb-37d1-44ee-b48d-05bf0b1f4ed2",
     "position": 11,
-    "length": 104866,
-    "recording": {
-      "title": "In Here Somewhere",
-      "video": false,
-      "id": "bec04986-bcca-45ca-b7f3-764e9838edd8",
-      "first-release-date": "2016-08-19",
-      "disambiguation": "",
-      "length": 104000
-    },
     "album_id": "b69366e3-8145-405e-9220-c0a575f23474"
   },
   {
-    "position": 12,
-    "length": 186786,
+    "number": "12",
     "recording": {
+      "first-release-date": "2018-04-09",
+      "video": false,
+      "id": "d7ea1de1-7718-47f5-a00d-34ba22e7336c",
       "disambiguation": "",
       "length": 186786,
-      "id": "d7ea1de1-7718-47f5-a00d-34ba22e7336c",
-      "video": false,
-      "title": "Slide on Me",
-      "first-release-date": "2018-04-09"
+      "title": "Slide on Me"
     },
+    "length": 186786,
     "title": "Slide on Me",
-    "number": "12",
     "id": "8a2d159d-0226-4fdf-95fc-8f673f57cdf8",
+    "position": 12,
     "album_id": "b69366e3-8145-405e-9220-c0a575f23474"
   },
   {
     "title": "Sideways",
-    "number": "13",
     "id": "25b9085e-a0fb-4f30-bb14-b7322018b300",
     "position": 13,
     "length": 113946,
     "recording": {
-      "disambiguation": "",
-      "length": 113946,
       "title": "Sideways",
-      "video": false,
+      "length": 113946,
+      "disambiguation": "",
       "id": "61d242f1-9238-46be-84ce-b1de847e8fbc",
+      "video": false,
       "first-release-date": "2018-04-09"
     },
+    "number": "13",
     "album_id": "b69366e3-8145-405e-9220-c0a575f23474"
   },
   {
-    "position": 14,
     "length": 75426,
+    "title": "Florida",
+    "id": "5a0dcfd1-42d2-4d97-b17d-fbef7317d90b",
+    "position": 14,
+    "number": "14",
     "recording": {
-      "first-release-date": "2018-04-09",
+      "length": 75000,
       "title": "Florida",
       "video": false,
+      "first-release-date": "2018-04-09",
       "id": "81d0df64-4be0-4931-b0f0-4087df5c8818",
-      "length": 75000,
       "disambiguation": ""
     },
-    "title": "Florida",
-    "number": "14",
-    "id": "5a0dcfd1-42d2-4d97-b17d-fbef7317d90b",
     "album_id": "b69366e3-8145-405e-9220-c0a575f23474"
   },
   {
     "recording": {
+      "video": false,
       "first-release-date": "2017-11-27",
       "id": "0686d85d-25cb-40d9-9542-f9ecd59b4af8",
-      "title": "Impietas / Deathwish (ASR)",
-      "video": false,
+      "disambiguation": "",
       "length": 112000,
-      "disambiguation": ""
+      "title": "Impietas / Deathwish (ASR)"
     },
-    "length": 115586,
-    "position": 15,
-    "id": "2e159b24-ae44-488d-8155-3aca6ce323cb",
     "number": "15",
+    "id": "2e159b24-ae44-488d-8155-3aca6ce323cb",
     "title": "Impietas / Deathwish (ASR)",
+    "position": 15,
+    "length": 115586,
     "album_id": "b69366e3-8145-405e-9220-c0a575f23474"
   },
   {
-    "recording": {
-      "length": 205560,
-      "disambiguation": "",
-      "first-release-date": "2018-04-09",
-      "title": "Rushes",
-      "video": false,
-      "id": "57e0cfff-385d-41bf-bb3d-7ead6456cba6"
-    },
+    "id": "8555101c-f782-42a3-9354-fbd53f44826b",
+    "title": "Rushes",
     "position": 16,
     "length": 205560,
-    "title": "Rushes",
+    "recording": {
+      "title": "Rushes",
+      "length": 205560,
+      "disambiguation": "",
+      "id": "57e0cfff-385d-41bf-bb3d-7ead6456cba6",
+      "video": false,
+      "first-release-date": "2018-04-09"
+    },
     "number": "16",
-    "id": "8555101c-f782-42a3-9354-fbd53f44826b",
     "album_id": "b69366e3-8145-405e-9220-c0a575f23474"
   },
   {
-    "position": 17,
     "length": 132426,
+    "position": 17,
+    "title": "Rushes To",
+    "id": "52977af7-33b3-4eae-81b6-959c4fefc126",
+    "number": "17",
     "recording": {
       "length": 132000,
-      "disambiguation": "",
-      "first-release-date": "2018-04-09",
       "title": "Rushes To",
       "video": false,
-      "id": "3dff05b2-9d7b-4f0b-b638-8a0b0cfd79dc"
-    },
-    "title": "Rushes To",
-    "number": "17",
-    "id": "52977af7-33b3-4eae-81b6-959c4fefc126",
-    "album_id": "b69366e3-8145-405e-9220-c0a575f23474"
-  },
-  {
-    "id": "4c9c6eaa-5be4-4b0e-a1f9-2434709aa5e6",
-    "number": "18",
-    "title": "Higgs",
-    "recording": {
-      "length": 218853,
-      "disambiguation": "",
+      "id": "3dff05b2-9d7b-4f0b-b638-8a0b0cfd79dc",
       "first-release-date": "2018-04-09",
-      "title": "Higgs",
-      "video": false,
-      "id": "6df90109-d275-492d-90fc-0e9b189d2af4"
-    },
-    "length": 218853,
-    "position": 18,
-    "album_id": "b69366e3-8145-405e-9220-c0a575f23474"
-  },
-  {
-    "recording": {
-      "first-release-date": "2016-08-19",
-      "title": "Mitsubishi Sony",
-      "video": false,
-      "id": "c3adc431-2740-40ff-8e2f-6c5feeb982a4",
-      "length": 170000,
       "disambiguation": ""
     },
-    "position": 19,
+    "album_id": "b69366e3-8145-405e-9220-c0a575f23474"
+  },
+  {
+    "recording": {
+      "length": 218853,
+      "title": "Higgs",
+      "video": false,
+      "first-release-date": "2018-04-09",
+      "id": "6df90109-d275-492d-90fc-0e9b189d2af4",
+      "disambiguation": ""
+    },
+    "number": "18",
+    "title": "Higgs",
+    "id": "4c9c6eaa-5be4-4b0e-a1f9-2434709aa5e6",
+    "position": 18,
+    "length": 218853,
+    "album_id": "b69366e3-8145-405e-9220-c0a575f23474"
+  },
+  {
     "length": 170506,
     "title": "Mitsubishi Sony",
     "id": "bca45fcf-054b-45a4-b95e-05ee1f146a31",
+    "position": 19,
     "number": "19",
+    "recording": {
+      "video": false,
+      "id": "c3adc431-2740-40ff-8e2f-6c5feeb982a4",
+      "first-release-date": "2016-08-19",
+      "disambiguation": "",
+      "length": 170000,
+      "title": "Mitsubishi Sony"
+    },
     "album_id": "b69366e3-8145-405e-9220-c0a575f23474"
   },
   {
-    "length": 302000,
-    "position": 1,
-    "recording": {
-      "length": 302856,
-      "video": false,
-      "disambiguation": "",
-      "id": "3c31f807-4a9f-4e6d-a23f-ee4cd9a49026",
-      "first-release-date": "2011-02-16",
-      "title": "Novacane"
-    },
+    "id": "34b33dd0-f8b4-448c-9613-38e2c9990059",
     "title": "Novacane",
     "number": "1",
-    "id": "34b33dd0-f8b4-448c-9613-38e2c9990059",
+    "position": 1,
+    "recording": {
+      "title": "Novacane",
+      "id": "3c31f807-4a9f-4e6d-a23f-ee4cd9a49026",
+      "video": false,
+      "length": 302856,
+      "disambiguation": "",
+      "first-release-date": "2011-02-16"
+    },
+    "length": 302000,
     "album_id": "c2dde373-d47b-45a9-8b7e-0a9f5f011ed4"
   },
   {
-    "title": "Goldeneye",
     "id": "a09ffe96-f8ae-4fec-92ea-49e6f3fa90c7",
     "number": "2",
-    "length": 18000,
+    "title": "Goldeneye",
     "position": 2,
     "recording": {
-      "length": 18000,
-      "video": false,
       "disambiguation": "",
       "first-release-date": "2011-02-16",
+      "video": false,
+      "length": 18000,
       "id": "5a152443-ab18-4f55-ad93-0242c4b52e80",
       "title": "Goldeneye"
     },
+    "length": 18000,
     "album_id": "c2dde373-d47b-45a9-8b7e-0a9f5f011ed4"
   },
   {
-    "id": "59a42c1a-00ea-4214-a3a1-90cc56f7d456",
-    "number": "3",
-    "title": "There Will Be Tears",
-    "recording": {
-      "length": 194000,
-      "disambiguation": "",
-      "id": "51a8b220-a163-48dd-adfd-55599f432e69",
-      "first-release-date": "2011-02-16",
-      "video": false,
-      "title": "There Will Be Tears"
-    },
     "position": 3,
+    "title": "There Will Be Tears",
+    "number": "3",
+    "id": "59a42c1a-00ea-4214-a3a1-90cc56f7d456",
     "length": 194000,
+    "recording": {
+      "title": "There Will Be Tears",
+      "id": "51a8b220-a163-48dd-adfd-55599f432e69",
+      "length": 194000,
+      "video": false,
+      "first-release-date": "2011-02-16",
+      "disambiguation": ""
+    },
     "album_id": "c2dde373-d47b-45a9-8b7e-0a9f5f011ed4"
   },
   {
+    "position": 4,
+    "title": "Electric Feel",
+    "number": "4",
+    "id": "5e1cddfb-3603-4aa8-8514-0bb1a7d99fbb",
+    "length": 224000,
     "recording": {
       "title": "Electric Feel",
       "id": "88caa908-8571-431b-affc-28155c2d0745",
-      "first-release-date": "2011-02-16",
-      "disambiguation": "",
       "video": false,
-      "length": 224000
+      "length": 224000,
+      "disambiguation": "",
+      "first-release-date": "2011-02-16"
     },
-    "position": 4,
-    "length": 224000,
-    "id": "5e1cddfb-3603-4aa8-8514-0bb1a7d99fbb",
-    "number": "4",
-    "title": "Electric Feel",
     "album_id": "c2dde373-d47b-45a9-8b7e-0a9f5f011ed4"
   },
   {
-    "number": "5",
     "id": "f297743b-d7f7-4596-a453-92d0fe723052",
     "title": "Swim Good",
-    "recording": {
-      "length": 256000,
-      "disambiguation": "",
-      "first-release-date": "2011-02-16",
-      "id": "17b9a0bf-e6d5-47cb-ad10-7103171a785f",
-      "video": false,
-      "title": "Swim Good"
-    },
+    "number": "5",
     "position": 5,
+    "recording": {
+      "title": "Swim Good",
+      "id": "17b9a0bf-e6d5-47cb-ad10-7103171a785f",
+      "length": 256000,
+      "video": false,
+      "first-release-date": "2011-02-16",
+      "disambiguation": ""
+    },
     "length": 256000,
     "album_id": "c2dde373-d47b-45a9-8b7e-0a9f5f011ed4"
   },
   {
-    "number": "6",
-    "id": "8e3839ed-d5fd-40f3-bdd0-4cdf1ff1fd5f",
-    "title": "Street Fighter",
     "recording": {
-      "disambiguation": "",
+      "title": "Street Fighter",
       "id": "b40ee348-e5c0-4b8c-8a31-3a9188cdd559",
-      "first-release-date": "2011-02-16",
       "video": false,
       "length": 22000,
-      "title": "Street Fighter"
+      "disambiguation": "",
+      "first-release-date": "2011-02-16"
     },
-    "position": 6,
     "length": 22000,
+    "id": "8e3839ed-d5fd-40f3-bdd0-4cdf1ff1fd5f",
+    "title": "Street Fighter",
+    "position": 6,
+    "number": "6",
     "album_id": "c2dde373-d47b-45a9-8b7e-0a9f5f011ed4"
   },
   {
-    "id": "e643ed7d-e2d8-4487-a26a-293428971268",
-    "number": "7",
-    "title": "We All Try",
-    "position": 7,
+    "length": 171000,
     "recording": {
       "title": "We All Try",
+      "id": "79febaed-c8ab-4b40-a83d-f9fb0b786560",
+      "video": false,
       "length": 171000,
       "disambiguation": "",
-      "id": "79febaed-c8ab-4b40-a83d-f9fb0b786560",
-      "first-release-date": "2011-02-16",
-      "video": false
+      "first-release-date": "2011-02-16"
     },
-    "length": 171000,
+    "title": "We All Try",
+    "number": "7",
+    "position": 7,
+    "id": "e643ed7d-e2d8-4487-a26a-293428971268",
     "album_id": "c2dde373-d47b-45a9-8b7e-0a9f5f011ed4"
   },
   {
-    "position": 8,
+    "length": 235000,
     "recording": {
       "id": "908e389b-256c-4f6a-9d75-0e0a81815444",
-      "first-release-date": "2011-02-16",
+      "title": "Strawberry Swing",
       "disambiguation": "",
+      "first-release-date": "2011-02-16",
       "video": false,
-      "length": 235000,
-      "title": "Strawberry Swing"
+      "length": 235000
     },
-    "length": 235000,
+    "title": "Strawberry Swing",
+    "position": 8,
     "number": "8",
     "id": "105504ad-fcfa-4609-b3ee-bf98e210c1df",
-    "title": "Strawberry Swing",
     "album_id": "c2dde373-d47b-45a9-8b7e-0a9f5f011ed4"
   },
   {
     "length": 153000,
-    "position": 9,
     "recording": {
-      "disambiguation": "",
-      "first-release-date": "2011-02-16",
+      "title": "Dust",
       "id": "7427a83f-b09b-4251-b9d7-68db76bd986d",
-      "video": false,
       "length": 153000,
-      "title": "Dust"
+      "video": false,
+      "first-release-date": "2011-02-16",
+      "disambiguation": ""
     },
-    "title": "Dust",
     "number": "9",
+    "title": "Dust",
+    "position": 9,
     "id": "1b50636e-ff2d-40a3-aae2-2253510edb75",
     "album_id": "c2dde373-d47b-45a9-8b7e-0a9f5f011ed4"
   },
   {
+    "title": "Lovecrimes",
+    "number": "10",
     "position": 10,
+    "id": "a5028bdf-73e0-4c43-978a-52621adbf688",
+    "length": 240000,
     "recording": {
+      "title": "Lovecrimes",
+      "id": "6c40a19b-b174-4546-b71f-681dd9d05a65",
+      "length": 240000,
       "video": false,
       "first-release-date": "2011-02-16",
-      "id": "6c40a19b-b174-4546-b71f-681dd9d05a65",
-      "disambiguation": "",
-      "length": 240000,
-      "title": "Lovecrimes"
+      "disambiguation": ""
     },
-    "length": 240000,
-    "number": "10",
-    "id": "a5028bdf-73e0-4c43-978a-52621adbf688",
-    "title": "Lovecrimes",
     "album_id": "c2dde373-d47b-45a9-8b7e-0a9f5f011ed4"
   },
   {
-    "length": 253000,
     "recording": {
-      "title": "Songs 4 Women",
       "length": 253000,
-      "disambiguation": "",
+      "video": false,
       "first-release-date": "2011-02-16",
-      "id": "546da794-8a19-4b4b-9d03-d1e6f4c44fa9",
-      "video": false
+      "disambiguation": "",
+      "title": "Songs 4 Women",
+      "id": "546da794-8a19-4b4b-9d03-d1e6f4c44fa9"
     },
-    "position": 11,
-    "title": "Songs for Women",
-    "number": "11",
+    "length": 253000,
     "id": "6e907f26-d2e1-4872-9e0d-13ed8ffac845",
+    "title": "Songs for Women",
+    "position": 11,
+    "number": "11",
     "album_id": "c2dde373-d47b-45a9-8b7e-0a9f5f011ed4"
   },
   {
-    "title": "Bitches Talkin\u2019",
-    "id": "db1d828b-b25a-4aa2-a6a7-19eb79bd2b9c",
-    "number": "12",
     "length": 22000,
-    "position": 12,
     "recording": {
+      "video": false,
       "length": 22000,
       "disambiguation": "",
       "first-release-date": "2011-02-16",
-      "id": "f88b4f1e-33cd-4c8b-81bb-ef2847b132b7",
-      "video": false,
-      "title": "Bitches Talkin\u2019"
+      "title": "Bitches Talkin\u2019",
+      "id": "f88b4f1e-33cd-4c8b-81bb-ef2847b132b7"
     },
+    "number": "12",
+    "title": "Bitches Talkin\u2019",
+    "position": 12,
+    "id": "db1d828b-b25a-4aa2-a6a7-19eb79bd2b9c",
     "album_id": "c2dde373-d47b-45a9-8b7e-0a9f5f011ed4"
   },
   {
-    "id": "3db0f900-8366-4316-a938-408521055e22",
     "number": "13",
     "title": "Soul Calibur",
     "position": 13,
+    "id": "3db0f900-8366-4316-a938-408521055e22",
+    "length": 18000,
     "recording": {
       "title": "Soul Calibur",
-      "video": false,
-      "disambiguation": "",
       "id": "c96c3c71-8b9b-434f-8bcf-0e971d86c12d",
-      "first-release-date": "2011-02-16",
-      "length": 18000
+      "video": false,
+      "length": 18000,
+      "disambiguation": "",
+      "first-release-date": "2011-02-16"
     },
-    "length": 18000,
     "album_id": "c2dde373-d47b-45a9-8b7e-0a9f5f011ed4"
   },
   {
-    "title": "Start",
-    "number": "1",
-    "id": "85f1c671-de19-4d07-92f3-f0844d20accb",
     "recording": {
-      "length": 45000,
+      "id": "b4f22410-ef06-4d44-b789-f32c185acbad",
+      "title": "Start",
       "disambiguation": "",
       "first-release-date": "2012-07-10",
-      "id": "b4f22410-ef06-4d44-b789-f32c185acbad",
       "video": false,
-      "title": "Start"
+      "length": 45000
     },
-    "position": 1,
     "length": 45000,
+    "id": "85f1c671-de19-4d07-92f3-f0844d20accb",
+    "position": 1,
+    "title": "Start",
+    "number": "1",
     "album_id": "f8f4167d-897c-4b25-a171-638374d1dfa4"
   },
   {
-    "number": "2",
-    "id": "79d721db-5c9e-40f1-8c85-d1235dd3c831",
-    "title": "Thinkin Bout You",
+    "length": 200000,
     "recording": {
-      "first-release-date": "2012-04-17",
       "id": "3f23dd2a-a70a-4d6e-a5b1-ae3f22589dd7",
       "title": "Thinkin Bout You",
-      "video": false,
+      "first-release-date": "2012-04-17",
+      "disambiguation": "",
       "length": 201000,
-      "disambiguation": ""
+      "video": false
     },
-    "length": 200000,
+    "number": "2",
+    "title": "Thinkin Bout You",
     "position": 2,
+    "id": "79d721db-5c9e-40f1-8c85-d1235dd3c831",
     "album_id": "f8f4167d-897c-4b25-a171-638374d1dfa4"
   },
   {
-    "number": "3",
-    "id": "c650bb98-8557-42d0-aaa6-2c3258de4fe5",
-    "title": "Fertilizer",
     "recording": {
       "id": "32302363-0617-4e82-a75f-d0648825ec5f",
       "title": "Fertilizer",
-      "video": false,
-      "first-release-date": "2012-07-10",
       "disambiguation": "",
+      "first-release-date": "2012-07-10",
+      "video": false,
       "length": 39000
     },
     "length": 39000,
+    "id": "c650bb98-8557-42d0-aaa6-2c3258de4fe5",
+    "title": "Fertilizer",
+    "number": "3",
     "position": 3,
     "album_id": "f8f4167d-897c-4b25-a171-638374d1dfa4"
   },
   {
-    "id": "f68cc123-8eeb-45d2-9478-931ae4cf3303",
-    "number": "4",
-    "title": "Sierra Leone",
+    "length": 148000,
     "recording": {
+      "disambiguation": "",
       "first-release-date": "2012-07-10",
       "video": false,
-      "title": "Sierra Leone",
-      "id": "e5743152-57f0-4a3c-ad17-720cef11917c",
       "length": 148000,
-      "disambiguation": ""
+      "id": "e5743152-57f0-4a3c-ad17-720cef11917c",
+      "title": "Sierra Leone"
     },
-    "length": 148000,
+    "number": "4",
+    "title": "Sierra Leone",
     "position": 4,
+    "id": "f68cc123-8eeb-45d2-9478-931ae4cf3303",
     "album_id": "f8f4167d-897c-4b25-a171-638374d1dfa4"
   },
   {
-    "title": "Sweet Life",
     "id": "2e1a7c4e-283b-454e-ab77-78e4f54f0525",
     "number": "5",
-    "recording": {
-      "disambiguation": "",
-      "length": 262000,
-      "title": "Sweet Life",
-      "video": false,
-      "id": "b57eed56-5786-4919-a184-68e2863a197b",
-      "first-release-date": "2012-07-10"
-    },
+    "title": "Sweet Life",
     "position": 5,
+    "recording": {
+      "length": 262000,
+      "video": false,
+      "first-release-date": "2012-07-10",
+      "disambiguation": "",
+      "title": "Sweet Life",
+      "id": "b57eed56-5786-4919-a184-68e2863a197b"
+    },
     "length": 262000,
     "album_id": "f8f4167d-897c-4b25-a171-638374d1dfa4"
   },
   {
+    "title": "Not Just Money",
+    "number": "6",
     "position": 6,
+    "id": "9d33f287-b2c3-4645-b55d-3254ae28e829",
     "length": 59000,
     "recording": {
       "length": 60000,
-      "disambiguation": "",
-      "first-release-date": "2012-07-10",
-      "id": "895716e1-337f-42fd-be3b-c4fbbdd3a973",
       "video": false,
-      "title": "Not Just Money"
+      "first-release-date": "2012-07-10",
+      "disambiguation": "",
+      "title": "Not Just Money",
+      "id": "895716e1-337f-42fd-be3b-c4fbbdd3a973"
     },
-    "title": "Not Just Money",
-    "id": "9d33f287-b2c3-4645-b55d-3254ae28e829",
-    "number": "6",
     "album_id": "f8f4167d-897c-4b25-a171-638374d1dfa4"
   },
   {
     "number": "7",
-    "id": "e9968b85-5c8e-48ce-91b7-ed9d164a666e",
     "title": "Super Rich Kids",
-    "length": 304000,
     "position": 7,
+    "id": "e9968b85-5c8e-48ce-91b7-ed9d164a666e",
+    "length": 304000,
     "recording": {
+      "disambiguation": "",
       "first-release-date": "2012-07-10",
       "video": false,
-      "title": "Super Rich Kids",
-      "id": "b76012a9-8b64-434d-95a4-8cb2550a83fc",
       "length": 304453,
-      "disambiguation": ""
+      "id": "b76012a9-8b64-434d-95a4-8cb2550a83fc",
+      "title": "Super Rich Kids"
     },
     "album_id": "f8f4167d-897c-4b25-a171-638374d1dfa4"
   },
   {
-    "id": "92d0f95c-e97e-4ad2-af0f-5ca48c32a152",
-    "number": "8",
-    "title": "Pilot Jones",
+    "length": 184000,
     "recording": {
-      "video": false,
       "title": "Pilot Jones",
       "id": "e094de66-0adf-4879-b6d9-64d2a156315b",
-      "first-release-date": "2012-07-10",
-      "disambiguation": "",
-      "length": 184000
-    },
-    "length": 184000,
-    "position": 8,
-    "album_id": "f8f4167d-897c-4b25-a171-638374d1dfa4"
-  },
-  {
-    "recording": {
-      "disambiguation": "",
-      "length": 224000,
-      "id": "586ec6b1-0725-4825-84ec-54f0e9dd3855",
       "video": false,
-      "title": "Crack Rock",
+      "length": 184000,
+      "disambiguation": "",
       "first-release-date": "2012-07-10"
     },
-    "length": 224000,
-    "position": 9,
-    "number": "9",
-    "id": "95c54e21-bd85-488a-8f40-c0fb0f9e9122",
-    "title": "Crack Rock",
+    "number": "8",
+    "title": "Pilot Jones",
+    "position": 8,
+    "id": "92d0f95c-e97e-4ad2-af0f-5ca48c32a152",
     "album_id": "f8f4167d-897c-4b25-a171-638374d1dfa4"
   },
   {
-    "position": 10,
+    "id": "95c54e21-bd85-488a-8f40-c0fb0f9e9122",
+    "position": 9,
+    "title": "Crack Rock",
+    "number": "9",
+    "recording": {
+      "first-release-date": "2012-07-10",
+      "disambiguation": "",
+      "length": 224000,
+      "video": false,
+      "id": "586ec6b1-0725-4825-84ec-54f0e9dd3855",
+      "title": "Crack Rock"
+    },
+    "length": 224000,
+    "album_id": "f8f4167d-897c-4b25-a171-638374d1dfa4"
+  },
+  {
     "length": 592000,
     "recording": {
-      "length": 593000,
-      "disambiguation": "",
-      "first-release-date": "2012-07-10",
+      "id": "6663470e-57d7-450a-bbf5-be672640d14e",
       "title": "Pyramids",
-      "video": false,
-      "id": "6663470e-57d7-450a-bbf5-be672640d14e"
+      "first-release-date": "2012-07-10",
+      "disambiguation": "",
+      "length": 593000,
+      "video": false
     },
     "title": "Pyramids",
-    "id": "1ae6d7ed-cd3e-4d87-94ce-85ca0e4b0bb4",
     "number": "10",
+    "position": 10,
+    "id": "1ae6d7ed-cd3e-4d87-94ce-85ca0e4b0bb4",
     "album_id": "f8f4167d-897c-4b25-a171-638374d1dfa4"
   },
   {
-    "position": 11,
     "length": 234000,
     "recording": {
+      "video": false,
       "length": 234000,
       "disambiguation": "",
       "first-release-date": "2012-07-10",
-      "id": "88429f7d-3407-4a8c-8741-e072e03fc71f",
-      "video": false,
-      "title": "Lost"
+      "title": "Lost",
+      "id": "88429f7d-3407-4a8c-8741-e072e03fc71f"
     },
     "title": "Lost",
+    "position": 11,
     "number": "11",
     "id": "8fd13904-c86a-44f7-aee6-0dbfcf9a7a24",
     "album_id": "f8f4167d-897c-4b25-a171-638374d1dfa4"
   },
   {
+    "position": 12,
     "title": "White",
     "number": "12",
     "id": "25fcf80b-b339-464c-9964-57b572e960fc",
-    "position": 12,
     "length": 76000,
     "recording": {
+      "first-release-date": "2012-07-10",
       "disambiguation": "",
       "length": 76000,
-      "id": "b7780605-fcad-46bf-8b6b-6d17e6b84bed",
-      "title": "White",
       "video": false,
-      "first-release-date": "2012-07-10"
+      "id": "b7780605-fcad-46bf-8b6b-6d17e6b84bed",
+      "title": "White"
     },
     "album_id": "f8f4167d-897c-4b25-a171-638374d1dfa4"
   },
   {
+    "id": "24ba0390-f31e-447c-be1d-5652cc826b63",
+    "title": "Monks",
+    "number": "13",
+    "position": 13,
     "recording": {
-      "length": 201000,
       "disambiguation": "",
       "first-release-date": "2012-07-10",
-      "title": "Monks",
       "video": false,
-      "id": "e53b9c87-fa13-4b9d-b727-85e1b8d01eea"
+      "length": 201000,
+      "id": "e53b9c87-fa13-4b9d-b727-85e1b8d01eea",
+      "title": "Monks"
     },
     "length": 200000,
-    "position": 13,
-    "id": "24ba0390-f31e-447c-be1d-5652cc826b63",
-    "number": "13",
-    "title": "Monks",
     "album_id": "f8f4167d-897c-4b25-a171-638374d1dfa4"
   },
   {
-    "length": 175000,
     "position": 14,
-    "recording": {
-      "first-release-date": "2012-07-10",
-      "id": "ff53b338-2e3d-4f2d-aa9e-5c100c79be3f",
-      "title": "Bad Religion",
-      "video": false,
-      "length": 175000,
-      "disambiguation": ""
-    },
+    "title": "Bad Religion",
     "number": "14",
     "id": "129f0b3f-e82f-44db-8681-8bb896e42ab6",
-    "title": "Bad Religion",
-    "album_id": "f8f4167d-897c-4b25-a171-638374d1dfa4"
-  },
-  {
+    "length": 175000,
     "recording": {
-      "length": 268000,
       "disambiguation": "",
       "first-release-date": "2012-07-10",
       "video": false,
-      "title": "Pink Matter",
-      "id": "9ac93b0d-f1b3-4fa0-b8df-99266215e835"
+      "length": 175000,
+      "id": "ff53b338-2e3d-4f2d-aa9e-5c100c79be3f",
+      "title": "Bad Religion"
     },
-    "position": 15,
+    "album_id": "f8f4167d-897c-4b25-a171-638374d1dfa4"
+  },
+  {
     "length": 268000,
+    "recording": {
+      "disambiguation": "",
+      "first-release-date": "2012-07-10",
+      "video": false,
+      "length": 268000,
+      "id": "9ac93b0d-f1b3-4fa0-b8df-99266215e835",
+      "title": "Pink Matter"
+    },
     "title": "Pink Matter",
-    "id": "1233c742-3b8a-4c79-9739-bfea0a7ee6ba",
+    "position": 15,
     "number": "15",
+    "id": "1233c742-3b8a-4c79-9739-bfea0a7ee6ba",
     "album_id": "f8f4167d-897c-4b25-a171-638374d1dfa4"
   },
   {
     "title": "Forrest Gump",
     "number": "16",
+    "position": 16,
     "id": "e89499c2-2041-4a83-b307-69d6a164cbb9",
+    "length": 194000,
     "recording": {
-      "video": false,
       "title": "Forrest Gump",
       "id": "98b769b8-8b9f-438d-af89-50846240ca44",
-      "first-release-date": "2012-07-10",
-      "disambiguation": "",
-      "length": 195000
-    },
-    "position": 16,
-    "length": 194000,
-    "album_id": "f8f4167d-897c-4b25-a171-638374d1dfa4"
-  },
-  {
-    "recording": {
-      "first-release-date": "2012-07-10",
-      "title": "End",
+      "length": 195000,
       "video": false,
-      "id": "14a9a343-7c40-4f5f-8071-78ba79f9403a",
-      "length": 134000,
+      "first-release-date": "2012-07-10",
       "disambiguation": ""
     },
-    "position": 17,
-    "length": 134000,
-    "title": "End",
-    "id": "502d7503-1434-492e-b44d-9788a542df96",
-    "number": "17",
     "album_id": "f8f4167d-897c-4b25-a171-638374d1dfa4"
   },
   {
+    "id": "502d7503-1434-492e-b44d-9788a542df96",
+    "title": "End",
+    "number": "17",
+    "position": 17,
+    "recording": {
+      "title": "End",
+      "id": "14a9a343-7c40-4f5f-8071-78ba79f9403a",
+      "video": false,
+      "length": 134000,
+      "disambiguation": "",
+      "first-release-date": "2012-07-10"
+    },
+    "length": 134000,
+    "album_id": "f8f4167d-897c-4b25-a171-638374d1dfa4"
+  },
+  {
+    "title": "Golden Girl",
+    "position": 18,
     "number": "18",
     "id": "c397f48a-b45e-4927-a3ca-badfb659ea1a",
-    "title": "Golden Girl",
+    "length": null,
     "recording": {
       "disambiguation": "",
+      "first-release-date": "2012",
+      "video": false,
       "length": null,
       "id": "5aca073f-b8bf-4674-92d5-01228a927ab3",
-      "video": false,
-      "title": "Golden Girl",
-      "first-release-date": "2012"
+      "title": "Golden Girl"
     },
-    "length": null,
-    "position": 18,
     "album_id": "f8f4167d-897c-4b25-a171-638374d1dfa4"
   }
 ]

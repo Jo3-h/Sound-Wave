@@ -4,7 +4,7 @@ import json
 import requests
 
 def request_albums_data(artist_id: str):
-    
+
     if not artist_id:
         log_process("No artist ID provided for album extraction", "WARNING", LOG_FILE)
         return None
@@ -23,6 +23,7 @@ def request_albums_data(artist_id: str):
     album_data = response.json()
     for album in album_data["release-groups"]:
         album["artist_id"] = artist_id
+        album["image"] = f'http://coverartarchive.org/release-group/{album["id"]}/front'
 
     log_process(f"Album data extracted for artist ID: {artist_id} from the MusicBrainz API", "INFO", LOG_FILE)
 

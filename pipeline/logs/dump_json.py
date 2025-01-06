@@ -1,4 +1,4 @@
-from config import LOG_DIR
+from config import LOG_DIR, VERBOSE
 import json
 import os
 
@@ -20,4 +20,7 @@ def dump_json(data, filename):
     with open(file_path, "w") as f:
         json.dump(data, f, indent=2)
 
-    print(f"JSON data written to {file_path}")
+    if VERBOSE:
+        print(f"JSON data written to {file_path}")
+
+    return
