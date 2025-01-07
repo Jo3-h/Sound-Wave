@@ -2,9 +2,12 @@ import React from "react";
 
 import "./css/GameHistoryCard.css";
 
-export default function GameHistoryCard({ game }) {
+export default function GameHistoryCard({ game, index }) {
   return (
     <div className="game-card-container-master">
+      <div>
+        <h1 className="game-history-header">Game {index}</h1>
+      </div>
       <div className="header-text-section">
         <div className="header-text">Album Cover</div>
         <div className="header-text">Song Title</div>

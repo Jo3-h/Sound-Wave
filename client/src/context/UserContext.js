@@ -33,15 +33,28 @@ export const UserProvider = ({ children }) => {
   const logout = () => {
     setUser(null);
     localStorage.removeItem("user"); // Remove user data from localStorage
+    localStorage.removeItem("token"); // Remove token from localStorage
   };
 
-  const signup = (userData) => {
+  const signup = (userData, token) => {
     setUser(userData);
+    localStorage.setItem("token", token); // Store token in localStorage
     localStorage.setItem("user", JSON.stringify(userData)); // Store user data in localStorage
   };
 
+  const updateUserDetails = (updatedDetails) => {
+    // Merge updated details into the current user object
+    const updatedUser = { ...user, ...updatedDetails };
+    setUser(updatedUser);
+
+    // Update localStorage with the new user details
+    localStorage.setItem("user", JSON.stringify(updatedUser));
+  };
+
   return (
-    <UserContext.Provider value={{ user, login, logout, signup }}>
+    <UserContext.Provider
+      value={{ user, login, logout, signup, updateUserDetails }}
+    >
       {children}
     </UserContext.Provider>
   );

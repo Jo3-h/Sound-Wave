@@ -3,7 +3,7 @@ from config import DB_HOSTNAME, DB_NAME, DB_USER, DB_PASSWORD, LOG_FILE
 import mysql.connector
 import pandas as pd
 
-def load_albums(albums_df: pd.DataFrame, truncate: bool = False):
+def load_albums(albums_df: pd.DataFrame, delete: bool = False):
 
     # create a connection to the database
     db_config = {
@@ -22,6 +22,10 @@ def load_albums(albums_df: pd.DataFrame, truncate: bool = False):
     try:
         connection = mysql.connector.connect(**db_config)
         cursor = connection.cursor()
+
+         # if truncate is True, delete all records from the table
+        if delete:
+            cursor.execute("DELETE FROM Albums")
 
         # Load the albums data into the database
         for _, row in albums_df.iterrows():

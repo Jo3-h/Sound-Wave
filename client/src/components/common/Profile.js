@@ -6,16 +6,16 @@ import axios from "axios";
 import "./css/Profile.css";
 
 export default function Profile() {
-  const { user, login, logout } = useUser();
+  const { user, login, logout, updateUserDetails } = useUser();
   const [updateImage, setUpdateImage] = useState(false);
   const [formData, setFormData] = useState({
-    id: user.id || 0,
+    id: user?.id || 0,
     profile_image: "",
     profile_image_preview: "", // Add a field for the image preview URL
-    firstName: user.firstName,
-    lastName: user.lastName,
-    username: user.username,
-    email: user.email,
+    firstName: user?.firstName,
+    lastName: user?.lastName,
+    username: user?.username,
+    email: user?.email,
     password: "",
     password2: "",
   });
@@ -102,11 +102,12 @@ export default function Profile() {
         .post("http://localhost:3001/api/update-user", formDataToSend, {
           headers: {
             "Content-Type": "multipart/form-data",
+            Authorization: `Bearer ${localStorage.getItem("token")}`,
           },
         })
         .then((response) => {
           console.log("User updated: ", response.data);
-          logout();
+          updateUserDetails(response.data.user);
         })
         .catch((error) => {
           console.error("Error updating user: ", error);

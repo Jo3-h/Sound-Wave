@@ -259,7 +259,7 @@ export default function SongGuesser({
       incorrectGuesses: 0,
       startTime: new Date(),
     });
-    // setPlayingTrack(savedTracks[gameIndex.current]);
+    setPlayingTrack(savedTracks[gameIndex.current]);
   };
 
   return (
@@ -297,9 +297,12 @@ export default function SongGuesser({
               </div>
             </div>
             <div className="game-history-container">
-              <GameHistoryCard game={currentGame} />
+              <GameHistoryCard
+                game={currentGame}
+                index={gameHistory.length + 1}
+              />
               {gameHistory.map((game, index) => (
-                <GameHistoryCard key={index} game={game} />
+                <GameHistoryCard key={index} game={game} index={index + 1} />
               ))}
             </div>
           </div>

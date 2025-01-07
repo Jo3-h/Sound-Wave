@@ -1,8 +1,5 @@
 const dotenv = require("dotenv");
 dotenv.config();
-console.log("DB_USER:", process.env.DB_USER); // Check if it prints the correct value
-console.log("DB_PASSWORD:", process.env.DB_PASSWORD);
-console.log("DB_NAME:", process.env.DB_NAME);
 module.exports = {
   development: {
     username: process.env.DB_USER,

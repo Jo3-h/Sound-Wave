@@ -5,6 +5,7 @@
   background-color: white;
   border: 1px solid #ccc;
   padding: 10px;
+  margin-bottom: 10px;
 }
 
 .header-text-section {
@@ -53,4 +54,12 @@
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+}
+
+.game-history-header {
+  font-size: 16px;
+  text-align: center;
+  font-weight: bold;
+  color: #1daede;
+  margin-bottom: 10px;
 }
