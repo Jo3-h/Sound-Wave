@@ -1,4 +1,4 @@
-import React, { useState, useRef } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import { useUser } from "../../context/UserContext";
 import { Link } from "react-router-dom";
 
@@ -14,6 +14,10 @@ export default function NavBar() {
     console.log("Logging out...");
     window.location = "/";
   };
+
+  useEffect(() => {
+    console.log("user update from mavbar component:", user);
+  }, [user]);
 
   const toggleDropdown = () => {
     setDropdownVisible((prev) => !prev);
@@ -75,7 +79,7 @@ export default function NavBar() {
               >
                 <img
                   className="user-profile-picture"
-                  src={`/profile_pictures/${user.profile_pic}`}
+                  src={`/profile_pictures/${user.username}.jpg`}
                   alt="User Profile"
                   onError={handleImageError}
                 />

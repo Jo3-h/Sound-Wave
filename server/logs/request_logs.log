@@ -1,0 +1,269 @@
+
+[2025-01-07T22:57:47.531Z] [ERROR] [POST] [/spotify/login] 
+      [RequestID: N/A]
+      - Client IP: ::1
+      - User Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+      - Request Params: {}
+      - Request Body: {
+  "code": "AQAE6wca_xzmcukiN5CauxPijjngVpGQLk-vIOdplZKrGr9lml_su3bVWoUEUB2of6CYoq_V3ccLYaUsdlAr_kdHgt8JfkDqLAqthzcButT-iQKJ6Bhb1xiNN7w_Ev0l3DZcneGDJDhm-CVQO0fZpRSl5kpcKbwwJgdBi5dNDwUU8KxNdnet95djOOuGrcPR9Npry2Qwok1hEmiBUykjiSWj8-RUSvlloOqv7UfDEI_NUTd66KnC1XUG2YTglZo-766RV6E3ipIxUOK8WLHOsYKgXoVsa9RAdf4slRyEhI4N4sgoBdnP2G7P2239kprweeU0LHgTuZTDl9JYxHXUZPoPR0IKVgkoGQmz5Z2pOx6p3-ndAN4GLtPz_dcOQ9ye-Sc",
+  "redirectUri": "http://localhost:3000/music-player"
+}
+      Message: Spotify route not found
+    
+[2025-01-07T23:26:00.678Z] [INFO] [POST] [/spotify/login] 
+      [RequestID: N/A]
+      - Client IP: ::1
+      - User Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+      - Request Params: {}
+      - Request Body: {
+  "code": "AQDoOoYaiUlZQsFygT6ZO9FH4m5UrkZq7BipY9EsBRpkIYMnN4vNgfaEkCoVVk39o7I7pi6ehmHRzAvcdMq4wkY4VD1DdbWc60S-SxvuN_mJT6VpjECqan3-4MgBAKHYQJUDCmDm-yWSubkG0fHKe0teT7kQBkckXlsOGgXCVQyec8S-pyp-NigJ5tA3y5kuqfAq2d4Q-jXdqipZq6Dru0bulpDps2AJINj8j8rJDE5Q-ksyMB4CajUT9usHUaIozNKQ3oB3FLVzAWJMVUu_AT1ZiEusAb9iC7_pav3-aarTjGrmAOdRYpPZkfKuyBjF8YJFY_7ZeGtW9hb33kxEVWobUMJI4OhCLUK3p8qnIb0Ho-B4xlv9mdfmggvEOs0ojP4",
+  "redirectUri": "http://localhost:3000/music-player"
+}
+      Message: Requesting Access Token
+    
+[2025-01-07T23:45:31.591Z] [INFO] [POST] [/users/login] 
+      [RequestID: N/A]
+      - Client IP: ::1
+      - User Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+      - Request Params: {}
+      - Request Body: {
+  "username": "Jo3_h",
+  "password": "password"
+}
+      Message: Logging in user
+    
+[2025-01-07T23:47:12.803Z] [INFO] [POST] [/users/check-username] 
+      [RequestID: N/A]
+      - Client IP: ::1
+      - User Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+      - Request Params: {}
+      - Request Body: {
+  "username": "Jo3_h"
+}
+      Message: Checking username availability
+    
+[2025-01-07T23:47:13.265Z] [INFO] [POST] [/users/update-user] 
+      [RequestID: N/A]
+      - Client IP: ::1
+      - User Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+      - Request Params: {}
+      - Request Body: {
+  "id": "1",
+  "firstName": "Jo",
+  "lastName": "Hosk",
+  "username": "Jo3_h",
+  "email": "email@email.com",
+  "password": "",
+  "password2": ""
+}
+      Message: Updating user details
+    
+[2025-01-07T23:47:21.656Z] [INFO] [POST] [/users/check-username] 
+      [RequestID: N/A]
+      - Client IP: ::1
+      - User Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+      - Request Params: {}
+      - Request Body: {
+  "username": "Jo3_"
+}
+      Message: Checking username availability
+    
+[2025-01-07T23:47:21.747Z] [INFO] [POST] [/users/update-user] 
+      [RequestID: N/A]
+      - Client IP: ::1
+      - User Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+      - Request Params: {}
+      - Request Body: {
+  "id": "1",
+  "firstName": "Joe",
+  "lastName": "Hoskin",
+  "username": "Jo3_",
+  "email": "email@email.com",
+  "password": "",
+  "password2": ""
+}
+      Message: Updating user details
+    
+[2025-01-07T23:48:46.876Z] [INFO] [POST] [/users/check-username] 
+      [RequestID: N/A]
+      - Client IP: ::1
+      - User Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+      - Request Params: {}
+      - Request Body: {
+  "username": "Jo3"
+}
+      Message: Checking username availability
+    
+[2025-01-07T23:48:47.116Z] [INFO] [POST] [/users/update-user] 
+      [RequestID: N/A]
+      - Client IP: ::1
+      - User Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+      - Request Params: {}
+      - Request Body: {
+  "id": "1",
+  "firstName": "Joe",
+  "lastName": "Hoskin",
+  "username": "Jo3",
+  "email": "email@email.com",
+  "password": "",
+  "password2": ""
+}
+      Message: Updating user details
+    
+[2025-01-07T23:52:52.543Z] [INFO] [POST] [/users/check-username] 
+      [RequestID: N/A]
+      - Client IP: ::1
+      - User Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+      - Request Params: {}
+      - Request Body: {
+  "username": "Jo3_"
+}
+      Message: Checking username availability
+    
+[2025-01-07T23:52:53.061Z] [INFO] [POST] [/users/update-user] 
+      [RequestID: N/A]
+      - Client IP: ::1
+      - User Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+      - Request Params: {}
+      - Request Body: {
+  "id": "1",
+  "firstName": "Joe",
+  "lastName": "Hoskin",
+  "username": "Jo3_",
+  "email": "email@email.com",
+  "password": "",
+  "password2": ""
+}
+      Message: Updating user details
+    
+[2025-01-08T01:26:13.217Z] [INFO] [POST] [/users/check-username] 
+      [RequestID: N/A]
+      - Client IP: ::1
+      - User Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+      - Request Params: {}
+      - Request Body: {
+  "username": "Jo3_"
+}
+      Message: Checking username availability
+    
+[2025-01-08T01:27:08.857Z] [INFO] [POST] [/users/check-username] 
+      [RequestID: N/A]
+      - Client IP: ::1
+      - User Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+      - Request Params: {}
+      - Request Body: {
+  "username": "Jo3_"
+}
+      Message: Checking username availability
+    
+[2025-01-08T01:27:20.430Z] [INFO] [POST] [/users/login] 
+      [RequestID: N/A]
+      - Client IP: ::1
+      - User Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+      - Request Params: {}
+      - Request Body: {
+  "username": "Jo3_h",
+  "password": "password"
+}
+      Message: Logging in user
+    
+[2025-01-08T01:27:31.079Z] [INFO] [POST] [/users/login] 
+      [RequestID: N/A]
+      - Client IP: ::1
+      - User Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+      - Request Params: {}
+      - Request Body: {
+  "username": "Jo3_",
+  "password": "password"
+}
+      Message: Logging in user
+    
+[2025-01-08T01:27:42.231Z] [INFO] [POST] [/users/check-username] 
+      [RequestID: N/A]
+      - Client IP: ::1
+      - User Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+      - Request Params: {}
+      - Request Body: {
+  "username": "Jo3_"
+}
+      Message: Checking username availability
+    
+[2025-01-08T01:27:42.574Z] [INFO] [POST] [/users/update-user] 
+      [RequestID: N/A]
+      - Client IP: ::1
+      - User Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+      - Request Params: {}
+      - Request Body: {
+  "id": "1",
+  "firstName": "Joe",
+  "lastName": "Hoskin",
+  "username": "Jo3_",
+  "email": "email@email.com",
+  "password": "",
+  "password2": ""
+}
+      Message: Updating user details
+    
+[2025-01-08T01:36:36.212Z] [INFO] [POST] [/users/check-username] 
+      [RequestID: N/A]
+      - Client IP: ::1
+      - User Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+      - Request Params: {}
+      - Request Body: {
+  "username": "Jo3_"
+}
+      Message: Checking username availability
+    
+[2025-01-08T01:36:36.470Z] [INFO] [POST] [/users/update-user] 
+      [RequestID: N/A]
+      - Client IP: ::1
+      - User Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+      - Request Params: {}
+      - Request Body: {
+  "id": "1",
+  "firstName": "Joe",
+  "lastName": "Hoskin",
+  "username": "Jo3_",
+  "email": "email@email.com",
+  "password": "",
+  "password2": ""
+}
+      Message: Updating user details
+    
+[2025-01-08T01:47:42.565Z] [INFO] [POST] [/users/check-username] 
+      [RequestID: N/A]
+      - Client IP: ::1
+      - User Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+      - Request Params: {}
+      - Request Body: {
+  "username": "Jo3_"
+}
+      Message: Checking username availability
+    
+[2025-01-08T01:47:42.900Z] [INFO] [POST] [/users/update-user] 
+      [RequestID: N/A]
+      - Client IP: ::1
+      - User Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+      - Request Params: {}
+      - Request Body: {
+  "id": "1",
+  "firstName": "Joe",
+  "lastName": "Hoskin",
+  "username": "Jo3_",
+  "email": "email@email.com",
+  "password": "",
+  "password2": ""
+}
+      Message: Updating user details
+    
+[2025-01-08T01:52:27.597Z] [INFO] [POST] [/users/login] 
+      [RequestID: N/A]
+      - Client IP: ::1
+      - User Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+      - Request Params: {}
+      - Request Body: {
+  "username": "Jo3_",
+  "password": "password"
+}
+      Message: Logging in user
+    

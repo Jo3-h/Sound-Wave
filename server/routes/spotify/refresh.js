@@ -22,9 +22,9 @@ on failure -> {
 const express = require("express");
 const router = express.Router();
 const logRequest = require("../../logs/logRequest");
-const { spotifyApi } = require("./../spotifyWebApi");
+const { spotifyApi } = require("./../utils/spotifyWebApi");
 
-router.post("/refresh", (req, res) => {
+router.post("/", (req, res) => {
   const refreshToken = req.body.refreshToken;
 
   spotifyApi

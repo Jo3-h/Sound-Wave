@@ -1,18 +1,14 @@
-/**
- * /server/middleware/checkDBConnection.js
- *
- */
-let db_connection = false;
+const sequelize = require("./../db/sequelize");
 
-// Middleware to check database connection
-const checkDBConnection = (req, res, next) => {
-  if (!db_connection) {
-    return res.status(500).json({ error: "Database connection error" });
+const checkDBConnection = async (req, res, next) => {
+  try {
+    await sequelize.authenticate(); // Check the actual database connection
+    console.log("Database connection is healthy.");
+    next();
+  } catch (error) {
+    console.error("Database connection error:", error.message);
+    res.status(500).json({ error: "Database connection error" });
   }
-  next();
 };
 
-module.exports = {
-  checkDBConnection,
-  setDBConnectionStatus: (status) => (db_connection = status),
-};
+module.exports = checkDBConnection;

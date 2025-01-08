@@ -1,12 +1,9 @@
 const express = require("express");
 const router = express.Router();
 const logRequest = require("../../logs/logRequest");
-const {
-  checkDBConnection,
-  setDBConnectionStatus,
-} = require("../../middleware/checkDBConnection");
+const checkDBConnection = require("../../middleware/checkDBConnection");
 
-router.post("/api/signup", checkDBConnection, async (req, res) => {
+router.post("/", checkDBConnection, async (req, res) => {
   logRequest(req, "INFO", "Creating new user");
   const { username, email, password } = req.body;
 

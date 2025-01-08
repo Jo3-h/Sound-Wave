@@ -31,7 +31,7 @@ export default function useAuth(code, redirectUri) {
 
     hasFetched.current = true;
     axios
-      .post("http://localhost:3001/login", {
+      .post("http://localhost:3001/spotify/login", {
         code,
         redirectUri,
       })
@@ -71,7 +71,7 @@ export default function useAuth(code, redirectUri) {
     // create a timeout for auto refresh
     const interval = setInterval(() => {
       axios
-        .post("http://localhost:3001/refresh", {
+        .post("http://localhost:3001/spotify/refresh", {
           refreshToken,
         })
         .then((res) => {

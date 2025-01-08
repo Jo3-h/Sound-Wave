@@ -4,10 +4,10 @@
  */
 const express = require("express");
 const router = express.Router();
-const { spotifyApi } = require("../spotifyWebApi");
+const { spotifyApi } = require("../utils/spotifyWebApi");
 const { logRequest } = require("../../logs/logRequest");
 
-router.get("/import-countdown-playlist", async (req, res) => {
+router.get("/", async (req, res) => {
   // Add `async` here
   logRequest(req, "INFO", "Importing Playlist to Countdown");
   const playlistId = req.query.playlistId;

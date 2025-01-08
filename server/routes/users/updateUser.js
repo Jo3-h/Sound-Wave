@@ -2,15 +2,14 @@ const express = require("express");
 const router = express.Router();
 const { User } = require("../../db");
 const logRequest = require("../../logs/logRequest");
-const {
-  checkDBConnection,
-  setDBConnectionStatus,
-} = require("../../middleware/checkDBConnection");
+const checkDBConnection = require("../../middleware/checkDBConnection");
 const { upload } = require("../../middleware/profilePictureUpload");
+const checkJWT = require("../../middleware/checkJWT");
 
 router.post(
-  "/api/update-user",
+  "/",
   checkDBConnection,
+  checkJWT,
   upload.single("profile_image"),
   async (req, res) => {
     logRequest(req, "INFO", "Updating user details");
@@ -40,7 +39,7 @@ router.post(
 
       // save changes to database
       await user.save();
-      res.json(user);
+      res.json({ user });
     } catch (error) {
       res.status(500).json({ error: "Error updating user details" });
       console.error("Error updating user details:", error);

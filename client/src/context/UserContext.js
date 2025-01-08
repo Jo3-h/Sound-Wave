@@ -44,6 +44,9 @@ export const UserProvider = ({ children }) => {
 
   const updateUserDetails = (updatedDetails) => {
     // Merge updated details into the current user object
+    console.log("Attempting to update user details");
+    console.log("user", user);
+    console.log("updatedDetails", updatedDetails);
     const updatedUser = { ...user, ...updatedDetails };
     setUser(updatedUser);
 

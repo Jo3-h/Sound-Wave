@@ -4,12 +4,10 @@ const bcrypt = require("bcrypt");
 const jwt = require("jsonwebtoken");
 const { User } = require("../../db");
 const logRequest = require("../../logs/logRequest");
-const {
-  checkDBConnection,
-  setDBConnectionStatus,
-} = require("../../middleware/checkDBConnection");
+const checkDBConnection = require("../../middleware/checkDBConnection");
+const { generateToken, verifyToken } = require("../utils/jwt");
 
-router.post("/api/login", checkDBConnection, async (req, res) => {
+router.post("/", checkDBConnection, async (req, res) => {
   logRequest(req, "INFO", "Logging in user");
   const { username, password } = req.body;
   try {
@@ -26,11 +24,7 @@ router.post("/api/login", checkDBConnection, async (req, res) => {
     }
 
     // create JWT token
-    const token = jwt.sign(
-      { id: user.id, email: user.email },
-      process.env.JWT_SECRET,
-      { expiresIn: "1h" }
-    );
+    const token = generateToken({ user_id: user.id, username: user.username });
     return res.json({
       token,
       user: {

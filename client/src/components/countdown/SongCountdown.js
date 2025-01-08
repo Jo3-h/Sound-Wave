@@ -71,7 +71,7 @@ export default function SongCountdown({
   const handleImportPlaylist = (playlist) => {
     console.log("importing playlist -> ", playlist);
     axios
-      .get("http://localhost:3001/import-countdown-playlist", {
+      .get("http://localhost:3001/spotify/import-countdown-playlist", {
         params: {
           accessToken: accessToken,
           playlistId: playlist.id,

@@ -26,7 +26,7 @@ const router = express.Router();
 const logRequest = require("../../logs/logRequest");
 const SpotifyWebApi = require("spotify-web-api-node"); // Importing SpotifyWebApi
 
-router.post("/login", (req, res) => {
+router.post("/", (req, res) => {
   logRequest(req, "INFO", "Requesting Access Token");
   const code = req.body.code;
   const redirectUri = req.body.redirectUri;

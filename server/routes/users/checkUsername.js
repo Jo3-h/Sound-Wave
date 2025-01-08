@@ -9,12 +9,10 @@
 const express = require("express");
 const router = express.Router();
 const { User } = require("../../db");
-const {
-  checkDBConnection,
-  setDBConnectionStatus,
-} = require("../../middleware/checkDBConnection");
+const checkDBConnection = require("../../middleware/checkDBConnection");
+const logRequest = require("../../logs/logRequest");
 
-router.post("/check-username", checkDBConnection, async (req, res) => {
+router.post("/", checkDBConnection, async (req, res) => {
   logRequest(req, "INFO", "Checking username availability");
   const username = req.body.username;
 

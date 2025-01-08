@@ -8,10 +8,10 @@
  */
 const express = require("express");
 const router = express.Router();
-const { spotifyApi } = require("../spotifyWebApi");
+const { spotifyApi } = require("../utils/spotifyWebApi");
 const logRequest = require("../../logs/logRequest");
 
-router.get("/user-stats", (req, res) => {
+router.get("/", (req, res) => {
   const accessToken = req.query.accessToken;
   spotifyApi.setAccessToken(accessToken);
 

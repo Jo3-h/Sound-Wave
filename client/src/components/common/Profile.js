@@ -65,7 +65,7 @@ export default function Profile() {
     }
     try {
       const response = await axios.post(
-        "http://localhost:3001/api/check-username",
+        "http://localhost:3001/users/check-username",
         { username }
       );
       return response.data.available;
@@ -99,7 +99,7 @@ export default function Profile() {
         formDataToSend.append("profile_image", formData.profile_image);
       }
       axios
-        .post("http://localhost:3001/api/update-user", formDataToSend, {
+        .post("http://localhost:3001/users/update-user", formDataToSend, {
           headers: {
             "Content-Type": "multipart/form-data",
             Authorization: `Bearer ${localStorage.getItem("token")}`,

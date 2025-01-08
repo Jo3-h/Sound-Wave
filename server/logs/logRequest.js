@@ -1,7 +1,10 @@
 /*
 Logging function to display to server terminal for debugging purposes
 */
-const logRequest = (req, level = "INFO", message = "") => {
+const path = require("path");
+const fs = require("fs");
+
+const logRequest = (req, level = "INFO", message = "", fileExport = true) => {
   const logMessage = `\n[${new Date().toISOString()}] [${level}] [${
     req.method
   }] [${req.originalUrl}] 
@@ -19,6 +22,15 @@ const logRequest = (req, level = "INFO", message = "") => {
     console.warn(logMessage);
   } else {
     console.info(logMessage);
+  }
+
+  if (fileExport) {
+    const logFilePath = path.join(__dirname, "request_logs.log");
+    fs.appendFile(logFilePath, logMessage, (err) => {
+      if (err) {
+        console.error(`Failed to write log to file: ${err.message}`);
+      }
+    });
   }
 };
 

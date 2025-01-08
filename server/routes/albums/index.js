@@ -1,21 +1,17 @@
 /**
- * /routes/spotify/index.js
+ * /routes/albums/index.js
  */
 const express = require("express");
 const router = express.Router();
 const logRequest = require("../../logs/logRequest");
 
 // Import individual user routes
-const loginRoute = require("./login");
-const refreshRoute = require("./refresh");
-const importRoute = require("./importCountdownPlaylist");
-const statsRoute = require("./userStats");
+const getAlbumRoute = require("./getAlbum");
+const getAlbumsRoute = require("./getAlbums");
 
 // Mount user routes at /spotify
-router.use("/login", loginRoute);
-router.use("/refresh", refreshRoute);
-router.use("/import-countdown-playlist", importRoute);
-router.use("/user-stats", statsRoute);
+router.use("/get-album/:id", getAlbumRoute);
+router.use("/get-albums", getAlbumsRoute);
 
 // Catch-all handler for invalid Spotify routes
 router.use((req, res) => {
