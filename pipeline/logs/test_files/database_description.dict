@@ -1,0 +1,367 @@
+{
+    "Albums": {
+        "columns": [
+            {
+                "COLUMN_NAME": "id",
+                "COLUMN_TYPE": "varchar(255)",
+                "IS_NULLABLE": "NO",
+                "COLUMN_KEY": "PRI",
+                "EXTRA": ""
+            },
+            {
+                "COLUMN_NAME": "title",
+                "COLUMN_TYPE": "varchar(255)",
+                "IS_NULLABLE": "NO",
+                "COLUMN_KEY": "",
+                "EXTRA": ""
+            },
+            {
+                "COLUMN_NAME": "release_date",
+                "COLUMN_TYPE": "datetime",
+                "IS_NULLABLE": "YES",
+                "COLUMN_KEY": "",
+                "EXTRA": ""
+            },
+            {
+                "COLUMN_NAME": "image",
+                "COLUMN_TYPE": "varchar(255)",
+                "IS_NULLABLE": "YES",
+                "COLUMN_KEY": "",
+                "EXTRA": ""
+            },
+            {
+                "COLUMN_NAME": "genre",
+                "COLUMN_TYPE": "varchar(255)",
+                "IS_NULLABLE": "YES",
+                "COLUMN_KEY": "",
+                "EXTRA": ""
+            },
+            {
+                "COLUMN_NAME": "artist_id",
+                "COLUMN_TYPE": "varchar(255)",
+                "IS_NULLABLE": "YES",
+                "COLUMN_KEY": "MUL",
+                "EXTRA": ""
+            },
+            {
+                "COLUMN_NAME": "createdAt",
+                "COLUMN_TYPE": "datetime",
+                "IS_NULLABLE": "NO",
+                "COLUMN_KEY": "",
+                "EXTRA": ""
+            },
+            {
+                "COLUMN_NAME": "updatedAt",
+                "COLUMN_TYPE": "datetime",
+                "IS_NULLABLE": "NO",
+                "COLUMN_KEY": "",
+                "EXTRA": ""
+            },
+            {
+                "COLUMN_NAME": "track_id",
+                "COLUMN_TYPE": "varchar(255)",
+                "IS_NULLABLE": "YES",
+                "COLUMN_KEY": "MUL",
+                "EXTRA": ""
+            }
+        ],
+        "foreign_keys": [
+            {
+                "CONSTRAINT_NAME": "Albums_ibfk_1",
+                "COLUMN_NAME": "artist_id",
+                "REFERENCED_TABLE_NAME": "Artists",
+                "REFERENCED_COLUMN_NAME": "id"
+            },
+            {
+                "CONSTRAINT_NAME": "Albums_ibfk_2",
+                "COLUMN_NAME": "track_id",
+                "REFERENCED_TABLE_NAME": "Tracks",
+                "REFERENCED_COLUMN_NAME": "id"
+            }
+        ]
+    },
+    "Artists": {
+        "columns": [
+            {
+                "COLUMN_NAME": "id",
+                "COLUMN_TYPE": "varchar(255)",
+                "IS_NULLABLE": "NO",
+                "COLUMN_KEY": "PRI",
+                "EXTRA": ""
+            },
+            {
+                "COLUMN_NAME": "name",
+                "COLUMN_TYPE": "varchar(255)",
+                "IS_NULLABLE": "NO",
+                "COLUMN_KEY": "",
+                "EXTRA": ""
+            },
+            {
+                "COLUMN_NAME": "bio",
+                "COLUMN_TYPE": "text",
+                "IS_NULLABLE": "YES",
+                "COLUMN_KEY": "",
+                "EXTRA": ""
+            },
+            {
+                "COLUMN_NAME": "image",
+                "COLUMN_TYPE": "varchar(255)",
+                "IS_NULLABLE": "YES",
+                "COLUMN_KEY": "",
+                "EXTRA": ""
+            },
+            {
+                "COLUMN_NAME": "createdAt",
+                "COLUMN_TYPE": "datetime",
+                "IS_NULLABLE": "NO",
+                "COLUMN_KEY": "",
+                "EXTRA": ""
+            },
+            {
+                "COLUMN_NAME": "updatedAt",
+                "COLUMN_TYPE": "datetime",
+                "IS_NULLABLE": "NO",
+                "COLUMN_KEY": "",
+                "EXTRA": ""
+            }
+        ],
+        "foreign_keys": []
+    },
+    "Reviews": {
+        "columns": [
+            {
+                "COLUMN_NAME": "id",
+                "COLUMN_TYPE": "int",
+                "IS_NULLABLE": "NO",
+                "COLUMN_KEY": "PRI",
+                "EXTRA": "auto_increment"
+            },
+            {
+                "COLUMN_NAME": "entity_id",
+                "COLUMN_TYPE": "varchar(255)",
+                "IS_NULLABLE": "YES",
+                "COLUMN_KEY": "",
+                "EXTRA": ""
+            },
+            {
+                "COLUMN_NAME": "entity_type",
+                "COLUMN_TYPE": "enum('album','track')",
+                "IS_NULLABLE": "NO",
+                "COLUMN_KEY": "",
+                "EXTRA": ""
+            },
+            {
+                "COLUMN_NAME": "rating",
+                "COLUMN_TYPE": "int",
+                "IS_NULLABLE": "YES",
+                "COLUMN_KEY": "",
+                "EXTRA": ""
+            },
+            {
+                "COLUMN_NAME": "review_text",
+                "COLUMN_TYPE": "text",
+                "IS_NULLABLE": "YES",
+                "COLUMN_KEY": "",
+                "EXTRA": ""
+            },
+            {
+                "COLUMN_NAME": "favourite_track",
+                "COLUMN_TYPE": "varchar(255)",
+                "IS_NULLABLE": "YES",
+                "COLUMN_KEY": "",
+                "EXTRA": ""
+            },
+            {
+                "COLUMN_NAME": "user_id",
+                "COLUMN_TYPE": "int",
+                "IS_NULLABLE": "YES",
+                "COLUMN_KEY": "MUL",
+                "EXTRA": ""
+            },
+            {
+                "COLUMN_NAME": "createdAt",
+                "COLUMN_TYPE": "datetime",
+                "IS_NULLABLE": "NO",
+                "COLUMN_KEY": "",
+                "EXTRA": ""
+            },
+            {
+                "COLUMN_NAME": "updatedAt",
+                "COLUMN_TYPE": "datetime",
+                "IS_NULLABLE": "NO",
+                "COLUMN_KEY": "",
+                "EXTRA": ""
+            },
+            {
+                "COLUMN_NAME": "album_id",
+                "COLUMN_TYPE": "varchar(255)",
+                "IS_NULLABLE": "YES",
+                "COLUMN_KEY": "",
+                "EXTRA": ""
+            }
+        ],
+        "foreign_keys": [
+            {
+                "CONSTRAINT_NAME": "Reviews_ibfk_1",
+                "COLUMN_NAME": "user_id",
+                "REFERENCED_TABLE_NAME": "Users",
+                "REFERENCED_COLUMN_NAME": "id"
+            }
+        ]
+    },
+    "SequelizeMeta": {
+        "columns": [
+            {
+                "COLUMN_NAME": "name",
+                "COLUMN_TYPE": "varchar(255)",
+                "IS_NULLABLE": "NO",
+                "COLUMN_KEY": "PRI",
+                "EXTRA": ""
+            }
+        ],
+        "foreign_keys": []
+    },
+    "Tracks": {
+        "columns": [
+            {
+                "COLUMN_NAME": "id",
+                "COLUMN_TYPE": "varchar(255)",
+                "IS_NULLABLE": "NO",
+                "COLUMN_KEY": "PRI",
+                "EXTRA": ""
+            },
+            {
+                "COLUMN_NAME": "title",
+                "COLUMN_TYPE": "varchar(255)",
+                "IS_NULLABLE": "NO",
+                "COLUMN_KEY": "",
+                "EXTRA": ""
+            },
+            {
+                "COLUMN_NAME": "duration_s",
+                "COLUMN_TYPE": "int",
+                "IS_NULLABLE": "YES",
+                "COLUMN_KEY": "",
+                "EXTRA": ""
+            },
+            {
+                "COLUMN_NAME": "genre",
+                "COLUMN_TYPE": "varchar(255)",
+                "IS_NULLABLE": "YES",
+                "COLUMN_KEY": "",
+                "EXTRA": ""
+            },
+            {
+                "COLUMN_NAME": "album_id",
+                "COLUMN_TYPE": "varchar(255)",
+                "IS_NULLABLE": "YES",
+                "COLUMN_KEY": "MUL",
+                "EXTRA": ""
+            },
+            {
+                "COLUMN_NAME": "createdAt",
+                "COLUMN_TYPE": "datetime",
+                "IS_NULLABLE": "NO",
+                "COLUMN_KEY": "",
+                "EXTRA": ""
+            },
+            {
+                "COLUMN_NAME": "updatedAt",
+                "COLUMN_TYPE": "datetime",
+                "IS_NULLABLE": "NO",
+                "COLUMN_KEY": "",
+                "EXTRA": ""
+            }
+        ],
+        "foreign_keys": [
+            {
+                "CONSTRAINT_NAME": "Tracks_ibfk_1",
+                "COLUMN_NAME": "album_id",
+                "REFERENCED_TABLE_NAME": "Albums",
+                "REFERENCED_COLUMN_NAME": "id"
+            }
+        ]
+    },
+    "Users": {
+        "columns": [
+            {
+                "COLUMN_NAME": "id",
+                "COLUMN_TYPE": "int",
+                "IS_NULLABLE": "NO",
+                "COLUMN_KEY": "PRI",
+                "EXTRA": "auto_increment"
+            },
+            {
+                "COLUMN_NAME": "username",
+                "COLUMN_TYPE": "varchar(255)",
+                "IS_NULLABLE": "NO",
+                "COLUMN_KEY": "UNI",
+                "EXTRA": ""
+            },
+            {
+                "COLUMN_NAME": "email",
+                "COLUMN_TYPE": "varchar(255)",
+                "IS_NULLABLE": "NO",
+                "COLUMN_KEY": "UNI",
+                "EXTRA": ""
+            },
+            {
+                "COLUMN_NAME": "password",
+                "COLUMN_TYPE": "varchar(255)",
+                "IS_NULLABLE": "NO",
+                "COLUMN_KEY": "",
+                "EXTRA": ""
+            },
+            {
+                "COLUMN_NAME": "createdAt",
+                "COLUMN_TYPE": "datetime",
+                "IS_NULLABLE": "NO",
+                "COLUMN_KEY": "",
+                "EXTRA": ""
+            },
+            {
+                "COLUMN_NAME": "updatedAt",
+                "COLUMN_TYPE": "datetime",
+                "IS_NULLABLE": "NO",
+                "COLUMN_KEY": "",
+                "EXTRA": ""
+            },
+            {
+                "COLUMN_NAME": "first_name",
+                "COLUMN_TYPE": "varchar(255)",
+                "IS_NULLABLE": "YES",
+                "COLUMN_KEY": "",
+                "EXTRA": ""
+            },
+            {
+                "COLUMN_NAME": "last_name",
+                "COLUMN_TYPE": "varchar(255)",
+                "IS_NULLABLE": "YES",
+                "COLUMN_KEY": "",
+                "EXTRA": ""
+            },
+            {
+                "COLUMN_NAME": "profile_pic",
+                "COLUMN_TYPE": "varchar(255)",
+                "IS_NULLABLE": "YES",
+                "COLUMN_KEY": "",
+                "EXTRA": ""
+            },
+            {
+                "COLUMN_NAME": "status",
+                "COLUMN_TYPE": "enum('active','inactive','banned')",
+                "IS_NULLABLE": "NO",
+                "COLUMN_KEY": "",
+                "EXTRA": ""
+            },
+            {
+                "COLUMN_NAME": "role",
+                "COLUMN_TYPE": "enum('admin','user')",
+                "IS_NULLABLE": "NO",
+                "COLUMN_KEY": "",
+                "EXTRA": ""
+            }
+        ],
+        "foreign_keys": []
+    }
+}

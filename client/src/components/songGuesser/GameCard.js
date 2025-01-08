@@ -86,7 +86,7 @@ export default function GameCard({ showTrack, game, gameStats, gameSettings }) {
             <div className="stats-label">Avg Guesses:</div>
             <div className="stats-value">
               {gameStats.totalGuesses
-                ? (gameStats.total / gameStats.totalGuesses).toFixed(2)
+                ? (gameStats.totalGuesses / gameStats.total).toFixed(2)
                 : "-"}
             </div>
           </div>

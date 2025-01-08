@@ -32,7 +32,7 @@ const SignUp = () => {
     }
     try {
       const response = await axios.post(
-        "http://localhost:3001/api/check-username",
+        "http://localhost:3001/users/check-username",
         { username }
       );
       return response.data.available;
@@ -72,7 +72,7 @@ const SignUp = () => {
       console.log("Form submitted successfully:", formData);
       // Uncomment to submit the form
       axios
-        .post("http://localhost:3001/api/signup", formData)
+        .post("http://localhost:3001/users/signup", formData)
         .then((response) => {
           console.log("User signed up:", response.data);
         })

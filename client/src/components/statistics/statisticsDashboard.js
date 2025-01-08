@@ -42,7 +42,7 @@ export default function StatisticsDashboard({
    */
   useEffect(() => {
     axios // request data from backend
-      .get("http://localhost:3001/user-stats", {
+      .get("http://localhost:3001/spotify/user-stats", {
         params: { accessToken },
       })
       .then((res) => {
